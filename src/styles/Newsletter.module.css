@@ -1,0 +1,27 @@
+
+
+@media screen and (max-width: 600px) {
+    .Newsletter{
+        width: 80vw;
+    }    
+}
+
+@media screen and (min-width: 600px) {
+    .Newsletter{
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    
+}
+@media screen and (min-width: 992px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .Newsletter{
+        width: 20vw;
+    }
+}
