@@ -1,0 +1,9 @@
+.Products{
+    max-width: 1200px;
+ 
+}
+.ProductsContainer{
+    justify-content: center;
+    align-items: flex-start;
+
+}

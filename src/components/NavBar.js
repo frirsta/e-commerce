@@ -11,7 +11,7 @@ import styles from "../styles/NavBar.module.css";
 
 const NavBar = ({ totalItems }) => {
   return (
-    <div>
+    <div className={styles.NavBarContainer}>
       <Box>
         <AppBar>
           <Toolbar className={styles.NavBar}>
