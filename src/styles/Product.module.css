@@ -1,5 +1,41 @@
-.Product {
+
+
+@media screen and (max-width: 600px) {
+ 
+.ProductContainer{
+  display: flex;
+  flex-direction: column;
   width: 200px;
-  margin: 30px;
+
+  margin: 20px;
 }
-.Name{}
+.Product {
+  border-radius: 20px;
+}
+.Image{
+  height: 250px;
+
+}
+.Name{
+  padding: 15px 0;
+  font-weight: 600;
+}
+
+
+}
+
+@media screen and (min-width: 600px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+    
+}
+@media screen and (min-width: 992px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
