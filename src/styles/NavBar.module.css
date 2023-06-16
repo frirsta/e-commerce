@@ -1,8 +1,13 @@
-.NavBar{
-    display: flex;
-    justify-content: space-between;
+.NavBar {
+  display: flex;
+  justify-content: space-between;
 }
 
-.NavBarContainer{
-    margin-bottom: 70px;
+.NavBarContainer {
+  margin-bottom: 70px;
+}
+
+.ShoppingCart {
+  width: 30px !important;
+  height: 30px !important;
 }

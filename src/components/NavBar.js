@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import Badge from "@mui/material/Badge";
+import Badge from '@mui/joy/Badge';
 import { Link } from "react-router-dom";
 import styles from "../styles/NavBar.module.css";
 
@@ -19,8 +19,8 @@ const NavBar = ({ totalItems }) => {
               <Link to={"/"}>Brand</Link>
             </Typography>
             <IconButton component={Link} to={"cart"}>
-              <Badge badgeContent={totalItems} color="primary"></Badge>
-              <ShoppingCartOutlinedIcon />
+              <Badge size="sm" badgeContent={totalItems} color="info"></Badge>
+              <ShoppingCartOutlinedIcon className={styles.ShoppingCart} />
             </IconButton>
           </Toolbar>
         </AppBar>
