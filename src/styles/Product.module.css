@@ -1,63 +1,71 @@
-
-
 @media screen and (max-width: 600px) {
- 
-.ProductContainer{
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-
-  margin: 20px;
-}
-.Product {
-  border-radius: 20px!important;
-}
-.Image{
-  height: 250px;
-
-}
-.Name{
-  padding: 15px 0;
-  font-weight: 600;
-}
-
-
-}
-
-@media screen and (min-width: 600px) {
-  .ProductSection{
-    max-width: 1200px;
-  }
-  .ProductContainer{
+  .ProductContainer {
     display: flex;
     flex-direction: column;
-    width: 200px;
-  
-    margin: 25px;
+    width: 150px;
+    margin: 20px 5px;
   }
   .Product {
-    border-radius: 20px!important;
+    border-radius: 20px !important;
   }
-  .Image{
-    height: 250px;
-  
+  .Image {
+    height: 200px;
   }
-  .Name{
-    padding: 15px 0;
+  .Name {
+    margin-top: 5px;
+    padding: 10px 0;
     font-weight: 600;
   }
-  
-    
+  .Text {
+    font-size: 12px;
+  }
+  .TextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
 }
-
+@media screen and (min-width: 600px) {
+  .ProductContainer {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 20px 10px;
+  }
+  .Product {
+    border-radius: 20px !important;
+  }
+  .Image {
+    height: 200px;
+  }
+  .Name {
+    margin-top: 5px;
+    padding: 10px 0;
+    font-weight: 600;
+  }
+  .Text {
+    font-size: 12px;
+  }
+  .TextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+}
 @media screen and (min-width: 768px) {
-    
-    
+  .Text {
+    font-size: 15px;
+  }
 }
 @media screen and (min-width: 992px) {
-    
+  .ProductContainer {
+    width: 225px;
+  }
+  .Image {
+    height: 350px;
+  }
 }
-
 @media screen and (min-width: 1200px) {
-    
 }
