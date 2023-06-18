@@ -5,7 +5,7 @@ import styles from "../../styles/Products.module.css";
 
 const Products = ({ products, onAddToCart }) => {
   return (
-    <Grid className={styles.ProductsContainer} container rowSpacing={1}>
+    <Grid className={styles.ProductsContainer} container>
       {products.map((product) => (
         <Grid key={product.id}>
           <Product product={product}  onAddToCart={onAddToCart} />

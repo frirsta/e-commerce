@@ -6,6 +6,7 @@ import Products from "./components/products/Products";
 import { commerce } from "./library/commerce/commerce";
 import { useEffect, useState } from "react";
 import Cart from "./components/cart/Cart";
+import ProductDetails from "./components/products/ProductDetails";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -32,6 +33,7 @@ function App() {
         <NavBar totalItems={cart?.total_items} />
         <Routes>
           <Route path={"/cart"} element={<Cart cart={cart} />} />
+          <Route path={"/item/:id"} element={<ProductDetails />} />
           <Route
             path={"/"}
             element={

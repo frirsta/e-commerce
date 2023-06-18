@@ -25,6 +25,12 @@
     align-items: flex-start;
     margin-left: 10px;
   }
+  .ProductInformation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ProductLink{}
 }
 @media screen and (min-width: 600px) {
   .ProductContainer {
@@ -47,6 +53,11 @@
   .Text {
     font-size: 12px;
   }
+  .ProductInformation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .TextContainer {
     display: flex;
     flex-direction: column;
@@ -55,9 +66,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .Text {
-    font-size: 15px;
-  }
+
 }
 @media screen and (min-width: 992px) {
   .ProductContainer {
