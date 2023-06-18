@@ -5,7 +5,6 @@ import styles from "../../styles/Product.module.css";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import { Link } from "react-router-dom";
 
-
 const Product = ({ product, onAddToCart }) => {
   return (
     <div className={styles.ProductSection}>
@@ -13,14 +12,13 @@ const Product = ({ product, onAddToCart }) => {
         <Card className={styles.Product}>
           <CardOverflow>
             <Link to={`/item/${product.id}`} className={styles.ProductLink}>
-            <CardMedia
-              className={styles.Image}
-              component={"img"}
-              image={product.image.url}
-            />
+              <CardMedia
+                className={styles.Image}
+                component={"img"}
+                image={product.image.url}
+              />
             </Link>
           </CardOverflow>
-
         </Card>
         <div className={styles.ProductInformation}>
           <div className={styles.TextContainer}>

@@ -33,7 +33,10 @@ function App() {
         <NavBar totalItems={cart?.total_items} />
         <Routes>
           <Route path={"/cart"} element={<Cart cart={cart} />} />
-          <Route path={"/item/:id"} element={<ProductDetails />} />
+          <Route
+            path={"/item/:id"}
+            element={<ProductDetails onAddToCart={handleAddToCart} />}
+          />
           <Route
             path={"/"}
             element={

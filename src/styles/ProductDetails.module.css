@@ -1,0 +1,14 @@
+.ProductDetails {
+  width: 100vw;
+  position: relative;
+}
+.Button {
+  position: absolute !important;
+  z-index: 10;
+  top: 20px;
+  left: 20px;
+  background-color: transparent !important;
+  color: gray !important;
+}
+.ProductInformation {
+}
