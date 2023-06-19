@@ -14,7 +14,8 @@ const ProductDetails = ({ onAddToCart }) => {
   const [product, setProduct] = useState([]);
   const [item, setItem] = useState([]);
   const [images, setImages] = useState();
-  const [sizes, setSizes] = useState();
+  const [groupId, setGroupId] = useState();
+  const [optionId, setOptionId] = useState();
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -31,17 +32,13 @@ const ProductDetails = ({ onAddToCart }) => {
         );
       });
     };
-    const fetchSizes = async () => {
-      setSizes(
-        product.variant_groups[0].options.map((item) => {
-          return <li key={item.id}>{item.name}</li>;
-        })
-      );
+    const fetchGroupId = async () => {
+      setGroupId(product.variant_groups?.[0].id);
     };
-    fetchImages();
-    fetchSizes();
-  }, [id, item, product.variant_groups]);
 
+    fetchImages();
+    fetchGroupId();
+  }, [id, item, product.variant_groups]);
   return (
     <div className={styles.ProductDetails}>
       <IconButton
@@ -66,10 +63,26 @@ const ProductDetails = ({ onAddToCart }) => {
         ></Typography>
       </div>
       <div className={styles.Sizes}>
-        <ul>{sizes}</ul>
+        <div>
+          <label htmlFor="variant-picker">
+            {product.variant_groups?.[0].name}
+          </label>
+          <select
+            name="variant-picker"
+            id="variant-picker"
+            value={optionId}
+            onChange={(e) => setOptionId(e.target.value)}
+          >
+            {product.variant_groups?.[0].options.map(({ id, name }) => (
+              <option value={id} key={id}>
+                {name}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
       <Button
-        onClick={() => onAddToCart(product.id, 1)}
+        onClick={() => onAddToCart(product.id, 1, { [groupId]: optionId })}
         aria-label="add to cart"
         startDecorator={<Add />}
       >
