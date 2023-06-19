@@ -53,35 +53,30 @@ const ProductDetails = ({ onAddToCart }) => {
       </IconButton>
       <Carousel>{images}</Carousel>
       <div className={styles.ProductInformation}>
-        <Typography variant="h5" gutterBottom>
+        <Typography 
+        className={styles.Name}>
           {product.name}
         </Typography>
         <Typography
           dangerouslySetInnerHTML={{ __html: product.description }}
-          variant="h6"
-          gutterBottom
+          className={styles.Description}
         ></Typography>
       </div>
       <div className={styles.Sizes}>
         <div>
-          <label htmlFor="variant-picker">
-            {product.variant_groups?.[0].name}
-          </label>
-          <select
-            name="variant-picker"
-            id="variant-picker"
+          <select className={styles.Select}
             value={optionId}
             onChange={(e) => setOptionId(e.target.value)}
           >
             {product.variant_groups?.[0].options.map(({ id, name }) => (
-              <option value={id} key={id}>
+              <option className={styles.Option} value={id} key={id}>
                 {name}
               </option>
             ))}
           </select>
         </div>
       </div>
-      <Button
+      <Button className={styles.AddToCartButton}
         onClick={() => onAddToCart(product.id, 1, { [groupId]: optionId })}
         aria-label="add to cart"
         startDecorator={<Add />}

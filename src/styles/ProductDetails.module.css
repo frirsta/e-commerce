@@ -1,6 +1,9 @@
 .ProductDetails {
   width: 100vw;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Button {
   position: absolute !important;
@@ -11,4 +14,29 @@
   color: gray !important;
 }
 .ProductInformation {
+  width: 85%;
+}
+
+.Name {
+  color: rgb(94, 93, 93);
+  line-height: 0px !important;
+  position: relative;
+  top: 15px;
+}
+.Description {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
+
+.AddToCartButton {
+  width: 90%;
+  border-radius: 20px !important;
+}
+.Select {
+  border-radius: 20px;
+  width: 88vw;
+  padding: 10px;
+  margin: 10px 0;
+}
+.Option {
 }
