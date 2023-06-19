@@ -1,10 +1,9 @@
-.NavBar {
-  display: flex;
-  justify-content: space-between;
-}
-
 .NavBarContainer {
-  margin-bottom: 70px;
+  position: absolute;
+  z-index: 10;
+  width: 90%;
+  text-align: right;
+
 }
 
 .ShoppingCart {

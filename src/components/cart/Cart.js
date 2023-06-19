@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CircularProgress from '@mui/joy/CircularProgress';
 import CartItem from './CartItem';
+import { Button } from '@mui/joy';
 
 
-const Cart = ({cart}) => {
+const Cart = ({cart, handleUpdateCart, handleRemoveCart, handleEmtyCart}) => {
     const emptyCart = (
         <>
         <span>You have no items in the cart</span>
@@ -17,8 +18,10 @@ console.log(cart)
 const items = (
     <>
     {cart.line_items.map((item) => (
-        <CartItem key={item.id} item={item} />
-    ))}
+        <CartItem onRemoveCart={handleRemoveCart} onUpdateCart={handleUpdateCart} key={item.id} item={item} />
+        ))}
+        <Button onClick={handleEmtyCart}>Empty Cart</Button>
+        <Button>Checkout</Button>
     </>
 )
 

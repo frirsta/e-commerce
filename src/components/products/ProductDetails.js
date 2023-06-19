@@ -33,7 +33,7 @@ const ProductDetails = ({ onAddToCart }) => {
       });
     };
     const fetchGroupId = async () => {
-      setGroupId(product.variant_groups?.[0].id);
+      setGroupId(product.variant_groups?.[0]?.id);
     };
 
     fetchImages();
@@ -68,7 +68,7 @@ const ProductDetails = ({ onAddToCart }) => {
             value={optionId}
             onChange={(e) => setOptionId(e.target.value)}
           >
-            {product.variant_groups?.[0].options.map(({ id, name }) => (
+            {product.variant_groups?.[0]?.options?.map(({ id, name }) => (
               <option className={styles.Option} value={id} key={id}>
                 {name}
               </option>

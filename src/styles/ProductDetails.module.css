@@ -1,42 +1,101 @@
-.ProductDetails {
-  width: 100vw;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (max-width: 600px) {
+  .ProductDetails {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 10px;
+  }
+  .Button {
+    position: absolute !important;
+    z-index: 10;
+    top: 20px;
+    left: 20px;
+    background-color: transparent !important;
+    color: gray !important;
+  }
+  .ProductInformation {
+    width: 85%;
+  }
+  
+  .Name {
+    color: rgb(94, 93, 93);
+    line-height: 0px !important;
+    position: relative;
+    top: 15px;
+  }
+  .Description {
+    font-size: 25px !important;
+    font-weight: 600 !important;
+  }
+  
+  .AddToCartButton {
+    width: 90%;
+    border-radius: 20px !important;
+  }
+  .Select {
+    border-radius: 20px;
+    width: 88vw;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .Option {
+  }
+  
 }
-.Button {
-  position: absolute !important;
-  z-index: 10;
-  top: 20px;
-  left: 20px;
-  background-color: transparent !important;
-  color: gray !important;
+@media screen and (min-width: 600px) {
+  .ProductDetails {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 10px;
+  }
+  .Button {
+    position: absolute !important;
+    z-index: 10;
+    top: 20px;
+    left: 20px;
+    background-color: transparent !important;
+    color: gray !important;
+  }
+  .ProductInformation {
+    width: 85%;
+  }
+  
+  .Name {
+    color: rgb(94, 93, 93);
+    line-height: 0px !important;
+    position: relative;
+    top: 15px;
+  }
+  .Description {
+    font-size: 25px !important;
+    font-weight: 600 !important;
+  }
+  
+  .AddToCartButton {
+    width: 90%;
+    border-radius: 20px !important;
+  }
+  .Select {
+    border-radius: 20px;
+    width: 88vw;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .Option {
+  }
+  
+  
 }
-.ProductInformation {
-  width: 85%;
-}
+@media screen and (min-width: 768px) {
 
-.Name {
-  color: rgb(94, 93, 93);
-  line-height: 0px !important;
-  position: relative;
-  top: 15px;
 }
-.Description {
-  font-size: 25px !important;
-  font-weight: 600 !important;
-}
+@media screen and (min-width: 992px) {
 
-.AddToCartButton {
-  width: 90%;
-  border-radius: 20px !important;
 }
-.Select {
-  border-radius: 20px;
-  width: 88vw;
-  padding: 10px;
-  margin: 10px 0;
-}
-.Option {
+@media screen and (min-width: 1200px) {
 }
