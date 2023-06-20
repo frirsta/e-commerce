@@ -5,7 +5,7 @@ import CartItem from './CartItem';
 import { Button } from '@mui/joy';
 
 
-const Cart = ({cart, handleUpdateCart, handleRemoveCart, handleEmtyCart}) => {
+const Cart = ({cart, handleUpdateCart, handleRemoveCart, handleEmptyCart}) => {
     const emptyCart = (
         <>
         <span>You have no items in the cart</span>
@@ -20,8 +20,8 @@ const items = (
     {cart.line_items.map((item) => (
         <CartItem onRemoveCart={handleRemoveCart} onUpdateCart={handleUpdateCart} key={item.id} item={item} />
         ))}
-        <Button onClick={handleEmtyCart}>Empty Cart</Button>
-        <Button>Checkout</Button>
+        <Button onClick={handleEmptyCart}>Empty Cart</Button>
+        <Button component={Link} to='/checkout'>Checkout</Button>
     </>
 )
 

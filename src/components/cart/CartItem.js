@@ -9,7 +9,7 @@ import ClearIcon from "@mui/icons-material/Clear";
 
 const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
   return (
-      <Box className={styles.Container}>
+      <Box className={styles.Card}>
         <div className={styles.ImageContainer}>
           <img className={styles.Image} src={item.image.url} alt={item.name} />
         </div>

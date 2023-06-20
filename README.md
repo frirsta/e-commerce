@@ -8,6 +8,8 @@ npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 npm install @mui/joy @emotion/react @emotion/styled
 
 npm install react-responsive-carousel --save
+npm install react-hook-form
+npm install @mui/material @emotion/react @emotion/styled
 
 # Technologies
 
