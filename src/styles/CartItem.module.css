@@ -1,0 +1,59 @@
+@media screen and (max-width: 600px) {
+  .Container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 10px;
+  }
+  .ImageContainer{
+    width: 100px;
+    border-radius: 20px;
+    margin-right: 10px;
+    
+  }
+  .Image {
+    width: 100px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .CardContent {
+    justify-content: space-around;
+  }
+  .Quantity {
+    font-weight: 600;
+  }
+
+  .ButtonsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .UpdateButton {
+    border: 1px solid #000000;
+    color: #000;
+    border-radius: 7px;
+  }
+  .EmptyButton {
+    color: gray;
+  }
+  .RemoveButton {
+    padding-left: 0px !important;
+  }
+  .DeleteButton {
+    padding-right: 0px !important;
+  }
+  .Size {
+    font-weight: 600;
+  }
+  .Icon {
+    width: 17px !important;
+    height: 17px !important;
+  }
+}
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}

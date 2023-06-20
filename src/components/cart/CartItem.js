@@ -1,94 +1,55 @@
-import * as React from 'react';
-import AspectRatio from '@mui/joy/AspectRatio';
-import Box from '@mui/joy/Box';
-import Button from '@mui/joy/Button';
-import Card from '@mui/joy/Card';
-import CardContent from '@mui/joy/CardContent';
-import Typography from '@mui/joy/Typography';
+import Box from "@mui/joy/Box";
+import IconButton from "@mui/material/IconButton";
+import CardContent from "@mui/joy/CardContent";
+import Typography from "@mui/joy/Typography";
+import styles from "../../styles/CartItem.module.css";
+import RemoveIcon from "@mui/icons-material/Remove";
+import AddIcon from "@mui/icons-material/Add";
+import ClearIcon from "@mui/icons-material/Clear";
 
-const CartItem = ({item, onUpdateCart, onRemoveCart}) => {
+const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
   return (
-    <Box
-      sx={{
-        width: '100%',
-        position: 'relative',
-      }}
-    >
-      <Box
-        sx={{
-          position: 'absolute',
-          display: 'block',
-          width: '1px',
-          bgcolor: 'warning.300',
-          left: '500px',
-          top: '-24px',
-          bottom: '-24px',
-          '&::before': {
-            top: '4px',
-            content: '"vertical"',
-            display: 'block',
-            position: 'absolute',
-            right: '0.5rem',
-            color: 'text.tertiary',
-            fontSize: 'sm',
-            fontWeight: 'lg',
-          },
-          '&::after': {
-            top: '4px',
-            content: '"horizontal"',
-            display: 'block',
-            position: 'absolute',
-            left: '0.5rem',
-            color: 'text.tertiary',
-            fontSize: 'sm',
-            fontWeight: 'lg',
-          },
-        }}
-      />
-      <Card
-        orientation="horizontal"
-        sx={{
-          width: '100%',
-          flexWrap: 'wrap',
-          [`& > *`]: {
-            '--stack-point': '500px',
-            minWidth:
-              'clamp(0px, (calc(var(--stack-point) - 2 * var(--Card-padding) - 2 * var(--variant-borderWidth, 0px)) + 1px - 100%) * 999, 100%)',
-          },
-          // make the card resizable for demo
-          overflow: 'auto',
-          resize: 'horizontal',
-        }}
-      >
-        <AspectRatio ratio="1" maxHeight={182} sx={{ minWidth: 182, flex: 1 }}>
-          <img
-            src={item.image.url}
-            alt={item.name}
-          />
-        </AspectRatio>
-        <CardContent>
-          <Typography fontSize="xl" fontWeight="lg">
-            Alex Morrison
+      <Box className={styles.Container}>
+        <div className={styles.ImageContainer}>
+          <img className={styles.Image} src={item.image.url} alt={item.name} />
+        </div>
+        <CardContent className={styles.CardContent}>
+          <Typography fontWeight="lg">
+            {item.name}
           </Typography>
+          <Typography>{item.selected_options[0]?.option_name ? (<><span className={styles.Size}>Size:</span> {item.selected_options[0]?.option_name}</>) : (null)}</Typography>
           <Typography level="body2" fontWeight="lg" textColor="text.tertiary">
-            Senior Journalist
+            {item.line_total.formatted_with_symbol}
           </Typography>
-
-          <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-            <Button onClick={() => onUpdateCart(item.id, item.quantity - 1)} variant="outlined" color="neutral">
-              -
-            </Button>
-            <Button onClick={() => onUpdateCart(item.id, item.quantity + 1)} variant="solid" color="primary">
-              +
-            </Button>
+          <Box className={styles.ButtonsContainer}>
+            <Box>
+              <IconButton
+              className={styles.RemoveButton}
+                onClick={() => onUpdateCart(item.id, item.quantity - 1)}
+                aria-label="remove"
+              >
+                <RemoveIcon className={`${styles.UpdateButton} ${styles.Icon}`} />
+              </IconButton>
+              <span className={styles.Quantity}>{item.quantity}</span>
+              <IconButton
+                onClick={() => onUpdateCart(item.id, item.quantity + 1)}
+                aria-label="add"
+              >
+                <AddIcon className={`${styles.UpdateButton} ${styles.Icon}`} />
+              </IconButton>
+            </Box>
+            <IconButton
+            className={styles.DeleteButton}
+              onClick={() => onRemoveCart(item.id)}
+              variant="solid"
+              aria-label="delete"
+            >
+              <ClearIcon className={`${styles.EmptyButton} ${styles.Icon}`} />
+            </IconButton>
           </Box>
-          <Button onClick={() => onRemoveCart(item.id)} variant="solid" color="primary">
-              Remove
-            </Button>
         </CardContent>
-      </Card>
     </Box>
   );
-}
+};
 
 export default CartItem;
