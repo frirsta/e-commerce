@@ -29,9 +29,11 @@ const Address = ({ checkoutToken, next }) => {
     })
   );
 
-  const options = shippingOptions.map((s0) => ({id: s0.id, label: `${s0.description} - (${s0.price.formatted_with_symbol})`}))
-  console.log(options)
-
+  const options = shippingOptions.map((s0) => ({
+    id: s0.id,
+    label: `${s0.description} - (${s0.price.formatted_with_symbol})`,
+  }));
+  console.log(options);
 
   const fetchShippingCountries = async (checkoutTokenId) => {
     const { countries } = await commerce.services.localeListShippingCountries(
@@ -81,7 +83,16 @@ const Address = ({ checkoutToken, next }) => {
   return (
     <>
       <FormProvider {...methods}>
-        <form onSubmit={methods.handleSubmit((data => next(... data, shippingCountry, shippingSubdivision, shippingOption)))}>
+        <form
+          onSubmit={methods.handleSubmit((data) =>
+            next({
+              ...data,
+              shippingCountry,
+              shippingSubdivision,
+              shippingOption,
+            })
+          )}
+        >
           <CheckoutInput name="firstname" label="firstname" />
           <CheckoutInput name="lastname" label="lastname" />
           <CheckoutInput name="address" label="address" />
@@ -128,7 +139,9 @@ const Address = ({ checkoutToken, next }) => {
             </select>
           </Grid>
           <div>
-            <Button to='/cart' component={Link}>Back</Button>
+            <Button to="/cart" component={Link}>
+              Back
+            </Button>
             <Button type="submit">Next</Button>
           </div>
         </form>
