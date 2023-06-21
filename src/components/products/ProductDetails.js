@@ -83,6 +83,9 @@ const ProductDetails = ({ onAddToCart }) => {
       >
         Add to cart
       </Button>
+      <div className={styles.price}>
+        {product.price.formatted_with_symbol}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,9 @@
 
 @media screen and (max-width: 600px) {
     .Footer{
+        margin-top: 20px;
         width: 100%;
+        background-color: aliceblue;
     }
     .FooterList{
         justify-content: flex-start;
@@ -37,6 +39,8 @@
         width: 100%;
         margin: 0 auto;
         max-width: 1200px;
+        margin-top: 20px;
+        background-color: aliceblue;
     }
     .FooterList{
         justify-content: space-evenly;

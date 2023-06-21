@@ -1,0 +1,117 @@
+@media screen and (max-width: 600px) {
+    .Cart{
+        margin: 30px 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .Summary{
+        margin-top: 40px;
+        max-width: 90vw;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ButtonsContainer{
+        margin: 10px 0;
+    }
+    .Total{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        
+    }
+    .Divider{
+        margin: 15px 0!important;
+    }
+    .DeleteButton{
+        padding: 0px!important;
+        color: #033867!important;
+        background-color: transparent!important;
+    }
+    .CheckoutButton{
+        background-color: pink!important;
+        margin: 10px!important;
+        padding-block: 0px!important;
+        max-width: 80vw;
+        width: 400px;
+    }
+}
+  @media screen and (min-width: 600px) {
+    .Cart{
+        margin: 30px 0;
+        display: flex;
+        width: 70%;
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+    .Summary{
+        margin-top: 40px;
+        max-width: 90vw;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ButtonsContainer{
+        margin: 10px 0;
+    }
+    .Total{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        
+    }
+    .Divider{
+        margin: 15px 0!important;
+    }
+    .DeleteButton{
+        padding: 0px!important;
+        color: #033867!important;
+        background-color: transparent!important;
+    }
+    .CheckoutButton{
+        background-color: pink!important;
+        margin: 10px!important;
+        padding-block: 0px!important;
+        max-width: 80vw;
+        width: 400px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .CartContainer{
+       display: flex;
+       justify-content: space-evenly;
+       width: 100%;
+    }
+    .Products{
+        width: 50vw;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .Summary{
+        max-width: unset;
+        width: 200px;
+    }
+    .CheckoutButton{
+        max-width: unset;
+        width: 200px;
+    }
+    .Title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 992px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  

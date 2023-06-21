@@ -22,10 +22,15 @@ function App() {
   const fetchCart = async () => {
     setCart(await commerce.cart.retrieve());
   };
-  const handleAddToCart = async (itemId, quantity, optionId) => {
-    const item = await commerce.cart.add(itemId, quantity, optionId);
-    console.log(item);
-    setCart(item);
+  const handleAddToCart = async (productId, quantity, variantInfo) => {
+    if(variantInfo) {
+      commerce.cart.add(productId, quantity, variantInfo)
+          .then(res => {
+              setCart(res.cart)
+          })
+  } else {
+      window.alert('Please Select a Shirt Size')
+  }
   };
 
   const handleUpdateCart = async (productId, quantity) => {
