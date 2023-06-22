@@ -1,10 +1,10 @@
+import { useState } from "react";
 import FormControl from "@mui/joy/FormControl";
 import FormLabel from "@mui/joy/FormLabel";
 import FormHelperText from "@mui/joy/FormHelperText";
 import Input from "@mui/joy/Input";
 import Button from "@mui/joy/Button";
-import { useState } from "react";
-import styles from '../styles/Newsletter.module.css';
+import styles from "../styles/Newsletter.module.css";
 
 export default function InputSubscription() {
   const [data, setData] = useState({
@@ -36,7 +36,7 @@ export default function InputSubscription() {
           MUI Newsletter
         </FormLabel>
         <Input
-        className={styles.Newsletter}
+          className={styles.Newsletter}
           size="md"
           variant="outlined"
           color="info"

@@ -12,11 +12,12 @@ const StripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
 const Payment = ({
   checkoutToken,
+  nextStep,
   backStep,
   shippingData,
-  nextStep,
   onCaptureCheckout,
 }) => {
+  console.log(shippingData);
   const handleSubmit = async (event, elements, stripe) => {
     event.preventDefault();
     if (!stripe || !elements) return;
@@ -34,16 +35,16 @@ const Payment = ({
       const orderData = {
         line_items: checkoutToken.line_items,
         customer: {
-          firstname: shippingData.firstname,
-          lastname: shippingData.lastname,
-          email: shippingData.email,
+          firstname: shippingData.firstName,
+          lastname: shippingData.lastName,
+          email: shippingData.shippingEmail,
         },
         shipping: {
           name: "Primary",
-          street: shippingData.address,
-          town_city: shippingData.city,
-          country_state: shippingData.shippingSubdivisions,
-          postal_zip_code: shippingData.zip,
+          street: shippingData.shippingStreet,
+          town_city: shippingData.shippingCity,
+          county_state: shippingData.shippingSubdivision,
+          postal_zip_code: shippingData.shippingZip,
           country: shippingData.shippingCountry,
         },
         fulfillment: { shipping_method: shippingData.shippingOption },
@@ -54,8 +55,9 @@ const Payment = ({
           },
         },
       };
-      onCaptureCheckout = (checkoutToken.id, orderData);
+      onCaptureCheckout(checkoutToken.id, orderData);
       nextStep();
+      console.log(orderData);
     }
   };
   return (

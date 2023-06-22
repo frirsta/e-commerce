@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Badge from "@mui/joy/Badge";
-import { Link } from "react-router-dom";
 import styles from "../styles/NavBar.module.css";
 
 const NavBar = ({ totalItems }) => {

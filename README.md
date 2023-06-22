@@ -29,3 +29,4 @@ https://stripe.com/docs/payments/quickstart?lang=node&client=react
 * Commercejs
 * Stripe
 * Material UI
+npm install --save stripe

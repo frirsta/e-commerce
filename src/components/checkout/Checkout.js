@@ -31,23 +31,28 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
   const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);
   const backStep = () => setActiveStep((prevActiveStep) => prevActiveStep - 1);
 
-  const next = (data) => {
+  const test = (data) => {
     setShippingData(data);
+    console.log(shippingData);
     nextStep();
   };
 
-  const Confirmation = () => {
-    <>Confirmation</>;
-  };
+  const Confirmation = <h2>Confirmation</h2>;
+
   const Form = () =>
     activeStep === 0 ? (
-      <Address checkoutToken={checkoutToken} next={next} />
+      <Address
+        test={test}
+        setShippingData={setShippingData}
+        checkoutToken={checkoutToken}
+        nextStep={nextStep}
+      />
     ) : (
       <Payment
-        shippingData={shippingData}
         checkoutToken={checkoutToken}
         nextStep={nextStep}
         backStep={backStep}
+        shippingData={shippingData}
         onCaptureCheckout={onCaptureCheckout}
       />
     );
@@ -62,11 +67,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
             </Step>
           ))}
         </Stepper>
-        {activeStep === steps.length ? (
-          <Confirmation />
-        ) : (
-          checkoutToken && <Form />
-        )}
+        {activeStep === steps.length ? Confirmation : checkoutToken && <Form />}
       </Paper>
     </div>
   );

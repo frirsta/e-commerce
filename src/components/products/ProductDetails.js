@@ -3,12 +3,13 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import { commerce } from "../../library/commerce/commerce";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { IconButton } from "@mui/joy";
+import IconButton from "@mui/joy/IconButton";
 import styles from "../../styles/ProductDetails.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/joy/Button";
-import Add from "@mui/icons-material/Add";
+import Button from "@mui/material/Button";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 const ProductDetails = ({ onAddToCart }) => {
   const [product, setProduct] = useState([]);
@@ -39,6 +40,12 @@ const ProductDetails = ({ onAddToCart }) => {
     fetchImages();
     fetchGroupId();
   }, [id, item, product.variant_groups]);
+  const handleSize = (event, optionId) => {
+    if (optionId !== null) {
+      setOptionId(optionId);
+    }
+  };
+
   return (
     <div className={styles.ProductDetails}>
       <IconButton
@@ -53,10 +60,7 @@ const ProductDetails = ({ onAddToCart }) => {
       </IconButton>
       <Carousel>{images}</Carousel>
       <div className={styles.ProductInformation}>
-        <Typography 
-        className={styles.Name}>
-          {product.name}
-        </Typography>
+        <Typography className={styles.Name}>{product.name}</Typography>
         <Typography
           dangerouslySetInnerHTML={{ __html: product.description }}
           className={styles.Description}
@@ -64,28 +68,33 @@ const ProductDetails = ({ onAddToCart }) => {
       </div>
       <div className={styles.Sizes}>
         <div>
-          <select className={styles.Select}
+          <ToggleButtonGroup
+            exclusive
+            onChange={handleSize}
             value={optionId}
-            onChange={(e) => setOptionId(e.target.value)}
+            aria-label="text alignment"
           >
-            {product.variant_groups?.[0]?.options?.map(({ id, name }) => (
-              <option className={styles.Option} value={id} key={id}>
-                {name}
-              </option>
+            {product.variant_groups?.[0]?.options?.map((item) => (
+              <ToggleButton
+                className={styles.Option}
+                key={item.id}
+                value={item.id}
+              >
+                {item.name}
+              </ToggleButton>
             ))}
-          </select>
+          </ToggleButtonGroup>
         </div>
       </div>
-      <Button className={styles.AddToCartButton}
+      <Button
+        className={styles.AddToCartButton}
         onClick={() => onAddToCart(product.id, 1, { [groupId]: optionId })}
         aria-label="add to cart"
-        startDecorator={<Add />}
+        color="info"
       >
         Add to cart
       </Button>
-      <div className={styles.price}>
-        {product.price.formatted_with_symbol}
-      </div>
+      <div className={styles.price}></div>
     </div>
   );
 };

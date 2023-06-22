@@ -1,6 +1,6 @@
 import React from "react";
-import Product from "./Product";
 import Grid from "@mui/material/Grid";
+import Product from "./Product";
 import styles from "../../styles/Products.module.css";
 
 const Products = ({ products, onAddToCart }) => {
@@ -8,7 +8,7 @@ const Products = ({ products, onAddToCart }) => {
     <Grid className={styles.ProductsContainer} container>
       {products.map((product) => (
         <Grid key={product.id}>
-          <Product product={product}  onAddToCart={onAddToCart} />
+          <Product product={product} onAddToCart={onAddToCart} />
         </Grid>
       ))}
     </Grid>

@@ -11,7 +11,7 @@ import TableCell from "@mui/material/TableCell";
 const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
   return (
     <TableRow>
-      <TableCell >
+      <TableCell>
         <img className={styles.Image} src={item.image.url} alt={item.name} />
 
         <Typography level="body2" fontWeight="lg">
@@ -27,7 +27,7 @@ const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
         </Typography>
       </TableCell>
 
-      <TableCell >
+      <TableCell>
         <Box className={styles.UpdateButtonsContainer}>
           <IconButton
             className={styles.RemoveButton}
@@ -45,7 +45,7 @@ const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
           </IconButton>
         </Box>
       </TableCell>
-      <TableCell >
+      <TableCell>
         <Typography level="body3" fontWeight="lg" textColor="text.tertiary">
           {item.line_total.formatted_with_symbol}
         </Typography>

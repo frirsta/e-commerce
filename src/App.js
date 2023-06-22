@@ -23,14 +23,13 @@ function App() {
     setCart(await commerce.cart.retrieve());
   };
   const handleAddToCart = async (productId, quantity, variantInfo) => {
-    if(variantInfo) {
-      commerce.cart.add(productId, quantity, variantInfo)
-          .then(res => {
-              setCart(res.cart)
-          })
-  } else {
-      window.alert('Please Select a Shirt Size')
-  }
+    if (variantInfo) {
+      commerce.cart.add(productId, quantity, variantInfo).then((res) => {
+        setCart(res.cart);
+      });
+    } else {
+      window.alert("Please Select a Shirt Size");
+    }
   };
 
   const handleUpdateCart = async (productId, quantity) => {
