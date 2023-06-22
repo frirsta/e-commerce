@@ -74,7 +74,7 @@ const Payment = ({
               <div>
                 <Button onClick={backStep}>Back</Button>
                 <Button type="submit" disabled={!stripe}>
-                  Pay {checkoutToken.subtotal.formatted_with_symbol}
+                  Pay {checkoutToken.subtotal.formatted_with_code}
                 </Button>
               </div>
             </form>

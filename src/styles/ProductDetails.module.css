@@ -92,6 +92,57 @@
   
 }
 @media screen and (min-width: 768px) {
+.ProductDetails{
+  flex-direction: row;
+    align-items: flex-start;
+}
+.Product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 400px;
+  width: 70%;
+  margin: 20px;
+}
+  .Carousel{
+  width: 70%;
+}
+
+.Name{
+  line-height: unset !important; 
+  top: unset;
+}
+.Form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.ButtonGroup{
+  display: flex!important;
+  flex-direction: row;
+
+}
+
+.AddToCartButton {
+  margin: 15px 0!important;
+  border-radius: 5px !important;
+  background-color: pink!important;
+  color: #fff!important;
+}
+
+.Option {
+  padding: 17px!important;
+  margin: 0 3px!important;
+  width: 30px;
+  height: 30px;
+  border: none!important;
+  background-color: pink!important;
+  border-radius: 5px!important;
+  color: #fff!important;
+}
 
 }
 @media screen and (min-width: 992px) {

@@ -58,14 +58,14 @@ const Cart = ({
 
       <div className={styles.Summary}>
         <Box className={styles.Total}>
-          Subtotal: <span>{cart.subtotal.formatted_with_symbol}</span>
+          Subtotal: <span>{cart.subtotal.formatted_with_code}</span>
         </Box>
         <Box className={styles.Total}>
           Discount: <span>0kr</span>
         </Box>
         <Divider className={styles.Divider} />
         <Box className={styles.Total}>
-          Grand total: <span>{cart.subtotal.formatted_with_symbol}</span>
+          Grand total: <span>{cart.subtotal.formatted_with_code}</span>
         </Box>
         <div className={styles.ButtonsContainer}>
           <Button

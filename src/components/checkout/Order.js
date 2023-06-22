@@ -14,13 +14,13 @@ const Order = ({ checkoutToken }) => {
               primary={product.name}
               secondary={`Quantity: ${product.quantity}`}
             />
-            <Typography>{product.line_total.formatted_with_symbol}</Typography>
+            <Typography>{product.line_total.formatted_with_code}</Typography>
           </ListItem>
         ))}
         <ListItem>
           <ListItemText primary="Total" />
           <Typography>
-            {checkoutToken.subtotal.formatted_with_symbol}
+            {checkoutToken.subtotal.formatted_with_code}
           </Typography>
         </ListItem>
       </List>

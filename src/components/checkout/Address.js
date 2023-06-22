@@ -156,7 +156,7 @@ const Address = ({ checkoutToken, test }) => {
               {shippingOptions
                 .map((sO) => ({
                   id: sO.id,
-                  name: `${sO.description} - (${sO.price.formatted_with_symbol})`,
+                  name: `${sO.description} - (${sO.price.formatted_with_code})`,
                 }))
                 .map((item) => (
                   <option key={item.id} value={item.id}>

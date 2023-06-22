@@ -47,7 +47,7 @@ const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
       </TableCell>
       <TableCell>
         <Typography level="body3" fontWeight="lg" textColor="text.tertiary">
-          {item.line_total.formatted_with_symbol}
+          {item.line_total.formatted_with_code}
         </Typography>
         <IconButton
           className={styles.DeleteButton}

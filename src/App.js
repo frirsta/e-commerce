@@ -27,8 +27,6 @@ function App() {
       commerce.cart.add(productId, quantity, variantInfo).then((res) => {
         setCart(res.cart);
       });
-    } else {
-      window.alert("Please Select a Shirt Size");
     }
   };
 
@@ -91,7 +89,7 @@ function App() {
           <Route
             path={"/"}
             element={
-              <Products onAddToCart={handleAddToCart} products={products} />
+              <Products products={products} />
             }
           />
           <Route

@@ -6,7 +6,7 @@ npm i react-router-dom
 npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 npm install @mui/joy @emotion/react @emotion/styled
-
+npm install react-bootstrap bootstrap
 npm install express
 
 npm install react-responsive-carousel --save
