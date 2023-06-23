@@ -12,7 +12,7 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Tabs from "@mui/joy/Tabs";
 import TabList from "@mui/joy/TabList";
-import Tab, { tabClasses } from '@mui/joy/Tab';
+import Tab, { tabClasses } from "@mui/joy/Tab";
 import TabPanel from "@mui/joy/TabPanel";
 import { Box } from "@mui/joy";
 
@@ -21,6 +21,8 @@ const ProductDetails = ({ onAddToCart }) => {
   const [groupId, setGroupId] = useState();
   const [optionId, setOptionId] = useState("");
   const [clicked, setClicked] = useState(false);
+  const [selectedSize, setSelectedSize] = useState("");
+
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -91,6 +93,10 @@ const ProductDetails = ({ onAddToCart }) => {
               >
                 {product.variant_groups?.[0]?.options?.map((item) => (
                   <ToggleButton
+                    onClick={() => setSelectedSize(item.id)}
+                    style={{
+                      backgroundColor: selectedSize === item.id ? "grey" : "pink",
+                    }}
                     className={styles.Option}
                     key={item.id}
                     value={item.id}
@@ -125,39 +131,42 @@ const ProductDetails = ({ onAddToCart }) => {
             defaultValue={0}
             sx={{ borderRadius: "lg" }}
           >
-            <TabList variant="plain" sx={{
-            width: '100vw',
-            maxWidth: '1200px',
-            display: 'flex',
-            justifyContent: 'space-between',
-            mx: 'auto',
-            pt: 2,
-            alignSelf: 'flex-start',
-            [`& .${tabClasses.root}`]: {
-              bgcolor: 'transparent',
-              boxShadow: 'none',
-              '&:hover': {
-                bgcolor: 'transparent',
-              },
-              [`&.${tabClasses.selected}`]: {
-                color: 'primary.plainColor',
-                fontWeight: 'lg',
-                '&:before': {
-                  content: '""',
-                  display: 'block',
-                  position: 'absolute',
-                  zIndex: 1,
-                  bottom: '-1px',
-                  left: 'var(--ListItem-paddingLeft)',
-                  right: 'var(--ListItem-paddingRight)',
-                  height: '3px',
-                  borderTopLeftRadius: '3px',
-                  borderTopRightRadius: '3px',
-                  bgcolor: 'primary.500',
+            <TabList
+              variant="plain"
+              sx={{
+                width: "100vw",
+                maxWidth: "1200px",
+                display: "flex",
+                justifyContent: "space-between",
+                mx: "auto",
+                pt: 2,
+                alignSelf: "flex-start",
+                [`& .${tabClasses.root}`]: {
+                  bgcolor: "transparent",
+                  boxShadow: "none",
+                  "&:hover": {
+                    bgcolor: "transparent",
+                  },
+                  [`&.${tabClasses.selected}`]: {
+                    color: "primary.plainColor",
+                    fontWeight: "lg",
+                    "&:before": {
+                      content: '""',
+                      display: "block",
+                      position: "absolute",
+                      zIndex: 1,
+                      bottom: "-1px",
+                      left: "var(--ListItem-paddingLeft)",
+                      right: "var(--ListItem-paddingRight)",
+                      height: "3px",
+                      borderTopLeftRadius: "3px",
+                      borderTopRightRadius: "3px",
+                      bgcolor: "primary.500",
+                    },
+                  },
                 },
-              },
-            },
-          }}>
+              }}
+            >
               <Tab>First tab</Tab>
               <Tab>Second tab</Tab>
               <Tab>Third tab</Tab>

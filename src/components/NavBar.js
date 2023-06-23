@@ -17,7 +17,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 const drawerWidth = 240;
-const navItems = ["Home","Shop", "About", "Contact"];
 
 const NavBar = ({ totalItems }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -32,13 +31,42 @@ const NavBar = ({ totalItems }) => {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItem disablePadding>
+          <ListItemButton
+            to={"/"}
+            component={Link}
+            sx={{ textAlign: "center" }}
+          >
+            <ListItemText primary={"Home"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            to={"/shop"}
+            component={Link}
+            sx={{ textAlign: "center" }}
+          >
+            <ListItemText primary={"Shop"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            to={"/about"}
+            component={Link}
+            sx={{ textAlign: "center" }}
+          >
+            <ListItemText primary={"About"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            to={"/contact"}
+            component={Link}
+            sx={{ textAlign: "center" }}
+          >
+            <ListItemText primary={"Contact"} />
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
@@ -63,12 +91,34 @@ const NavBar = ({ totalItems }) => {
                 <ShoppingCartOutlinedIcon className={styles.ShoppingCart} />
               </IconButton>
             </Box>
-            <Box className={styles.Items} sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Link to={`/${item}`} className={styles.Button} key={item} sx={{ color: "#fff" }}>
-                  {item}
-                </Link>
-              ))}
+            <Box
+              className={styles.Items}
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
+              <Link to={`/`} className={styles.Button} sx={{ color: "#fff" }}>
+                Home
+              </Link>
+              <Link
+                to={`/shop`}
+                className={styles.Button}
+                sx={{ color: "#fff" }}
+              >
+                Shop
+              </Link>
+              <Link
+                to={`/about`}
+                className={styles.Button}
+                sx={{ color: "#fff" }}
+              >
+                About
+              </Link>
+              <Link
+                to={`/contact`}
+                className={styles.Button}
+                sx={{ color: "#fff" }}
+              >
+                Contact
+              </Link>
             </Box>
             <Typography
               variant="h6"

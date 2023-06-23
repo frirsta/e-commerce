@@ -5,11 +5,12 @@
     width: 150px;
     margin: 20px 5px;
   }
-  .ProductLink{}
-  .ImageSkeleton{
+  .ProductLink {
+  }
+  .ImageSkeleton {
     border-radius: 20px !important;
-    height: 200px!important;
-    width: 150px!important;
+    height: 200px !important;
+    width: 150px !important;
   }
   .Product {
     border-radius: 20px !important;
@@ -18,22 +19,21 @@
     height: 200px;
   }
   .Name {
-    margin-top: 5px!important;
+    margin-top: 5px !important;
     font-weight: 600;
     font-size: 15px;
   }
-  .Price{
+  .Price {
     font-weight: 600;
     font-size: 13px;
     color: gray;
   }
-  .SkeletonName{
+  .SkeletonName {
     width: 80%;
   }
-  .SkeletonPrice{
+  .SkeletonPrice {
     width: 40%;
   }
-
 
   .TextContainer {
     display: flex;
@@ -41,7 +41,7 @@
     align-items: flex-start;
     width: 100%;
   }
-  .ProductInformation{
+  .ProductInformation {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -62,10 +62,16 @@
   .Image {
     height: 200px;
   }
-  .ImageSkeleton{
+  .ImageSkeleton {
     border-radius: 20px !important;
-    height: 200px!important;
-    width: 150px!important;
+    height: 200px !important;
+    width: 150px !important;
+  }
+  .SkeletonName {
+    width: 80%;
+  }
+  .SkeletonPrice {
+    width: 40%;
   }
   .Name {
     margin-top: 5px;
@@ -75,7 +81,7 @@
   .Text {
     font-size: 12px;
   }
-  .ProductInformation{
+  .ProductInformation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,11 +90,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 10px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-
 }
 @media screen and (min-width: 992px) {
   .ProductContainer {

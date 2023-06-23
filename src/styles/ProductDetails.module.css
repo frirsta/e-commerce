@@ -99,7 +99,7 @@
 .Product{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
   height: 400px;
   width: 70%;
@@ -139,7 +139,7 @@
   width: 30px;
   height: 30px;
   border: none!important;
-  background-color: pink!important;
+
   border-radius: 5px!important;
   color: #fff!important;
 }

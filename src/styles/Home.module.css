@@ -29,7 +29,12 @@
   .HeroButton {
     background-color: pink !important;
     margin: 0 auto;
-    padding: 10px 30px!important;
+    padding: 10px 30px !important;
+    color: #fff;
+  }
+  .HeroButton:hover {
+    opacity: 0.8;
+    transition: ease 0.3s;
   }
 
   /* about */
@@ -78,6 +83,34 @@
     width: 100vw;
     height: 200px;
     transform: scaleX(-1);
+  }
+
+  /* new arrivals */
+  .NewProduct {
+    width: 80vw;
+    margin: 20px 0;
+    max-width: 300px;
+  }
+  .Trendy {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .TrendyGrid {
+  }
+  .Popular {
+    font-size: 20px;
+  }
+  .TrendyTitle {
+    font-size: 50px;
+  }
+  .ImageLink:hover{
+opacity: 0.8;
+transition: ease .3s;
+  }
+  .ProductButton{
+    position: absolute;
   }
 }
 
@@ -171,8 +204,57 @@
     max-width: 1200px;
     margin: 0 auto !important;
   }
+  /* new arrivals */
+  /* new arrivals */
+  .NewProduct {
+    max-width: 40vw;
+    margin: 5px 0;
+    width: 300px;
+  }
+  .Trendy {
+    max-width: 1200px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .TrendyGrid {
+    justify-content: center;
+    align-items: center;
+  }
+  .Popular {
+    font-size: 20px;
+  }
+  .TrendyTitle {
+    font-size: 50px;
+  }
 }
 @media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 900px) {
+  /* new arrivals */
+  .Trendy {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .NewProduct {
+    max-width: 20vw;
+    margin: 10px;
+    width: 280px;
+  }
+  .TrendyGrid {
+    justify-content: center;
+    align-items: center;
+  }
+  .Popular {
+    font-size: 20px;
+  }
+  .TrendyTitle {
+    font-size: 50px;
+  }
 }
 @media screen and (min-width: 992px) {
 }

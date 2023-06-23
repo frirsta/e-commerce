@@ -14,12 +14,22 @@ import About from "./pages/About";
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [newProducts, setNewProducts] = useState([]);
   const [cart, setCart] = useState({});
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState("");
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
     setProducts(data);
+  };
+
+  const fetchNewProducts = async () => {
+    const { data } = await commerce.products.list({
+      sortBy: 'created_at',
+      sortDirection: 'desc',
+      limit: 4,
+    });
+    setNewProducts(data);
   };
 
   const fetchCart = async () => {
@@ -66,6 +76,7 @@ function App() {
 
   useEffect(() => {
     fetchProducts();
+    fetchNewProducts()
     fetchCart();
   }, []);
 
@@ -106,7 +117,7 @@ function App() {
               />
             }
           />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home products={newProducts} />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
 
