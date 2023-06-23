@@ -1,12 +1,51 @@
-.NavBarContainer {
-  position: absolute;
-  z-index: 10;
-  width: 90%;
-  text-align: right;
-
-}
-
 .ShoppingCart {
   width: 30px !important;
   height: 30px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .NavBar {
+    background-color: transparent !important;
+    color: gray !important;
+    box-shadow: none !important;
+  }
+  .IconContainer {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+  .Button {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .NavBar {
+    background-color: transparent !important;
+    color: gray !important;
+    box-shadow: none !important;
+  }
+  .IconContainer {
+    width: unset;
+  }
+  .Toolbar {
+    display: flex !important;
+    flex-direction: row-reverse;
+  }
+  .Items {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .Button {
+    color: gray!important;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
 }

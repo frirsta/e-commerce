@@ -30,3 +30,23 @@ https://stripe.com/docs/payments/quickstart?lang=node&client=react
 * Stripe
 * Material UI
 npm install --save stripe
+
+Hero
+<a href="https://www.freepik.com/free-photo/cute-young-girl-with-dark-wavy-hairstyle-bright-makeup-silk-dress-black-jacket-holding-sunglasses-hands-looking-away-against-beige-building-wall_16179727.htm#query=fashionmodel&position=1&from_view=search&track=ais?log-in=google">Image by lookstudio</a> on Freepik
+
+Readme home
+Image by <a href="https://www.freepik.com/free-photo/fast-fashion-vs-slow-sustainable-fashion_19533990.htm#&position=6&from_view=collections">Freepik</a>
+
+https://omatsuri.app/page-dividers
+
+
+about
+
+<a href="https://www.freepik.com/free-photo/fashionable-boutique-owner-measures-dress-black-white-studio-generated-by-ai_41041091.htm#query=fashion&position=1&from_view=search&track=sph">Image by vecstock</a> on Freepik
+
+sewing kit
+<a href="https://www.freepik.com/free-photo/sewing-kit-with-cotton-threads-top-view_8487851.htm#query=measuring%20tape%20fashion&position=3&from_view=search&track=ais">Image by Racool_studio</a> on Freepik
+
+
+fashion show
+Bild av Duane Mendes: https://www.pexels.com/sv-se/foto/mode-manniskor-modell-lyx-8793626/

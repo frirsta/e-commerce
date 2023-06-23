@@ -1,0 +1,180 @@
+@media screen and (max-width: 600px) {
+  .Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .HeroImage {
+    height: 600px;
+    object-fit: cover;
+    width: 90vw;
+    overflow: hidden;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Hero {
+    background: url("../assets/hero.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  .HeroText {
+    font-size: 45px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+  }
+  .HeroButton {
+    background-color: pink !important;
+    margin: 0 auto;
+    padding: 10px 30px!important;
+  }
+
+  /* about */
+  .About {
+    background: url("../assets/about.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  /* delivery */
+  .DeliveryContainer {
+    margin: 100px 0;
+  }
+  .Delivery {
+    background-color: #e1d2ee;
+    padding: 50px 30px;
+    width: 100%;
+  }
+  .DeliveryItem {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .Icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .DeliveryText {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .DeliveryGrid {
+    max-width: 1200px;
+    margin: 0 auto !important;
+  }
+  .SvgContainer {
+    overflow: hidden;
+  }
+  .Svg1 {
+    fill: #e1d2ee;
+    width: 100vw;
+    height: 100px;
+    transform: rotate(180deg) scaleX(-1);
+  }
+  .Svg {
+    fill: #e1d2ee;
+    width: 100vw;
+    height: 200px;
+    transform: scaleX(-1);
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .HeroText {
+    font-size: 60px;
+    font-weight: 100;
+    color: #fff;
+  }
+  .Icon {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .HeroImage {
+    height: 600px;
+    object-fit: cover;
+    width: 90vw;
+    overflow: hidden;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Hero {
+    background: url("../assets/hero.jpg") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 100px;
+  }
+
+  .HeroText {
+    text-align: center;
+  }
+  .HeroButton {
+    background-color: pink !important;
+    margin: 0 auto;
+  }
+  /* about */
+  .About {
+    background: url("../assets/about.jpg") no-repeat center center;
+    background-size: cover;
+    margin: 100px 0;
+  }
+
+  /* delivery */
+
+  .Delivery {
+    background-color: #e1d2ee;
+    padding: 100px 30px;
+    width: 100%;
+  }
+  .SvgContainer {
+    overflow: hidden;
+  }
+  .Svg1 {
+    fill: #e1d2ee;
+    width: 100vw;
+    height: 90px;
+    transform: rotate(180deg) scaleX(-1);
+  }
+  .Svg {
+    fill: #e1d2ee;
+    width: 100vw;
+    height: 200px;
+    transform: scaleX(-1);
+  }
+  .DeliveryItem {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  .DeliveryText {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .DeliveryTextSpan {
+    color: rgb(75, 77, 90);
+    font-size: 15px;
+  }
+  .DeliveryGrid {
+    max-width: 1200px;
+    margin: 0 auto !important;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}

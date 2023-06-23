@@ -8,6 +8,9 @@ import { useEffect, useState } from "react";
 import Cart from "./components/cart/Cart";
 import ProductDetails from "./components/products/ProductDetails";
 import Checkout from "./components/checkout/Checkout";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -87,7 +90,7 @@ function App() {
             element={<ProductDetails onAddToCart={handleAddToCart} />}
           />
           <Route
-            path={"/"}
+            path={"/shop"}
             element={
               <Products products={products} />
             }
@@ -103,6 +106,10 @@ function App() {
               />
             }
           />
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+
         </Routes>
 
         <Footer />
