@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../styles/Home.module.css";
 import Button from "@mui/joy/Button";
 import LocalShippingSharpIcon from "@mui/icons-material/LocalShippingSharp";
@@ -7,9 +7,9 @@ import ShoppingCartCheckoutSharpIcon from "@mui/icons-material/ShoppingCartCheck
 import ShoppingBagSharpIcon from "@mui/icons-material/ShoppingBagSharp";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import NewArrivals from "../components/products/NewArrivals";
 import { Link } from "react-router-dom";
 const Home = ({ products }) => {
-  const [show, setShow] = useState(false);
   return (
     <div className={styles.Home}>
       <div className={`${styles.HeroImage} ${styles.Hero}`}>
@@ -17,34 +17,12 @@ const Home = ({ products }) => {
           Beauty <br></br> Pronounced
         </h2>
 
-        <Button component={Link} to={"/about"} className={styles.HeroButton}>
+        <Button component={Link} to={"/shop"} className={styles.HeroButton}>
           Shop Now
         </Button>
       </div>
-      <div className={styles.Trendy}>
-        <span className={styles.Popular}>New Arrivals</span>
-        <span className={styles.TrendyTitle}>Trending now</span>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid
-            container
-            className={styles.TrendyGrid} 
-          >
-            {products.map((item) => (
-              <Grid key={item.id} item xs={12} sm={5} md={3}>
-                <Link    onMouseOver={() => setShow(true)}
-      onMouseOut={() => setShow(false)} className={styles.ImageLink} to={`/item/${item.id}`}>
-                <img
-                  className={styles.NewProduct}
-                  src={item.image.url}
-                  alt={item.name}
-                />
-                {show && <Button className={styles.ProductButton}>Read more</Button>}
-                </Link>
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
-      </div>
+
+      <NewArrivals products={products} />
       <div className={styles.DeliveryContainer}>
         <div className={styles.SvgContainer}>
           <svg

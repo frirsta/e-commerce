@@ -1,50 +1,40 @@
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import CardOverflow from "@mui/joy/CardOverflow";
-import React, { useEffect, useState } from "react";
-import styles from "../../styles/Product.module.css";
-import Skeleton from "@mui/material/Skeleton";
+import AspectRatio from "@mui/joy/AspectRatio";
 import Box from "@mui/joy/Box";
+import Card from "@mui/joy/Card";
 import CardCover from "@mui/joy/CardCover";
 import Typography from "@mui/joy/Typography";
 import Link from "@mui/joy/Link";
 import Button from "@mui/joy/Button";
 import { Link as RouterLink } from "react-router-dom";
+import styles from "../../styles/NewArrivals.module.css";
+import Grid from "@mui/joy/Grid";
+import Divider from '@mui/material/Divider';
 
-const Product = ({ product }) => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
+export default function NewArrivals({ products }) {
   return (
-    <div className={styles.ProductSection}>
-      <div className={styles.ProductContainer}>
-        {loading ? (
-          <>
-            <Skeleton className={styles.ImageSkeleton} variant="rectangular" />
-            <div className={styles.ProductInformation}>
-              <div className={styles.TextContainer}>
-                <Skeleton className={styles.SkeletonName} variant="text" />
-                <Skeleton className={styles.SkeletonPrice} variant="text" />
-              </div>
-            </div>
-          </>
-        ) : (
-          <>
-            <Card className={styles.Product}>
-              <CardOverflow className={styles.CardOverflow}>
-                <Link to={`/item/${product.id}`} className={styles.ProductLink}>
-                  <CardMedia
-                    className={styles.Image}
-                    component={"img"}
-                    image={product.image.url}
-                  />
-                </Link>
-              <CardCover
+    <div className={styles.Trendy}>
+      <span className={styles.Popular}>New Arrivals</span>
+      <span className={styles.TrendyTitle}>Trending now</span>
+      <Divider className={styles.Divider} variant="middle" />
+      <Grid className={styles.ProductGrid} container>
+          {products.map((item) => (
+        <Grid key={item.id}>
+          <Card
+          className={styles.Product}
+            sx={{
+              bgcolor: "initial",
+              boxShadow: "none",
+              "--Card-padding": "0px",
+            }}
+          >
+              <Box sx={{ position: "relative" }}>
+                <AspectRatio ratio="4/4">
+                  <figure>
+                    <img src={item.image.url} alt={item.name} />
+                  </figure>
+                </AspectRatio>
+
+                <CardCover
                   className="gradient-cover"
                   sx={{
                     "&:hover, &:focus-within": {
@@ -71,7 +61,7 @@ const Product = ({ product }) => {
                       <Typography level="h2" noWrap sx={{ fontSize: "lg" }}>
                         <Link
                           component={RouterLink}
-                          to={`/item/${product.id}`}
+                          to={`/item/${item.id}`}
                           overlay
                           underline="none"
                           sx={{
@@ -87,24 +77,11 @@ const Product = ({ product }) => {
                     </Box>
                   </Box>
                 </CardCover>
-              </CardOverflow>
-            </Card>
-            <div className={styles.ProductInformation}>
-              <div className={styles.TextContainer}>
-                <span className={`${styles.Name} ${styles.Text}`}>
-                  {product.name}
-                </span>
-
-                <span className={`${styles.Price} ${styles.Text}`}>
-                  {product.price.formatted_with_code}
-                </span>
-              </div>
-            </div>
-          </>
-        )}
-      </div>
+              </Box>
+          </Card>
+        </Grid>
+            ))}
+      </Grid>
     </div>
   );
-};
-
-export default Product;
+}

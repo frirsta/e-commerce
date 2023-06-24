@@ -4,6 +4,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: flex-end;
     }
     .Summary{
         margin-top: 40px;

@@ -5,29 +5,29 @@ import styles from "../../styles/CartItem.module.css";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import ClearIcon from "@mui/icons-material/Clear";
-import TableRow from "@mui/material/TableRow";
-import TableCell from "@mui/material/TableCell";
 
 const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
   return (
-    <TableRow>
-      <TableCell>
+    <div>
+      <div className={styles.CartItemContainer}>
         <img className={styles.Image} src={item.image.url} alt={item.name} />
-
+        <Typography level="body3" fontWeight="lg" textColor="text.tertiary">
+          {item.line_total.formatted_with_code}
+        </Typography>
         <Typography level="body2" fontWeight="lg">
           {item.name}
         </Typography>
         <Typography>
           {item.selected_options[0]?.option_name ? (
             <>
-              <span className={styles.Size}>Size:</span>{" "}
+              <span className={styles.Size}>Size:</span>
               {item.selected_options[0]?.option_name}
             </>
           ) : null}
         </Typography>
-      </TableCell>
+      </div>
 
-      <TableCell>
+      <div>
         <Box className={styles.UpdateButtonsContainer}>
           <IconButton
             className={styles.RemoveButton}
@@ -44,11 +44,8 @@ const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
             <AddIcon className={`${styles.UpdateButton} ${styles.Icon}`} />
           </IconButton>
         </Box>
-      </TableCell>
-      <TableCell>
-        <Typography level="body3" fontWeight="lg" textColor="text.tertiary">
-          {item.line_total.formatted_with_code}
-        </Typography>
+      </div>
+      <div>
         <IconButton
           className={styles.DeleteButton}
           onClick={() => onRemoveCart(item.id)}
@@ -57,8 +54,8 @@ const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
         >
           <ClearIcon className={`${styles.EmptyButton} ${styles.Icon}`} />
         </IconButton>
-      </TableCell>
-    </TableRow>
+      </div>
+    </div>
   );
 };
 

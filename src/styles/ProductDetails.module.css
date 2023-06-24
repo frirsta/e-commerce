@@ -7,32 +7,53 @@
     align-items: center;
     bottom: 10px;
   }
+  .Product {
+    width: 95vw;
+    margin: 0 auto;
+  }
   .Button {
     position: absolute !important;
     z-index: 10;
     top: 20px;
     left: 20px;
     background-color: transparent !important;
-    color: gray !important;
+    color: rgb(94, 93, 93) !important;
   }
   .ProductInformation {
     width: 85%;
   }
-  
+  .Divider {
+    margin: 30px !important;
+  }
+  .Size {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(94, 93, 93);
+    padding-left: 5px;
+  }
+  .Form {
+    margin: 10px 0;
+  }
   .Name {
     color: rgb(94, 93, 93);
-    line-height: 0px !important;
-    position: relative;
-    top: 15px;
+    font-weight: 600 !important;
+    margin: 10px 0 !important;
+  }
+  .Price {
+    font-weight: 600 !important;
+    margin: 10px 0 !important;
   }
   .Description {
-    font-size: 25px !important;
-    font-weight: 600 !important;
+    max-width: 80vw;
+    padding: 5% 10% 0%;
   }
-  
+
   .AddToCartButton {
-    width: 90%;
-    border-radius: 20px !important;
+    width: 100%;
+    background-color: #000 !important;
+    color: #fff !important;
+    margin: 50px 0 !important;
+    border-radius: 0px !important;
   }
   .Select {
     border-radius: 20px;
@@ -41,8 +62,16 @@
     margin: 10px 0;
   }
   .Option {
+    padding: 17px !important;
+    margin: 0 3px !important;
+    width: 30px;
+    height: 30px;
+    border: none !important;
+    border-radius: 20px !important;
+    color: #fff !important;
+    font-size: 10px !important;
+    font-weight: 100;
   }
-  
 }
 @media screen and (min-width: 600px) {
   .ProductDetails {
@@ -53,32 +82,53 @@
     align-items: center;
     bottom: 10px;
   }
+  .Product {
+    width: 95vw;
+    margin: 0 auto;
+  }
   .Button {
     position: absolute !important;
     z-index: 10;
     top: 20px;
     left: 20px;
     background-color: transparent !important;
-    color: gray !important;
+    color: rgb(94, 93, 93) !important;
   }
   .ProductInformation {
     width: 85%;
   }
-  
+  .Divider {
+    margin: 30px !important;
+  }
+  .Size {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(94, 93, 93);
+    padding-left: 5px;
+  }
+  .Form {
+    margin: 10px 0;
+  }
   .Name {
     color: rgb(94, 93, 93);
-    line-height: 0px !important;
-    position: relative;
-    top: 15px;
+    font-weight: 600 !important;
+    margin: 10px 0 !important;
+  }
+  .Price {
+    font-weight: 600 !important;
+    margin: 10px 0 !important;
   }
   .Description {
-    font-size: 25px !important;
-    font-weight: 600 !important;
+    max-width: 80vw;
+    padding: 5% 10% 0%;
   }
-  
+
   .AddToCartButton {
-    width: 90%;
-    border-radius: 20px !important;
+    width: 100%;
+    background-color: #000 !important;
+    color: #fff !important;
+    margin: 50px 0 !important;
+    border-radius: 0px !important;
   }
   .Select {
     border-radius: 20px;
@@ -87,66 +137,36 @@
     margin: 10px 0;
   }
   .Option {
+    padding: 17px !important;
+    margin: 0 3px !important;
+    width: 30px;
+    height: 30px;
+    border: none !important;
+    border-radius: 20px !important;
+    color: #fff !important;
+    font-size: 10px !important;
+    font-weight: 100;
   }
-  
-  
 }
 @media screen and (min-width: 768px) {
-.ProductDetails{
-  flex-direction: row;
-    align-items: flex-start;
-}
-.Product{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 400px;
-  width: 70%;
-  margin: 20px;
-}
-  .Carousel{
-  width: 70%;
-}
-
-.Name{
-  line-height: unset !important; 
-  top: unset;
-}
-.Form{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-}
-.ButtonGroup{
-  display: flex!important;
-  flex-direction: row;
-
-}
-
-.AddToCartButton {
-  margin: 15px 0!important;
-  border-radius: 5px !important;
-  background-color: pink!important;
-  color: #fff!important;
-}
-
-.Option {
-  padding: 17px!important;
-  margin: 0 3px!important;
-  width: 30px;
-  height: 30px;
-  border: none!important;
-
-  border-radius: 5px!important;
-  color: #fff!important;
-}
-
+  .ProductDetails {
+    flex-direction: row;
+    align-items: center;
+  }
+  .Product {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 20px;
+  }
+  .Carousel {
+    width: 70%;
+  }
+  .Divider{
+    margin: 10px 0!important;
+  }
 }
 @media screen and (min-width: 992px) {
-
 }
 @media screen and (min-width: 1200px) {
 }

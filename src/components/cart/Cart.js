@@ -7,13 +7,8 @@ import Box from "@mui/joy/Box";
 import styles from "../../styles/Cart.module.css";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Divider from "@mui/joy/Divider";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
+import { Card } from "@mui/joy";
+
 
 const Cart = ({
   cart,
@@ -34,17 +29,8 @@ const Cart = ({
 
   const items = (
     <>
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="products table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Product</TableCell>
-              <TableCell>Quantity</TableCell>
-              <TableCell>Price</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {cart.line_items.map((item) => (
+  <Card>
+  {cart.line_items.map((item) => (
               <CartItem
                 key={item.id}
                 onRemoveCart={handleRemoveCart}
@@ -52,9 +38,7 @@ const Cart = ({
                 item={item}
               />
             ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+  </Card>
 
       <div className={styles.Summary}>
         <Box className={styles.Total}>

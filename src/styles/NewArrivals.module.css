@@ -1,0 +1,87 @@
+@media screen and (max-width: 600px) {
+  .Trendy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+  }
+  .Product {
+    width: 300px;
+    margin: 10px;
+  }
+  .ProductGrid {
+   justify-content: center;
+  }
+  .Popular {
+    font-size: 20px;
+  }
+  .TrendyTitle {
+    font-size: 50px;
+  }
+  .Divider{
+    background-color: #a86e3b;
+    height: 2px;
+    width: 100px;
+  }
+
+}
+
+@media screen and (min-width: 380px) {
+}
+
+@media screen and (min-width: 600px) {
+  .Trendy {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+  }
+  .ProductGrid {
+    justify-content: center;
+  }
+  .Product {
+    width: 300px;
+    margin: 10px;
+  }
+  .Popular {
+    font-size: 20px;
+  }
+  .TrendyTitle {
+    font-size: 50px;
+  }
+  .Divider{
+    background-color: #a86e3b;
+    height: 2px;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 900px) {
+  .Trendy {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Product {
+    max-width: 20vw;
+    margin: 10px;
+    width: 280px;
+  }
+  .Popular {
+    font-size: 20px;
+  }
+  .TrendyTitle {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}

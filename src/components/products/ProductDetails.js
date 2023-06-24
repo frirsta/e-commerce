@@ -14,7 +14,7 @@ import Tabs from "@mui/joy/Tabs";
 import TabList from "@mui/joy/TabList";
 import Tab, { tabClasses } from "@mui/joy/Tab";
 import TabPanel from "@mui/joy/TabPanel";
-import { Box } from "@mui/joy";
+import { Box, Divider } from "@mui/joy";
 
 const ProductDetails = ({ onAddToCart }) => {
   const [product, setProduct] = useState([]);
@@ -76,16 +76,16 @@ const ProductDetails = ({ onAddToCart }) => {
         <div className={styles.Product}>
           <div className={styles.ProductInformation}>
             <Typography className={styles.Name}>{product.name}</Typography>
-            <Typography
-              dangerouslySetInnerHTML={{ __html: product.description }}
-              className={styles.Description}
-            ></Typography>
-            <Typography>{product.price?.formatted_with_code}</Typography>
+
+            <Typography className={styles.Price}>
+              {product.price?.formatted_with_code}
+            </Typography>
           </div>
-          <div className={styles.Sizes}>
+          <Divider className={styles.Divider} />
+          <div>
+            <span className={styles.Size}>Size</span>
             <form className={styles.Form} onSubmit={handleSubmit}>
               <ToggleButtonGroup
-                className={styles.ButtonGroup}
                 exclusive
                 onChange={handleSize}
                 value={optionId}
@@ -95,7 +95,8 @@ const ProductDetails = ({ onAddToCart }) => {
                   <ToggleButton
                     onClick={() => setSelectedSize(item.id)}
                     style={{
-                      backgroundColor: selectedSize === item.id ? "grey" : "pink",
+                      backgroundColor:
+                        selectedSize === item.id ? "grey" : "#000",
                     }}
                     className={styles.Option}
                     key={item.id}
@@ -116,7 +117,7 @@ const ProductDetails = ({ onAddToCart }) => {
           </div>
         </div>
       </div>
-      <div className={styles.MaterialInformation}>
+      <div>
         <Box
           sx={{
             bgcolor: "background.body",
@@ -148,7 +149,7 @@ const ProductDetails = ({ onAddToCart }) => {
                     bgcolor: "transparent",
                   },
                   [`&.${tabClasses.selected}`]: {
-                    color: "primary.plainColor",
+                    color: "#000",
                     fontWeight: "lg",
                     "&:before": {
                       content: '""',
@@ -161,28 +162,31 @@ const ProductDetails = ({ onAddToCart }) => {
                       height: "3px",
                       borderTopLeftRadius: "3px",
                       borderTopRightRadius: "3px",
-                      bgcolor: "primary.500",
+                      bgcolor: "#000",
                     },
                   },
                 },
               }}
             >
-              <Tab>First tab</Tab>
-              <Tab>Second tab</Tab>
-              <Tab>Third tab</Tab>
+              <Tab>Product Description</Tab>
+              <Tab>Clothing Care</Tab>
             </TabList>
             <TabPanel value={0} sx={{ p: 2 }}>
-              <b>First</b> tab panel
+              <Typography
+                level="body1"
+                dangerouslySetInnerHTML={{ __html: product.description }}
+                className={styles.Description}
+              ></Typography>
             </TabPanel>
             <TabPanel value={1} sx={{ p: 2 }}>
-              <b>Second</b> tab panel
-            </TabPanel>
-            <TabPanel value={2} sx={{ p: 2 }}>
-              <b>Third</b> tab panel
+              <Typography level="body1" className={styles.Description}>
+                Machine wash according to the instructions on the care label
+              </Typography>
             </TabPanel>
           </Tabs>
         </Box>
       </div>
+      <Divider className={styles.Divider} />
     </>
   );
 };

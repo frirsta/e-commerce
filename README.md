@@ -103,3 +103,26 @@ purple jacket
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/T5ut0wuL0O8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/AYN-kdlk6Tg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/vagr_XT9Cms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 650 }} aria-label="products table">
+          <TableHead>
+            <TableRow>
+              <TableCell>Product</TableCell>
+              <TableCell>Quantity</TableCell>
+              <TableCell>Price</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {cart.line_items.map((item) => (
+              <CartItem
+                key={item.id}
+                onRemoveCart={handleRemoveCart}
+                onUpdateCart={handleUpdateCart}
+                item={item}
+              />
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>

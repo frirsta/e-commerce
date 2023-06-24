@@ -25,109 +25,119 @@ const NavBar = ({ totalItems }) => {
     setMobileOpen((prevState) => !prevState);
   };
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Brand
-      </Typography>
-      <Divider />
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton
-            to={"/"}
-            component={Link}
-            sx={{ textAlign: "center" }}
-          >
-            <ListItemText primary={"Home"} />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton
-            to={"/shop"}
-            component={Link}
-            sx={{ textAlign: "center" }}
-          >
-            <ListItemText primary={"Shop"} />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton
-            to={"/about"}
-            component={Link}
-            sx={{ textAlign: "center" }}
-          >
-            <ListItemText primary={"About"} />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton
-            to={"/contact"}
-            component={Link}
-            sx={{ textAlign: "center" }}
-          >
-            <ListItemText primary={"Contact"} />
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </Box>
+    <>
+      <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+        <Typography className={styles.MobileBrand} sx={{ my: 2 }}>
+          <Link className={styles.Link} to={"/"}>
+            Beauty Pronounced
+          </Link>
+        </Typography>
+        <Divider />
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton
+              className={styles.Link}
+              to={"/"}
+              component={Link}
+              sx={{ textAlign: "center" }}
+            >
+              <ListItemText primary={"Home"} />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton
+              className={styles.Link}
+              to={"/shop"}
+              component={Link}
+              sx={{ textAlign: "center" }}
+            >
+              <ListItemText primary={"Shop"} />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton
+              className={styles.Link}
+              to={"/about"}
+              component={Link}
+              sx={{ textAlign: "center" }}
+            >
+              <ListItemText primary={"About"} />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton
+              className={styles.Link}
+              to={"/contact"}
+              component={Link}
+              sx={{ textAlign: "center" }}
+            >
+              <ListItemText primary={"Contact"} />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Box>
+    </>
   );
 
   return (
     <div>
-      <Box sx={{ display: "flex" }}>
+      <Box className={styles.NavBarContainer} sx={{ display: "flex" }}>
         <AppBar className={styles.NavBar} component="nav">
+          <IconButton
+            className={`${styles.IconButton} ${styles.ShoppingCartContainer}`}
+            component={Link}
+            to={"cart"}
+          >
+            <Badge size="md" badgeContent={totalItems} color="info"></Badge>
+            <ShoppingCartOutlinedIcon />
+          </IconButton>
+          <Typography className={styles.Brand} sx={{ my: 2 }}>
+            <Link className={styles.Link} to={"/"}>
+              Beauty Pronounced
+            </Link>
+          </Typography>
           <Toolbar className={styles.Toolbar}>
             <Box className={styles.IconContainer}>
               <IconButton
+                className={`${styles.IconButton} ${styles.MenuIcon}`}
                 color="inherit"
                 aria-label="open drawer"
                 edge="start"
                 onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { sm: "none" } }}
+                sx={{ mr: 2, display: { md: "none" } }}
               >
                 <MenuIcon />
-              </IconButton>
-              <IconButton component={Link} to={"cart"}>
-                <Badge size="sm" badgeContent={totalItems} color="info"></Badge>
-                <ShoppingCartOutlinedIcon className={styles.ShoppingCart} />
               </IconButton>
             </Box>
             <Box
               className={styles.Items}
-              sx={{ display: { xs: "none", sm: "block" } }}
+              sx={{ display: { xs: "none", md: "block" } }}
             >
-              <Link to={`/`} className={styles.Button} sx={{ color: "#fff" }}>
+              <Link to={`/`} className={styles.Link}>
                 Home
               </Link>
-              <Link
-                to={`/shop`}
-                className={styles.Button}
-                sx={{ color: "#fff" }}
-              >
+              <Link to={`/shop`} className={styles.Link}>
                 Shop
               </Link>
-              <Link
-                to={`/about`}
-                className={styles.Button}
-                sx={{ color: "#fff" }}
-              >
+              <Link to={`/about`} className={styles.Link}>
                 About
               </Link>
-              <Link
-                to={`/contact`}
-                className={styles.Button}
-                sx={{ color: "#fff" }}
-              >
+              <Link to={`/contact`} className={styles.Link}>
                 Contact
               </Link>
             </Box>
-            <Typography
-              variant="h6"
-              sx={{ display: { xs: "none", sm: "block" } }}
-            >
-              Brand
-            </Typography>
           </Toolbar>
+
+          <Typography
+            className={styles.DesktopBrand}
+            sx={{ display: { xs: "none", md: "block" } }}
+          >
+            <Link className={styles.Link} to={"/"}>
+              Beauty Pronounced
+            </Link>
+          </Typography>
         </AppBar>
+
         <Box component="nav">
           <Drawer
             variant="temporary"
@@ -137,7 +147,7 @@ const NavBar = ({ totalItems }) => {
               keepMounted: true, // Better open performance on mobile.
             }}
             sx={{
-              display: { xs: "block", sm: "none" },
+              display: { xs: "block", md: "none" },
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
                 width: drawerWidth,
@@ -147,10 +157,8 @@ const NavBar = ({ totalItems }) => {
             {drawer}
           </Drawer>
         </Box>
-        <Box component="main" sx={{ p: 3 }}>
-          <Toolbar />
-        </Box>
       </Box>
+      <Divider />
     </div>
   );
 };

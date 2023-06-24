@@ -19,7 +19,10 @@ function App() {
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState("");
   const fetchProducts = async () => {
-    const { data } = await commerce.products.list();
+    const { data } = await commerce.products.list({
+      sortBy: 'created_at',
+      sortDirection: 'desc',
+    });
     setProducts(data);
   };
 

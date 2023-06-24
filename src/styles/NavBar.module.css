@@ -1,13 +1,15 @@
-.ShoppingCart {
-  width: 30px !important;
-  height: 30px !important;
-}
-
-@media screen and (max-width: 600px) {
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@media screen and (max-width: 900px) {
   .NavBar {
+    position: unset !important;
+    width: 100vw !important;
     background-color: transparent !important;
     color: gray !important;
     box-shadow: none !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
   }
   .IconContainer {
     width: 100%;
@@ -17,33 +19,95 @@
   .Button {
     text-decoration: none;
   }
+
+  .Brand {
+    font-family: "Cinzel Decorative", cursive !important;
+    font-size: 20px !important;
+    margin: 0px !important;
+  }
+  .MobileBrand {
+    font-family: "Cinzel Decorative", cursive !important;
+    font-size: 20px !important;
+  }
+  .Link {
+    font-family: "Cinzel Decorative", cursive !important;
+    color: gray;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .Link:hover {
+    color: #a86e3b;
+    transition: ease 0.3s;
+  }
+  .IconButton {
+    padding: 0px !important;
+  }
+  .ShoppingCartContainer {
+    padding-right: 10px !important;
+  }
+  .MenuIcon {
+    padding-left: 15px !important;
+  }
+  .Toolbar {
+    padding: 0px !important;
+  }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
+  .Brand {
+    display: none;
+  }
+  .DesktopBrand {
+    font-family: "Cinzel Decorative", cursive !important;
+    font-size: 20px !important;
+    width: 33vw !important;
+    max-width: 400px;
+  }
+  .NavBarContainer {
+    max-width: 1200px;
+  }
   .NavBar {
+    max-width: 1200px;
     background-color: transparent !important;
     color: gray !important;
     box-shadow: none !important;
+    flex-direction: row-reverse !important;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: unset !important;
+    height: 90px;
   }
-  .IconContainer {
-    width: unset;
+  .IconButton {
+    padding: 0px !important;
+  }
+  .ShoppingCartContainer {
+    width: 33vw !important;
+    justify-content: flex-end !important;
+    max-width: 400px;
   }
   .Toolbar {
     display: flex !important;
     flex-direction: row-reverse;
+    width: 33vw;
+    max-width: 400px;
   }
+
   .Items {
     width: 100%;
     display: flex !important;
     justify-content: center;
     align-items: center;
+    width: 30vw;
   }
-  .Button {
-    color: gray!important;
+  .Link {
+    color: gray;
     margin: 0 10px;
     text-decoration: none;
   }
-}
-@media screen and (min-width: 768px) {
+  .Link:hover {
+    color: #a86e3b;
+    transition: ease 0.3s;
+  }
 }
 @media screen and (min-width: 992px) {
 }
