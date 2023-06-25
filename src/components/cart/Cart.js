@@ -9,13 +9,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import Divider from "@mui/joy/Divider";
 import { Card } from "@mui/joy";
 
-
-const Cart = ({
-  cart,
-  onUpdateCart,
-  onRemoveCart,
-  onEmptyCart,
-}) => {
+const Cart = ({ cart, onUpdateCart, onRemoveCart, onEmptyCart }) => {
   const emptyCart = (
     <>
       <span>You have no items in the cart</span>
@@ -29,16 +23,19 @@ const Cart = ({
 
   const items = (
     <>
-  <Card>
-  {cart.line_items.map((item) => (
-              <CartItem
-                key={item.id}
-                onRemoveCart={onRemoveCart}
-                onUpdateCart={onUpdateCart}
-                item={item}
-              />
-            ))}
-  </Card>
+      <Button className={styles.DeleteButton} onClick={onEmptyCart}>
+        <DeleteIcon /> Empty Cart
+      </Button>
+      <Card>
+        {cart.line_items.map((item) => (
+          <CartItem
+            key={item.id}
+            onRemoveCart={onRemoveCart}
+            onUpdateCart={onUpdateCart}
+            item={item}
+          />
+        ))}
+      </Card>
 
       <div className={styles.Summary}>
         <Box className={styles.Total}>
@@ -68,12 +65,9 @@ const Cart = ({
     <>
       <div className={styles.Cart}>
         <h3>Cart</h3>
-        <Button className={styles.DeleteButton} onClick={onEmptyCart}>
-          <DeleteIcon /> Empty Cart
-        </Button>
       </div>
 
-      {cart.line_items ? items : emptyCart}
+      {!cart.line_items.length ? emptyCart : items}
     </>
   );
 };
