@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/e-commerce/static/css/main.501434cb.css",
+    "main.js": "/e-commerce/static/js/main.a213a515.js",
+    "static/js/787.46493d11.chunk.js": "/e-commerce/static/js/787.46493d11.chunk.js",
+    "static/media/about.jpg": "/e-commerce/static/media/about.d0626802fe3a71b0ec37.jpg",
+    "static/media/hero.jpg": "/e-commerce/static/media/hero.9685175e04341b0792e5.jpg",
+    "static/media/SewingKit.jpg": "/e-commerce/static/media/SewingKit.b99065ba528cc14412b1.jpg",
+    "static/media/AboutHero.jpg": "/e-commerce/static/media/AboutHero.1662b21da528d5b3b516.jpg",
+    "static/media/Runway.jpg": "/e-commerce/static/media/Runway.0f1689abceb0d28cb327.jpg",
+    "index.html": "/e-commerce/index.html",
+    "main.501434cb.css.map": "/e-commerce/static/css/main.501434cb.css.map",
+    "main.a213a515.js.map": "/e-commerce/static/js/main.a213a515.js.map",
+    "787.46493d11.chunk.js.map": "/e-commerce/static/js/787.46493d11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.501434cb.css",
+    "static/js/main.a213a515.js"
+  ]
+}
