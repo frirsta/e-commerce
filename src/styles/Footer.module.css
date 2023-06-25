@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 600px) {
     .Footer{
-        margin-top: 20px;
+        margin-top: 100px;
         width: 100%;
         background-color: aliceblue;
     }
@@ -39,7 +39,7 @@
         width: 100%;
         margin: 0 auto;
         max-width: 1200px;
-        margin-top: 20px;
+        margin-top: 100px;
         background-color: aliceblue;
     }
     .FooterList{

@@ -6,7 +6,7 @@ import Button from "@mui/joy/Button";
 import Box from "@mui/joy/Box";
 import styles from "../../styles/Cart.module.css";
 import DeleteIcon from "@mui/icons-material/Delete";
-import Divider from "@mui/joy/Divider";
+import Divider from '@mui/joy/Divider';
 import { Card } from "@mui/joy";
 
 const Cart = ({ cart, onUpdateCart, onRemoveCart, onEmptyCart }) => {
@@ -23,10 +23,15 @@ const Cart = ({ cart, onUpdateCart, onRemoveCart, onEmptyCart }) => {
 
   const items = (
     <>
+    <div className={styles.EmptyCart}>
+      <h2 className={styles.Title}>My Cart</h2>
       <Button className={styles.DeleteButton} onClick={onEmptyCart}>
         <DeleteIcon /> Empty Cart
       </Button>
-      <Card>
+
+    </div>
+    <div className={styles.CartItemContainer}>
+      <Card className={styles.CartItem}>
         {cart.line_items.map((item) => (
           <CartItem
             key={item.id}
@@ -41,10 +46,14 @@ const Cart = ({ cart, onUpdateCart, onRemoveCart, onEmptyCart }) => {
         <Box className={styles.Total}>
           Subtotal: <span>{cart.subtotal.formatted_with_code}</span>
         </Box>
+        <Divider variant="middle" className={styles.Divider} />
         <Box className={styles.Total}>
           Discount: <span>0kr</span>
         </Box>
-        <Divider className={styles.Divider} />
+        <Box className={styles.Total}>
+         Items: <span>{cart.total_items}</span>
+        </Box>
+        <Divider variant="middle" className={styles.Divider} />
         <Box className={styles.Total}>
           Grand total: <span>{cart.subtotal.formatted_with_code}</span>
         </Box>
@@ -58,16 +67,17 @@ const Cart = ({ cart, onUpdateCart, onRemoveCart, onEmptyCart }) => {
           </Button>
         </div>
       </div>
+      </div>
     </>
   );
 
   return (
     <>
       <div className={styles.Cart}>
-        <h3>Cart</h3>
-      </div>
+       
 
       {!cart.line_items.length ? emptyCart : items}
+      </div>
     </>
   );
 };

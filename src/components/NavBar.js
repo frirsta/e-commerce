@@ -80,7 +80,7 @@ const NavBar = ({ totalItems }) => {
   );
 
   return (
-    <div>
+    <div className={styles.Navbar}>
       <Box className={styles.NavBarContainer} sx={{ display: "flex" }}>
         <AppBar className={styles.NavBar} component="nav">
           <IconButton

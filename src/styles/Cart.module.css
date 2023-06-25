@@ -1,118 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @media screen and (max-width: 600px) {
-    .Cart{
-        margin: 30px 0;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    .Summary{
-        margin-top: 40px;
-        max-width: 90vw;
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .ButtonsContainer{
-        margin: 10px 0;
-    }
-    .Total{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 10px 0;
-        
-    }
-    .Divider{
-        margin: 15px 0!important;
-    }
-    .DeleteButton{
-        padding: 0px!important;
-        color: #033867!important;
-        background-color: transparent!important;
-    }
-    .CheckoutButton{
-        background-color: pink!important;
-        margin: 10px!important;
-        padding-block: 0px!important;
-        max-width: 80vw;
-        width: 400px;
-    }
+  .Cart {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Summary {
+    max-width: 90vw;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .ButtonsContainer {
+    margin: 10px 0;
+  }
+  .Total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .Divider {
+    margin: 15px 0 !important;
+  }
+  .DeleteButton {
+    padding: 0px !important;
+    color: #033867 !important;
+    background-color: transparent !important;
+  }
+  .CheckoutButton {
+    background-color: pink !important;
+    margin: 10px !important;
+    padding-block: 0px !important;
+    max-width: 80vw;
+    width: 400px;
+  }
+  .Title{
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .EmptyCart{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80vw;
+    padding-bottom: 25px;
+  }
 }
-  @media screen and (min-width: 600px) {
-    .Cart{
-        margin: 30px 0;
-        display: flex;
-        width: 70%;
+@media screen and (min-width: 600px) {
+    .Cart {
         max-width: 1200px;
-        justify-content: space-between;
-    }
-    .Summary{
-        margin-top: 40px;
-        max-width: 90vw;
-        width: 400px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-    }
-    .ButtonsContainer{
-        margin: 10px 0;
-    }
-    .Total{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 10px 0;
-        
-    }
-    .Divider{
-        margin: 15px 0!important;
-    }
-    .DeleteButton{
-        padding: 0px!important;
-        color: #033867!important;
-        background-color: transparent!important;
-    }
-    .CheckoutButton{
-        background-color: pink!important;
-        margin: 10px!important;
-        padding-block: 0px!important;
-        max-width: 80vw;
-        width: 400px;
-    }
+          }
+  .Summary {
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 90vw;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
-  @media screen and (min-width: 768px) {
-    .CartContainer{
-       display: flex;
-       justify-content: space-evenly;
-       width: 100%;
-    }
-    .Products{
-        width: 50vw;
-        border: 1px solid;
-        border-radius: 20px;
-        padding: 30px;
-    }
+  .ButtonsContainer {
+    margin: 10px 0;
+  }
+  .Total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .Divider {
+    margin: 15px 0 !important;
+  }
+  .DeleteButton {
+    padding: 0px !important;
+    color: #033867 !important;
+    background-color: transparent !important;
+    width: 120px;
+  }
+  .CheckoutButton {
+    background-color: pink !important;
+    margin: 10px !important;
+    padding-block: 0px !important;
+    max-width: 80vw;
+    width: 400px;
+  }
+  .Title{
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .EmptyCart{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80vw;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .CartContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .Products {
+    width: 50vw;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 30px;
+  }
 
-    .Summary{
-        max-width: unset;
-        width: 200px;
-    }
-    .CheckoutButton{
-        max-width: unset;
-        width: 200px;
-    }
-    .Title{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
+  .Summary {
+    max-width: unset;
+    border-radius: 10px;
+    margin-top: 0px;
+    height: 100%;
+    padding: 20px 20px 0px 20px;
+    margin-left: 5px;
+    width: 300px;
+    background-color: #f9f9f9;
   }
-  @media screen and (min-width: 992px) {
+  .CheckoutButton {
+    max-width: unset;
+    width: 250px;
   }
-  @media screen and (min-width: 1200px) {
+  .Title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
-  
+  .Total {
+    padding: 3px;
+    font-weight: 800;
+    font-size: 12px;
+  }
+  .Divider{
+    margin: 0px!important;
+  }
+  /* Cart item */
+  .CartItem {
+
+  }
+  .CartItemContainer {
+    display: flex;
+  }
+  .EmptyCart{
+    width: 70vw;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
