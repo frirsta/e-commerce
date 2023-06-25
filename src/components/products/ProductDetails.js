@@ -130,14 +130,14 @@ const ProductDetails = ({ onAddToCart }) => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                <ul>
+              
                   <li>
                     <b>Height: </b> 175cm / 5'9
                   </li>
                   <li>
                     <b>Size: </b> S
                   </li>
-                </ul>
+                
               </Typography>
             </AccordionDetails>
           </Accordion>

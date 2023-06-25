@@ -83,14 +83,16 @@ const NavBar = ({ totalItems }) => {
     <div className={styles.Navbar}>
       <Box className={styles.NavBarContainer} sx={{ display: "flex" }}>
         <AppBar className={styles.NavBar} component="nav">
+          <div className={styles.ShoppingCartContainer}>
           <IconButton
-            className={`${styles.IconButton} ${styles.ShoppingCartContainer}`}
+            className={`${styles.IconButton}`}
             component={Link}
             to={"cart"}
           >
             <Badge size="md" badgeContent={totalItems} color="info"></Badge>
             <ShoppingCartOutlinedIcon />
           </IconButton>
+          </div>
           <Typography className={styles.Brand} sx={{ my: 2 }}>
             <Link className={styles.Link} to={"/"}>
               Beauty Pronounced

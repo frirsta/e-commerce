@@ -3,7 +3,6 @@
   .NavBarContainer {
     background-color: #fae0df !important;
     width: 100vw;
-    margin-bottom: 20px;
   }
   .NavBar {
     position: unset !important;
@@ -71,7 +70,6 @@
   .NavBarContainer {
     background-color: #fae0df !important;
     width: 100vw;
-    margin-bottom: 20px;
   }
   .NavBar {
     max-width: 1200px;
@@ -90,6 +88,7 @@
     padding: 0px !important;
   }
   .ShoppingCartContainer {
+    display: flex;
     width: 33vw !important;
     justify-content: flex-end !important;
     max-width: 400px;

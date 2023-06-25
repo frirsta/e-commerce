@@ -19,7 +19,6 @@ const Cart = ({ cart, onUpdateCart, onRemoveCart, onEmptyCart }) => {
     </>
   );
   if (!cart?.line_items) return <CircularProgress className={styles.Progress} color="info" />;
-  console.log(cart);
 
   const items = (
     <>
