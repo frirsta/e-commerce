@@ -12,9 +12,9 @@ import { Card } from "@mui/joy";
 
 const Cart = ({
   cart,
-  handleUpdateCart,
-  handleRemoveCart,
-  handleEmptyCart,
+  onUpdateCart,
+  onRemoveCart,
+  onEmptyCart,
 }) => {
   const emptyCart = (
     <>
@@ -33,8 +33,8 @@ const Cart = ({
   {cart.line_items.map((item) => (
               <CartItem
                 key={item.id}
-                onRemoveCart={handleRemoveCart}
-                onUpdateCart={handleUpdateCart}
+                onRemoveCart={onRemoveCart}
+                onUpdateCart={onUpdateCart}
                 item={item}
               />
             ))}
@@ -68,7 +68,7 @@ const Cart = ({
     <>
       <div className={styles.Cart}>
         <h3>Cart</h3>
-        <Button className={styles.DeleteButton} onClick={handleEmptyCart}>
+        <Button className={styles.DeleteButton} onClick={onEmptyCart}>
           <DeleteIcon /> Empty Cart
         </Button>
       </div>

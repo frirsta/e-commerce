@@ -47,16 +47,16 @@ function App() {
   };
 
   const handleUpdateCart = async (productId, quantity) => {
-    const { cart } = await commerce.cart.update(productId, { quantity });
-    setCart(cart?.line_items);
+    const cart = await commerce.cart.update(productId, { quantity });
+    setCart(cart.cart);
   };
   const handleRemoveCart = async (productId) => {
-    const { cart } = await commerce.cart.remove(productId);
-    setCart(cart?.line_items);
+    const cart = await commerce.cart.remove(productId);
+    setCart(cart.cart);
   };
   const handleEmptyCart = async () => {
-    const { cart } = await commerce.cart.empty();
-    setCart(cart?.total_items);
+    const cart = await commerce.cart.empty();
+    setCart(cart.cart);
   };
 
   const refreshCart = async () => {
@@ -81,7 +81,7 @@ function App() {
     fetchProducts();
     fetchNewProducts()
     fetchCart();
-  }, []);
+  }, [cart]);
 
   return (
     <div className={styles.App}>
@@ -93,9 +93,9 @@ function App() {
             element={
               <Cart
                 cart={cart}
-                handleUpdateCart={handleUpdateCart}
-                handleRemoveCart={handleRemoveCart}
-                handleEmptyCart={handleEmptyCart}
+                onUpdateCart={handleUpdateCart}
+                onRemoveCart={handleRemoveCart}
+                onEmptyCart={handleEmptyCart}
               />
             }
           />
