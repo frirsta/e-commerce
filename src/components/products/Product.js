@@ -81,7 +81,7 @@ const Product = ({ product }) => {
                             display: "block",
                           }}
                         >
-                          <Button>Shop now</Button>
+                          <Button variant="soft" color="info">Shop now</Button>
                         </Link>
                       </Typography>
                     </Box>

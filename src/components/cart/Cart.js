@@ -18,7 +18,7 @@ const Cart = ({ cart, onUpdateCart, onRemoveCart, onEmptyCart }) => {
       </span>
     </>
   );
-  if (!cart?.line_items) return <CircularProgress color="info" />;
+  if (!cart?.line_items) return <CircularProgress className={styles.Progress} color="info" />;
   console.log(cart);
 
   const items = (

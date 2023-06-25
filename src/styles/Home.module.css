@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    
   }
   .HeroImage {
     height: 600px;
@@ -27,7 +28,7 @@
     text-align: center;
   }
   .HeroButton {
-    background-color: pink !important;
+    background-color: #fae0df!important;
     margin: 0 auto;
     padding: 10px 30px !important;
     color: #fff;
@@ -48,7 +49,7 @@
     margin: 100px 0;
   }
   .Delivery {
-    background-color: #e1d2ee;
+    background-color: #fae0df;
     padding: 50px 30px;
     width: 100%;
   }
@@ -73,13 +74,13 @@
     overflow: hidden;
   }
   .Svg1 {
-    fill: #e1d2ee;
+    fill: #fae0df;
     width: 100vw;
     height: 100px;
     transform: rotate(180deg) scaleX(-1);
   }
   .Svg {
-    fill: #e1d2ee;
+    fill: #fae0df;
     width: 100vw;
     height: 200px;
     transform: scaleX(-1);
@@ -104,6 +105,7 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    
   }
   .HeroImage {
     height: 600px;
@@ -126,7 +128,7 @@
     text-align: center;
   }
   .HeroButton {
-    background-color: pink !important;
+    background-color: #fae0df!important;
     margin: 0 auto;
   }
   /* about */
@@ -139,7 +141,7 @@
   /* delivery */
 
   .Delivery {
-    background-color: #e1d2ee;
+    background-color: #fae0df;
     padding: 100px 30px;
     width: 100%;
   }
@@ -147,13 +149,13 @@
     overflow: hidden;
   }
   .Svg1 {
-    fill: #e1d2ee;
+    fill: #fae0df;
     width: 100vw;
     height: 90px;
     transform: rotate(180deg) scaleX(-1);
   }
   .Svg {
-    fill: #e1d2ee;
+    fill: #fae0df;
     width: 100vw;
     height: 200px;
     transform: scaleX(-1);

@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
   }
   .Summary {
     max-width: 90vw;
@@ -54,12 +55,14 @@
   }
 }
 @media screen and (min-width: 600px) {
+  
     .Cart {
         max-width: 1200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
           }
   .Summary {
     margin: 0 auto;
@@ -130,6 +133,7 @@
     margin-left: 5px;
     width: 300px;
     background-color: #f9f9f9;
+    margin: unset;
   }
   .CheckoutButton {
     max-width: unset;
@@ -154,11 +158,15 @@
   }
   .CartItemContainer {
     display: flex;
+    justify-content: space-between;
+    width: 97vw;
+    max-width: 800px;
   }
   .EmptyCart{
     width: 70vw;
   padding-bottom: 50px;
   margin: 0 auto;
+  max-width: 800px;
   }
 }
 @media screen and (min-width: 992px) {

@@ -3,7 +3,8 @@
     .Footer{
         margin-top: 100px;
         width: 100%;
-        background-color: aliceblue;
+        background-color: #fae0df!important;
+        color: gray;
     }
     .FooterList{
         justify-content: flex-start;
@@ -38,12 +39,14 @@
     .Footer{
         width: 100%;
         margin: 0 auto;
-        max-width: 1200px;
         margin-top: 100px;
-        background-color: aliceblue;
+        background-color: #fae0df!important;
+        color: gray;
     }
     .FooterList{
         justify-content: space-evenly;
+        max-width: 1200px;
+        margin: 0 auto;
     }
     .FooterContainer{
         display: flex;

@@ -8,7 +8,7 @@ import Button from "@mui/joy/Button";
 import { Link as RouterLink } from "react-router-dom";
 import styles from "../../styles/NewArrivals.module.css";
 import Grid from "@mui/joy/Grid";
-import Divider from '@mui/material/Divider';
+import Divider from "@mui/material/Divider";
 
 export default function NewArrivals({ products }) {
   return (
@@ -17,16 +17,16 @@ export default function NewArrivals({ products }) {
       <span className={styles.TrendyTitle}>Trending now</span>
       <Divider className={styles.Divider} variant="middle" />
       <Grid className={styles.ProductGrid} container>
-          {products.map((item) => (
-        <Grid key={item.id}>
-          <Card
-          className={styles.Product}
-            sx={{
-              bgcolor: "initial",
-              boxShadow: "none",
-              "--Card-padding": "0px",
-            }}
-          >
+        {products.map((item) => (
+          <Grid key={item.id}>
+            <Card
+              className={styles.Product}
+              sx={{
+                bgcolor: "initial",
+                boxShadow: "none",
+                "--Card-padding": "0px",
+              }}
+            >
               <Box sx={{ position: "relative" }}>
                 <AspectRatio ratio="4/4">
                   <figure>
@@ -71,16 +71,16 @@ export default function NewArrivals({ products }) {
                             display: "block",
                           }}
                         >
-                          <Button>Shop now</Button>
+                          <Button variant="soft" color="info">Shop now</Button>
                         </Link>
                       </Typography>
                     </Box>
                   </Box>
                 </CardCover>
               </Box>
-          </Card>
-        </Grid>
-            ))}
+            </Card>
+          </Grid>
+        ))}
       </Grid>
     </div>
   );

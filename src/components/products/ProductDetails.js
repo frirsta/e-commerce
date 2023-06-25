@@ -15,6 +15,10 @@ import TabList from "@mui/joy/TabList";
 import Tab, { tabClasses } from "@mui/joy/Tab";
 import TabPanel from "@mui/joy/TabPanel";
 import { Box, Divider } from "@mui/joy";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const ProductDetails = ({ onAddToCart }) => {
   const [product, setProduct] = useState([]);
@@ -96,7 +100,7 @@ const ProductDetails = ({ onAddToCart }) => {
                     onClick={() => setSelectedSize(item.id)}
                     style={{
                       backgroundColor:
-                        selectedSize === item.id ? "grey" : "#000",
+                        selectedSize === item.id ? "#fae0df" : "#000",
                     }}
                     className={styles.Option}
                     key={item.id}
@@ -115,6 +119,60 @@ const ProductDetails = ({ onAddToCart }) => {
               </Button>
             </form>
           </div>
+          <div className={styles.ProductMaterial}>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>Size and fit</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                <ul>
+                  <li>
+                    <b>Height: </b> 175cm / 5'9
+                  </li>
+                  <li>
+                    <b>Size: </b> S
+                  </li>
+                </ul>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>Product Description</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography
+                dangerouslySetInnerHTML={{ __html: product.description }}
+              ></Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>Material</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Amet laboris ullamco tempor esse ad Lorem laboris cillum. Esse
+                non reprehenderit sunt qui officia dolore consectetur ullamco
+                qui laboris reprehenderit qui laborum. Pariatur ad magna
+                consectetur ipsum aliquip.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
         </div>
       </div>
       <div>

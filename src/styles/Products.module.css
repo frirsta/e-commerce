@@ -8,7 +8,6 @@
 }
 @media screen and (min-width: 600px) {
   .ProductsContainer {
-    max-width: 800px;
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto;

@@ -33,7 +33,7 @@ export default function InputSubscription() {
             "--FormLabel-color": theme.vars.palette.primary.plainColor,
           })}
         >
-          MUI Newsletter
+          Beauty Pronounced Newsletter
         </FormLabel>
         <Input
           className={styles.Newsletter}
