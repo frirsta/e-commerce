@@ -29,9 +29,7 @@ export default function InputSubscription() {
     <form onSubmit={handleSubmit} id="demo">
       <FormControl>
         <FormLabel
-          sx={(theme) => ({
-            "--FormLabel-color": theme.vars.palette.primary.plainColor,
-          })}
+        className={styles.Label}
         >
           Beauty Pronounced Newsletter
         </FormLabel>
@@ -39,9 +37,9 @@ export default function InputSubscription() {
           className={styles.Newsletter}
           size="md"
           variant="outlined"
-          color="info"
+       
           sx={{ "--Input-decoratorChildHeight": "45px" }}
-          placeholder="mail@mui.com"
+          placeholder="mail@gmail.com"
           type="email"
           required
           value={data.email}
@@ -51,11 +49,12 @@ export default function InputSubscription() {
           error={data.status === "failure"}
           endDecorator={
             <Button
+            className={styles.Button}
               variant="solid"
-              color="info"
+           
               loading={data.status === "loading"}
               type="submit"
-              sx={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
+              
             >
               Subscribe
             </Button>

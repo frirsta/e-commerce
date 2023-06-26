@@ -28,8 +28,8 @@ const NavBar = ({ totalItems }) => {
     <>
       <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
         <Typography className={styles.MobileBrand} sx={{ my: 2 }}>
-          <Link className={styles.Link} to={"/"}>
-            Beauty Pronounced
+          <Link className={styles.BrandLink} to={"/"}>
+            Beauty
           </Link>
         </Typography>
         <Divider />
@@ -94,8 +94,8 @@ const NavBar = ({ totalItems }) => {
           </IconButton>
           </div>
           <Typography className={styles.Brand} sx={{ my: 2 }}>
-            <Link className={styles.Link} to={"/"}>
-              Beauty Pronounced
+            <Link className={styles.BrandLink} to={"/"}>
+              Beauty
             </Link>
           </Typography>
           <Toolbar className={styles.Toolbar}>
@@ -134,8 +134,8 @@ const NavBar = ({ totalItems }) => {
             className={styles.DesktopBrand}
             sx={{ display: { xs: "none", md: "block" } }}
           >
-            <Link className={styles.Link} to={"/"}>
-              Beauty Pronounced
+            <Link className={styles.BrandLink} to={"/"}>
+              Beauty
             </Link>
           </Typography>
         </AppBar>

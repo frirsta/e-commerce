@@ -11,6 +11,7 @@ import Checkout from "./components/checkout/Checkout";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Announcement from "./components/Announcement";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -86,6 +87,7 @@ function App() {
   return (
     <div className={styles.App}>
       <BrowserRouter>
+      <Announcement />
         <NavBar totalItems={cart?.total_items} />
         <Routes>
           <Route

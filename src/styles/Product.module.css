@@ -34,10 +34,12 @@
     color: gray;
   }
   .SkeletonName {
-    width: 80%;
+    width: 75%;
+    font-size: 15px;
   }
   .SkeletonPrice {
-    width: 40%;
+    width: 20%;
+    font-size: 15px;
   }
 
   .TextContainer {
@@ -77,10 +79,12 @@
     width: 30vw !important;
   }
   .SkeletonName {
-    width: 80%;
+    width: 75%;
+    font-size: 15px;
   }
   .SkeletonPrice {
-    width: 40%;
+    width: 20%;
+    font-size: 15px;
   }
   .Name {
     padding: 10px 0;

@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'Fonts';
+  src: url('../assets/font/magnisa-sans-font-1687741923-0/Magnisasans-Regular-BF641b06340b5e9.otf'); 
+}
 @media screen and (max-width: 900px) {
   .NavBarContainer {
-    background-color: #fae0df !important;
+    background-color: transparent !important;
     width: 100vw;
   }
   .NavBar {
     position: unset !important;
     width: 100vw !important;
-    background-color: #fae0df !important;
+    background-color: transparent !important;
     color: gray !important;
     box-shadow: none !important;
     flex-direction: row-reverse !important;
@@ -24,18 +28,26 @@
   .Button {
     text-decoration: none;
   }
-
+.BrandLink{
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  transition: ease .3s;
+}
+.BrandLink:hover{
+  color: #a86e3b;
+}
   .Brand {
-    font-family: "Cinzel Decorative", cursive !important;
-    font-size: 20px !important;
+    font-family: "Fonts", cursive !important;
+    font-size: 35px !important;
     margin: 0px !important;
+    text-transform: uppercase;
   }
   .MobileBrand {
-    font-family: "Cinzel Decorative", cursive !important;
+    font-family: "Fonts", cursive !important;
     font-size: 20px !important;
   }
   .Link {
-    font-family: "Cinzel Decorative", cursive !important;
     color: gray;
     margin: 0 10px;
     text-decoration: none;
@@ -61,19 +73,30 @@
   .Brand {
     display: none;
   }
+  .BrandLink{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: ease .3s;
+  }
+  .BrandLink:hover{
+    color: #a86e3b;
+  }
   .DesktopBrand {
-    font-family: "Cinzel Decorative", cursive !important;
-    font-size: 20px !important;
+    font-family: "Fonts", cursive !important;
+    font-size: 35px !important;
     width: 33vw !important;
     max-width: 400px;
+    text-transform: uppercase;
   }
   .NavBarContainer {
-    background-color: #fae0df !important;
+    background-color: transparent !important;
     width: 100vw;
   }
   .NavBar {
     max-width: 1200px;
-    background-color: #fae0df !important;
+    background-color: transparent !important;
     color: gray !important;
     box-shadow: none !important;
     flex-direction: row-reverse !important;

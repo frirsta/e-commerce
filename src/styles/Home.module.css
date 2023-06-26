@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
   }
   .Hero {
     background: url("../assets/hero.jpg") no-repeat center center;
@@ -28,9 +29,10 @@
     text-align: center;
   }
   .HeroButton {
-    background-color: #fae0df!important;
+    border-radius: 0px!important;
+    background-color: #000!important;
     margin: 0 auto;
-    padding: 10px 30px !important;
+    padding: 15px 40px!important;
     color: #fff;
   }
   .HeroButton:hover {
@@ -121,15 +123,22 @@
   .Hero {
     background: url("../assets/hero.jpg") no-repeat center center;
     background-size: cover;
-    margin-bottom: 100px;
+    margin: 20px 0;
   }
 
   .HeroText {
     text-align: center;
   }
   .HeroButton {
-    background-color: #fae0df!important;
+    border-radius: 0px!important;
+    background-color: #000!important;
     margin: 0 auto;
+    padding: 15px 40px!important;
+    color: #fff;
+  }
+  .HeroButton:hover {
+    opacity: 0.8;
+    transition: ease 0.3s;
   }
   /* about */
   .About {

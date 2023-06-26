@@ -8,11 +8,11 @@
     margin: 50px 0;
   }
   .Product {
-    width: 300px;
     margin: 10px;
   }
   .ProductGrid {
-   justify-content: center;
+    justify-content: center;
+    margin: 50px 0 !important;
   }
   .Popular {
     font-size: 20px;
@@ -20,15 +20,32 @@
   .TrendyTitle {
     font-size: 50px;
   }
-  .Divider{
+  .Divider {
     background-color: #a86e3b;
     height: 2px;
     width: 100px;
   }
-
-}
-
-@media screen and (min-width: 380px) {
+  .Image {
+    border-radius: 0px !important;
+    height: 400px !important;
+    width: 85vw;
+    max-width: 320px;
+    object-fit: cover;
+  }
+  .CardCover {
+    border-radius: 0px !important;
+  }
+  .Button {
+    border-radius: 0px !important;
+    background-color: #000 !important;
+    margin: 0 auto;
+    padding: 15px 40px !important;
+    color: #fff;
+  }
+  .Button:hover {
+    opacity: 0.8;
+    transition: ease 0.3s;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -43,9 +60,10 @@
   }
   .ProductGrid {
     justify-content: center;
+    margin: 50px 0 !important;
+    
   }
   .Product {
-    width: 300px;
     margin: 10px;
   }
   .Popular {
@@ -54,34 +72,37 @@
   .TrendyTitle {
     font-size: 50px;
   }
-  .Divider{
+  .Divider {
     background-color: #a86e3b;
     height: 2px;
     width: 100px;
   }
-}
-@media screen and (min-width: 768px) {
+  .Image {
+    border-radius: 0px !important;
+    height: 400px !important;
+    width: 45vw;
+    max-width: 320px;
+    object-fit: cover;
+  }
+  .Button {
+    border-radius: 0px !important;
+    background-color: #000 !important;
+    margin: 0 auto;
+    padding: 15px 40px !important;
+    color: #fff;
+  }
+  .Button:hover {
+    opacity: 0.8;
+    transition: ease 0.3s;
+  }
+  .CardCover {
+    border-radius: 0px !important;
+  
+  }
 }
 @media screen and (min-width: 900px) {
-  .Trendy {
-    margin: 50px 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .Image {
+    width: 20vw;
+    max-width: 280px;
   }
-  .Product {
-    max-width: 20vw;
-    margin: 10px;
-    width: 280px;
-  }
-  .Popular {
-    font-size: 20px;
-  }
-  .TrendyTitle {
-    font-size: 50px;
-  }
-}
-@media screen and (min-width: 992px) {
-}
-@media screen and (min-width: 1200px) {
 }

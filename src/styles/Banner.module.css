@@ -12,3 +12,9 @@
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+.Announcement{
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  padding: 5px;
+}
