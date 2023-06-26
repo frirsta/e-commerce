@@ -9,6 +9,7 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import NewArrivals from "../components/products/NewArrivals";
 import { Link } from "react-router-dom";
+import Banner from "../components/Banner";
 const Home = ({ products }) => {
   return (
     <div className={styles.Home}>
@@ -23,6 +24,7 @@ const Home = ({ products }) => {
       </div>
 
       <NewArrivals products={products} />
+      <Banner />
       <div className={styles.DeliveryContainer}>
         <div className={styles.SvgContainer}>
           <svg
