@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @media screen and (max-width: 600px) {
   .ProductDetails {
     width: 95vw;
@@ -6,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
   }
   .ImageSkeleton {
     width: 100vw;
@@ -39,8 +42,11 @@
     margin: 10px 0;
   }
   .Name {
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     margin: 10px 0 !important;
+    letter-spacing: 2px!important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif!important;
   }
   .Price {
     font-weight: 600 !important;
@@ -88,6 +94,7 @@ margin-bottom: 50px;
     flex-direction: column;
     align-items: center;
     bottom: 10px;
+    font-family: 'Montserrat', sans-serif!important;
   }
   .Product {
     width: 95vw;
@@ -117,9 +124,12 @@ margin-bottom: 50px;
     margin: 10px 0;
   }
   .Name {
-    color: rgb(94, 93, 93);
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     margin: 10px 0 !important;
+    font-size: 25px!important;
+    letter-spacing: 2px!important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif!important;
   }
   .Price {
     font-weight: 600 !important;

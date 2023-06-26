@@ -147,6 +147,22 @@ const ProductDetails = ({ onAddToCart }) => {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
+              <Typography>Clothing Care</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+              
+              Machine wash according to the instructions on the care label
+                
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
               <Typography>Product Description</Typography>
             </AccordionSummary>
             <AccordionDetails>
