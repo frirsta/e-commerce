@@ -4,7 +4,7 @@ import Grid from "@mui/joy/Grid";
 import Button from "@mui/joy/Button";
 import { useForm, FormProvider } from "react-hook-form";
 import { Link } from "react-router-dom";
-import Input from "@mui/material/Input";
+import Input from "@mui/joy/Input";
 
 import { commerce } from "../../library/commerce/commerce";
 
@@ -81,52 +81,36 @@ const Address = ({ checkoutToken, test }) => {
             })
           )}
         >
-          <Grid container spacing={2}>
-            <Grid xs={6} sm={6}>
-              <Input required name="firstName" placeholder="firstname" />
-            </Grid>
-            <Grid xs={6} sm={6}>
-              <Input required name="lastName" placeholder="lastname" />
-            </Grid>
-
-            <Grid xs={6} sm={6}>
-              <Input
-                required
-                value={shippingStreet}
-                onChange={(e) => setShippingStreet(e.target.value)}
-                name="shippingStreet"
-                placeholder="address"
-              />
-            </Grid>
-            <Grid xs={6} sm={6}>
-              <Input
-                value={shippingEmail}
-                onChange={(e) => setShippingEmail(e.target.value)}
-                required
-                name="shippingEmail"
-                placeholder="email"
-              />
-            </Grid>
-
-            <Grid xs={6} sm={6}>
-              <Input
-                required
-                value={shippingCity}
-                onChange={(e) => setShippingCity(e.target.value)}
-                name="shippingCity"
-                placeholder="city"
-              />
-            </Grid>
-            <Grid xs={6} sm={6}>
-              <Input
-                required
-                value={shippingZip}
-                onChange={(e) => setShippingZip(e.target.value)}
-                name="shippingZip"
-                placeholder="ZIP / Postal code"
-              />
-            </Grid>
-          </Grid>
+          <Input required name="firstName" placeholder="firstname" />
+          <Input required name="lastName" placeholder="lastname" />
+          <Input
+            required
+            value={shippingStreet}
+            onChange={(e) => setShippingStreet(e.target.value)}
+            name="shippingStreet"
+            placeholder="address"
+          />
+          <Input
+            value={shippingEmail}
+            onChange={(e) => setShippingEmail(e.target.value)}
+            required
+            name="shippingEmail"
+            placeholder="email"
+          />
+          <Input
+            required
+            value={shippingCity}
+            onChange={(e) => setShippingCity(e.target.value)}
+            name="shippingCity"
+            placeholder="city"
+          />
+          <Input
+            required
+            value={shippingZip}
+            onChange={(e) => setShippingZip(e.target.value)}
+            name="shippingZip"
+            placeholder="ZIP / Postal code"
+          />
           <Grid xs={12} sm={6}>
             <FormLabel>Shipping Country</FormLabel>
             <select
