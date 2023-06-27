@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Badge from "@mui/joy/Badge";
@@ -15,10 +15,12 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import { commerce } from "../library/commerce/commerce";
 
 const drawerWidth = 240;
 
-const NavBar = ({ totalItems }) => {
+const NavBar = () => {
+  const [cart, setCart] = useState({});
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -78,20 +80,25 @@ const NavBar = ({ totalItems }) => {
       </Box>
     </>
   );
-
+  const fetchCart = async () => {
+    setCart(await commerce.cart.retrieve());
+  };
+  useEffect(() => {
+    fetchCart();
+  }, [cart]);
   return (
     <div className={styles.Navbar}>
       <Box className={styles.NavBarContainer} sx={{ display: "flex" }}>
         <AppBar className={styles.NavBar} component="nav">
           <div className={styles.ShoppingCartContainer}>
-          <IconButton
-            className={`${styles.IconButton}`}
-            component={Link}
-            to={"cart"}
-          >
-            <Badge size="md" badgeContent={totalItems} color="info"></Badge>
-            <ShoppingCartOutlinedIcon />
-          </IconButton>
+            <IconButton
+              className={`${styles.IconButton}`}
+              component={Link}
+              to={"cart"}
+            >
+              <Badge badgeContent={cart?.total_items} color="info"></Badge>
+              <ShoppingCartOutlinedIcon />
+            </IconButton>
           </div>
           <Typography className={styles.Brand} sx={{ my: 2 }}>
             <Link className={styles.BrandLink} to={"/"}>

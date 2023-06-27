@@ -11,10 +11,17 @@ import { commerce } from "../../library/commerce/commerce";
 
 const steps = ["Shipping", "Payment details"];
 
-const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
+const Checkout = ({ order, onCaptureCheckout, error }) => {
   const [activeStep, setActiveStep] = useState(0);
   const [checkoutToken, setCheckoutToken] = useState(null);
   const [shippingData, setShippingData] = useState({});
+  const [cart, setCart] = useState({});
+  const fetchCart = async () => {
+    setCart(await commerce.cart.retrieve());
+  };
+  useEffect(() => {
+    fetchCart();
+  }, []);
 
   useEffect(() => {
     const generateToken = async () => {

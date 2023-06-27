@@ -11,7 +11,6 @@ import Checkout from "./components/checkout/Checkout";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Announcement from "./components/Announcement";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -21,16 +20,16 @@ function App() {
   const [errorMessage, setErrorMessage] = useState("");
   const fetchProducts = async () => {
     const { data } = await commerce.products.list({
-      sortBy: 'created_at',
-      sortDirection: 'desc',
+      sortBy: "created_at",
+      sortDirection: "desc",
     });
     setProducts(data);
   };
 
   const fetchNewProducts = async () => {
     const { data } = await commerce.products.list({
-      sortBy: 'created_at',
-      sortDirection: 'desc',
+      sortBy: "created_at",
+      sortDirection: "desc",
       limit: 4,
     });
     setNewProducts(data);
@@ -80,15 +79,14 @@ function App() {
 
   useEffect(() => {
     fetchProducts();
-    fetchNewProducts()
+    fetchNewProducts();
     fetchCart();
-  }, [cart]);
+  }, []);
 
   return (
     <div className={styles.App}>
       <BrowserRouter>
-      <Announcement />
-        <NavBar totalItems={cart?.total_items} />
+        <NavBar />
         <Routes>
           <Route
             path={"/cart"}
@@ -105,12 +103,7 @@ function App() {
             path={"/item/:id"}
             element={<ProductDetails onAddToCart={handleAddToCart} />}
           />
-          <Route
-            path={"/shop"}
-            element={
-              <Products products={products} />
-            }
-          />
+          <Route path={"/shop"} element={<Products products={products} />} />
           <Route
             path="/checkout"
             element={
@@ -125,7 +118,6 @@ function App() {
           <Route path="/" element={<Home products={newProducts} />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
-
         </Routes>
 
         <Footer />
