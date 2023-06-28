@@ -11,9 +11,7 @@ Libraries and Frameworks:
 - Stripe
 
 - React-router-dom
-- Commercejs
-- Stripe
-- Material UI
+- CommerceJS
 - Express
 - react-responsive-carousel
 - React hook form

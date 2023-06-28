@@ -2,6 +2,7 @@
 .Banner {
   height: 200px;
   background-color: #efefef;
+  width: 100vw!important;
 }
 .Text {
     font-family: 'Montserrat', sans-serif;

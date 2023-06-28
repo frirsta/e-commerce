@@ -8,6 +8,8 @@ import { Link as RouterLink } from "react-router-dom";
 import styles from "../../styles/NewArrivals.module.css";
 import Grid from "@mui/joy/Grid";
 import Divider from "@mui/material/Divider";
+import CardMedia from "@mui/material/CardMedia";
+import CardOverflow from "@mui/joy/CardOverflow";
 
 export default function NewArrivals({ products }) {
   return (
@@ -18,46 +20,40 @@ export default function NewArrivals({ products }) {
       <Grid className={styles.ProductGrid} container>
         {products.map((item) => (
           <Grid key={item.id}>
-            <Card
-              className={styles.Product}
-              sx={{
-                bgcolor: "initial",
-                boxShadow: "none",
-                "--Card-padding": "0px",
-              }}
-            >
-              <Box sx={{ position: "relative" }}>
-                <div className={styles.Image}>
-                  <figure className={styles.Image}>
-                    <img className={styles.Image} src={item.image.url} alt={item.name} />
-                  </figure>
-                </div>
-
-                <CardCover
-                  className={`gradient-cover ${styles.CardCover}`}
-                  sx={{
-                    "&:hover, &:focus-within": {
-                      opacity: 1,
-                    },
-                    opacity: 0,
-                    transition: "0.3s ease-in",
-                    background:
-                      "linear-gradient(180deg, transparent 62%, rgba(0,0,0,0.00345888) 63.94%, rgba(0,0,0,0.014204) 65.89%, rgba(0,0,0,0.0326639) 67.83%, rgba(0,0,0,0.0589645) 69.78%, rgba(0,0,0,0.0927099) 71.72%, rgba(0,0,0,0.132754) 73.67%, rgba(0,0,0,0.177076) 75.61%, rgba(0,0,0,0.222924) 77.56%, rgba(0,0,0,0.267246) 79.5%, rgba(0,0,0,0.30729) 81.44%, rgba(0,0,0,0.341035) 83.39%, rgba(0,0,0,0.367336) 85.33%, rgba(0,0,0,0.385796) 87.28%, rgba(0,0,0,0.396541) 89.22%, rgba(0,0,0,0.4) 91.17%)",
-                  }}
-                >
-                  <Box>
-                    <Box
-                      sx={{
-                        p: 2,
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 1.5,
-                        flexGrow: 1,
-                        alignSelf: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Typography level="h2" noWrap sx={{ fontSize: "lg" }}>
+             <Card className={styles.Product}>
+            <CardOverflow className={styles.CardOverflow}>
+              <Link to={`/item/${item.id}`} className={styles.ProductLink}>
+                <CardMedia
+                  className={styles.Image}
+                  component={"img"}
+                  image={item.image.url}
+                />
+              </Link>
+            <CardCover
+            className={`${styles.CardCover} gradient-cover"`}
+                sx={{
+                  "&:hover, &:focus-within": {
+                    opacity: 1,
+                  },
+                  opacity: 0,
+                  transition: "0.3s ease-in",
+                  background:
+                      "linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.44796380090497734) 50%, rgba(0,0,0,0.45) 100%)",
+                }}
+              >
+                <Box>
+                  <Box
+                    sx={{
+                      p: 2,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1.5,
+                      flexGrow: 1,
+                      alignSelf: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Typography level="h2" noWrap sx={{ fontSize: "lg" }}>
                         <Link
                           component={RouterLink}
                           to={`/item/${item.id}`}
@@ -73,11 +69,11 @@ export default function NewArrivals({ products }) {
                           <Button variant="soft" color="info">Shop now</Button>
                         </Link>
                       </Typography>
-                    </Box>
                   </Box>
-                </CardCover>
-              </Box>
-            </Card>
+                </Box>
+              </CardCover>
+            </CardOverflow>
+          </Card>
           </Grid>
         ))}
       </Grid>
