@@ -1,36 +1,30 @@
-npm install @chec/commerce.js
-npm install -g @chec/cli
-npm install @check/commerce.js
-npm install @stripe/react-stripe-js @stripe/stripe-js
-npm i react-router-dom
-npm install @mui/material @emotion/react @emotion/styled
-npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
-npm install @mui/joy @emotion/react @emotion/styled
-npm install react-bootstrap bootstrap
-npm install express
+# Beauty Pronounced E-commerce
+## This is a hobby project
+Live link: https://beautypronounced-9ad907715922.herokuapp.com/
 
-npm install react-responsive-carousel --save
-npm install react-hook-form
-npm install @mui/material @emotion/react @emotion/styled
-
-npm install --save stripe
-npm install --save @stripe/react-stripe-js @stripe/stripe-js
-
-npm install --save stripe
-https://stripe.com/docs/payments/quickstart?lang=node&client=react
-
-# Technologies
-
+Technologies:
+Libraries and Frameworks:
 - React
-- Material UI
+- Material UI / Joy UI / Material Icons
 - HTML
 - CSS
+- Stripe
 
 - React-router-dom
 - Commercejs
 - Stripe
 - Material UI
-  npm install --save stripe
+- Express
+- react-responsive-carousel
+- React hook form
+- react-fast-marquee
+
+
+
+<details>
+<summary>Image Sources
+</summary>
+
 
 Hero
 <a href="https://www.freepik.com/free-photo/cute-young-girl-with-dark-wavy-hairstyle-bright-makeup-silk-dress-black-jacket-holding-sunglasses-hands-looking-away-against-beige-building-wall_16179727.htm#query=fashionmodel&position=1&from_view=search&track=ais?log-in=google">Image by lookstudio</a> on Freepik
@@ -38,9 +32,10 @@ Hero
 Readme home
 Image by <a href="https://www.freepik.com/free-photo/fast-fashion-vs-slow-sustainable-fashion_19533990.htm#&position=6&from_view=collections">Freepik</a>
 
+Divider
 https://omatsuri.app/page-dividers
 
-about
+about hero
 
 <a href="https://www.freepik.com/free-photo/fashionable-boutique-owner-measures-dress-black-white-studio-generated-by-ai_41041091.htm#query=fashion&position=1&from_view=search&track=sph">Image by vecstock</a> on Freepik
 
@@ -76,10 +71,8 @@ Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_med
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/b-fzW8mJR_k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/i3BpYPMwKiM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-trendy glasses
-Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/3zDWVLglv7g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-gray coat
+grey coat
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/pv6oYcKcxlI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/5B-dLR8jmOI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/pv6oYcKcxlI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -103,41 +96,6 @@ purple jacket
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/T5ut0wuL0O8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/AYN-kdlk6Tg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/vagr_XT9Cms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="products table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Product</TableCell>
-              <TableCell>Quantity</TableCell>
-              <TableCell>Price</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {cart.line_items.map((item) => (
-              <CartItem
-                key={item.id}
-                onRemoveCart={handleRemoveCart}
-                onUpdateCart={handleUpdateCart}
-                item={item}
-              />
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-
-       npm install express --save
-
-       npm install gh-pages --save-dev
-
-
-       https://frirsta.github.io/e-commerce/
-
-       https://beautypronounced-9ad907715922.herokuapp.com/
-       npm i nodemon --save
-
-       npm install react-fast-marquee --save
 
 
 black short dress
@@ -201,4 +159,4 @@ Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm
 
 Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Chouette</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Chouette</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+  </details>

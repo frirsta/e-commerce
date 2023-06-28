@@ -86,16 +86,6 @@ const NavBar = ({ category }) => {
               <ListItemText primary={"About"} />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton
-              className={styles.Link}
-              to={"/contact"}
-              component={Link}
-              sx={{ textAlign: "center" }}
-            >
-              <ListItemText primary={"Contact"} />
-            </ListItemButton>
-          </ListItem>
         </List>
       </Box>
     </>
@@ -146,19 +136,12 @@ const NavBar = ({ category }) => {
                 Home
               </Link>
 
-              <Link
-                to={`/shop`}
-                className={`${styles.Link} ${styles.Shop}`}
-              >
+              <Link to={`/shop`} className={`${styles.Link} ${styles.Shop}`}>
                 Shop
               </Link>
 
-      
               <Link to={`/about`} className={styles.Link}>
                 About
-              </Link>
-              <Link to={`/contact`} className={styles.Link}>
-                Contact
               </Link>
             </Box>
           </Toolbar>

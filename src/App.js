@@ -9,7 +9,6 @@ import Cart from "./components/cart/Cart";
 import ProductDetails from "./components/products/ProductDetails";
 import Checkout from "./components/checkout/Checkout";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Category from "./pages/Category";
 
@@ -127,7 +126,7 @@ console.log(order)
           />
           <Route path="/" element={<Home products={newProducts} />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
+          
           <Route
             path="/products/:category"
             element={<Category categories={category} />}
