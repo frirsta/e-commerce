@@ -1,31 +1,39 @@
 @font-face {
-  font-family: 'Fonts';
-  src: url('../assets/font/magnisa-sans-font-1687741923-0/Magnisasans-Regular-BF641b06340b5e9.otf'); 
+  font-family: "Fonts";
+  src: url("../assets/font/magnisa-sans-font-1687741923-0/Magnisasans-Regular-BF641b06340b5e9.otf");
 }
-.Open{
-  height: 150px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
- text-align: center;
- margin-bottom: 20px;
- padding: 0px;
- font-size: 14px;
-  
-}
-.Menu{
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-.Category{
-  list-style-type: none;
-}
-.Close{
-  display: none;
-}
+
 @media screen and (max-width: 900px) {
+  .Open {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px;
+    font-size: 14px;
+  }
+  .Menu {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Category {
+    list-style-type: none;
+    color: gray;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .Category:hover {
+    color: #a86e3b;
+    transition: ease 0.3s;
+  }
+  .Close {
+    display: none;
+  }
   .NavBarContainer {
     background-color: transparent !important;
     width: 100vw;
@@ -50,15 +58,15 @@
   .Button {
     text-decoration: none;
   }
-.BrandLink{
-  text-decoration: none;
-  color: #000;
-  text-transform: uppercase;
-  transition: ease .3s;
-}
-.BrandLink:hover{
-  color: #a86e3b;
-}
+  .BrandLink {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    transition: ease 0.3s;
+  }
+  .BrandLink:hover {
+    color: #a86e3b;
+  }
   .Brand {
     font-family: "Fonts", cursive !important;
     font-size: 35px !important;
@@ -92,17 +100,62 @@
   }
 }
 @media screen and (min-width: 900px) {
+  .Shop:hover {
+    transition: all ease 0.3s;
+  }
+
+  .Open {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 14px;
+    transition: ease 0.3s;
+  }
+  .List {
+    background-color: #fff !important;
+    position: absolute;
+    top: 82px;
+    width: 100vw;
+  }
+  .Menu {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 75px;
+  }
+  .Category {
+    list-style-type: none;
+    color: gray;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .Category:hover {
+    color: #a86e3b;
+    transition: ease 0.3s;
+  }
+
+  .Close {
+    display: none;
+  }
   .Brand {
     display: none;
   }
-  .BrandLink{
+  .BrandLink {
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: ease .3s;
+    transition: ease 0.3s;
   }
-  .BrandLink:hover{
+  .BrandLink:hover {
     color: #a86e3b;
   }
   .DesktopBrand {

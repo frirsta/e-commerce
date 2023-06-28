@@ -1,3 +1,12 @@
+.Breadcrumbs {
+  text-decoration: none;
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+}
+.Breadcrumbs:hover {
+  color: #a86e3b;
+  transition: ease 0.3s;
+}
 @media screen and (max-width: 600px) {
   .ProductsContainer {
     display: flex;
@@ -6,26 +15,36 @@
     align-items: center;
   }
 
-  .Category{
-  margin: 25px 0;
+  .Category {
+    margin: 25px 0;
   }
-  .Link{
-    color: #fff!important;
-    font-family: 'Montserrat', sans-serif!important;
-    font-weight: 400!important;
-    font-size: 27px!important;
-    letter-spacing: 2px!important;
+  .Link {
+    color: #fff !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 27px !important;
+    letter-spacing: 2px !important;
   }
 }
 @media screen and (min-width: 600px) {
+  .Category {
+    margin: 25px 0;
+  }
+  .Link {
+    color: #fff !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 27px !important;
+    letter-spacing: 2px !important;
+  }
   .ProductsContainer {
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto;
   }
-  .Category{
+  .Category {
     margin: 15px;
-    }
+  }
 }
 @media screen and (min-width: 768px) {
 }

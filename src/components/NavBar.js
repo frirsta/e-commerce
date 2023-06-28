@@ -19,7 +19,7 @@ import { commerce } from "../library/commerce/commerce";
 
 const drawerWidth = 240;
 
-const NavBar = ({category}) => {
+const NavBar = ({ category }) => {
   const [open, setOpen] = useState(false);
   const [cart, setCart] = useState({});
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -37,7 +37,11 @@ const NavBar = ({category}) => {
         </Typography>
         <Divider />
         <List>
-        <ListItem className={styles.Menu} onMouseLeave={() => setOpen(false)} disablePadding>
+          <ListItem
+            className={styles.Menu}
+            onMouseLeave={() => setOpen(false)}
+            disablePadding
+          >
             <ListItemButton
               className={`${styles.Link}`}
               onMouseOver={() => setOpen(true)}
@@ -47,22 +51,21 @@ const NavBar = ({category}) => {
             </ListItemButton>
             <ul className={`${open ? styles.Open : styles.Open}`}>
               {category.map((item) => (
-              <li className={`${styles.Category} ${styles.Link}`} key={item.id}>
-           <Link to={`/products/${item.slug}`}>{item.name}</Link>
-              </li>
+                <li
+                  className={`${styles.Category} ${styles.Link}`}
+                  key={item.id}
+                >
+                  <Link
+                    className={styles.Category}
+                    to={`/products/${item.slug}`}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
               ))}
             </ul>
           </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton
-              className={styles.Link}
-              to={"/"}
-              component={Link}
-              sx={{ textAlign: "center" }}
-            >
-              <ListItemText primary={"Home"} />
-            </ListItemButton>
-          </ListItem>
+
           <ListItem disablePadding>
             <ListItemButton
               className={styles.Link}
@@ -142,9 +145,15 @@ const NavBar = ({category}) => {
               <Link to={`/`} className={styles.Link}>
                 Home
               </Link>
-              <Link to={`/shop`} className={styles.Link}>
+
+              <Link
+                to={`/shop`}
+                className={`${styles.Link} ${styles.Shop}`}
+              >
                 Shop
               </Link>
+
+      
               <Link to={`/about`} className={styles.Link}>
                 About
               </Link>

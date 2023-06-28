@@ -37,10 +37,9 @@ function App() {
     setNewProducts(data);
   };
 
-
   const fetchCategories = async () => {
     const { data } = await commerce.categories.list({
-include: "breadcrumbs"
+      include: "breadcrumbs",
     });
     setCategory(data);
   };
@@ -55,8 +54,6 @@ include: "breadcrumbs"
       });
     }
   };
-
-  
 
   const handleUpdateCart = async (productId, quantity) => {
     const cart = await commerce.cart.update(productId, { quantity });
@@ -92,10 +89,9 @@ include: "breadcrumbs"
   useEffect(() => {
     fetchProducts();
     fetchNewProducts();
-    fetchCategories()
+    fetchCategories();
     fetchCart();
   }, []);
-
 
   return (
     <div className={styles.App}>
@@ -117,7 +113,7 @@ include: "breadcrumbs"
             path={"/item/:id"}
             element={<ProductDetails onAddToCart={handleAddToCart} />}
           />
-          <Route path={"/shop"} element={<Products products={products} />} />
+          <Route path={"/shop"} element={<Products products={products} categories={category} />} />
           <Route
             path="/checkout"
             element={
@@ -132,7 +128,10 @@ include: "breadcrumbs"
           <Route path="/" element={<Home products={newProducts} />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/products/:category" element={<Category categories={category} />} />
+          <Route
+            path="/products/:category"
+            element={<Category categories={category} />}
+          />
         </Routes>
 
         <Footer />
