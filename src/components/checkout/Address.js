@@ -6,6 +6,8 @@ import { useForm, FormProvider } from "react-hook-form";
 import { Link } from "react-router-dom";
 import TextField from "@mui/material/TextField";
 import styles from "../../styles/Address.module.css";
+import Select from '@mui/joy/Select';
+import Option from '@mui/joy/Option';
 
 import { commerce } from "../../library/commerce/commerce";
 
@@ -161,9 +163,10 @@ const Address = ({ checkoutToken, test }) => {
               />
             </Grid>
           </Grid>
-          <Grid xs={12} sm={6}>
-            <FormLabel htmlFor="selectCountry">Shipping Country</FormLabel>
-            <select
+          <Grid className={styles.Shipping} container>
+          <Grid xs={12}>
+            <FormLabel htmlFor="selectCountry">Country</FormLabel>
+            <Select
               id="selectCountry"
               autoComplete="off"
               onChange={(e) => setShippingCountry(e.target.value)}
@@ -175,15 +178,15 @@ const Address = ({ checkoutToken, test }) => {
                   name: name,
                 }))
                 .map((item) => (
-                  <option key={item.id} value={item.id}>
+                  <Option key={item.id} value={item.id}>
                     {item.name}
-                  </option>
+                  </Option>
                 ))}
-            </select>
+            </Select>
           </Grid>
-          <Grid xs={12} sm={6}>
-            <FormLabel htmlFor="selectSubdivision">Subdivisions</FormLabel>
-            <select
+          <Grid xs={12}>
+            <FormLabel htmlFor="selectSubdivision">Subdivision</FormLabel>
+            <Select
               id="selectSubdivision"
               autoComplete="off"
               onChange={(e) => setShippingSubdivision(e.target.value)}
@@ -195,15 +198,15 @@ const Address = ({ checkoutToken, test }) => {
                   name: name,
                 }))
                 .map((item) => (
-                  <option key={item.id} value={item.id}>
+                  <Option key={item.id} value={item.id}>
                     {item.name}
-                  </option>
+                  </Option>
                 ))}
-            </select>
+            </Select>
           </Grid>
-          <Grid xs={12} sm={6}>
-            <FormLabel htmlFor="selectOption">Shipping options</FormLabel>
-            <select
+          <Grid xs={12}>
+            <FormLabel htmlFor="selectOption">Options</FormLabel>
+            <Select
               id="selectOption"
               autoComplete="off"
               onChange={(e) => setShippingOption(e.target.value)}
@@ -215,11 +218,12 @@ const Address = ({ checkoutToken, test }) => {
                   name: `${sO.description} - (${sO.price.formatted_with_code})`,
                 }))
                 .map((item) => (
-                  <option key={item.id} value={item.id}>
+                  <Option key={item.id} value={item.id}>
                     {item.name}
-                  </option>
+                  </Option>
                 ))}
-            </select>
+            </Select>
+          </Grid>
           </Grid>
           <div className={styles.ButtonsContainer}>
             <Button className={styles.Button} to="/cart" component={Link}>

@@ -1,3 +1,7 @@
+.Categories{
+    width: 80vw;
+    margin: 30px auto;
+}
 .List{
     max-width: 1200px;
     margin: 0 auto;
@@ -5,9 +9,13 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 10px 0;
 }
 .Link{
     text-decoration: none;
     color: gray;   
+}
+
+.Divider{
+    margin: 20px 0;
 }

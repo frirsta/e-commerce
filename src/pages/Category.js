@@ -42,7 +42,7 @@ const Category = () => {
 
   return (
     <div>
-      <Breadcrumbs separator="/" aria-label="breadcrumb">
+      <Breadcrumbs className={styles.BreadcrumbsContainer} separator="/" aria-label="breadcrumb">
         <RouterLink className={styles.Breadcrumbs} to={"/shop"}>
           Shop
         </RouterLink>

@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "../styles/Categories.module.css";
 import { Link } from "react-router-dom";
+import { Divider } from "@mui/material";
 
 const Categories = ({ categories }) => {
   return (
-    <div>
+    <div className={styles.Categories}>
       <ul className={styles.List}>
         {categories.map((item) => (
           <li key={item.id}>
@@ -12,6 +13,7 @@ const Categories = ({ categories }) => {
           </li>
         ))}
       </ul>
+      <Divider className={styles.Divider} variant="middle" />
     </div>
   );
 };

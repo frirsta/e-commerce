@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import Table from "@mui/joy/Table";
 import Card from "@mui/joy/Card";
 
+
 const steps = ["Shipping", "Payment details"];
 
 const Checkout = ({ order, onCaptureCheckout, error }) => {
