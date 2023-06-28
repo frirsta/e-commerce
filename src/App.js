@@ -11,6 +11,7 @@ import Checkout from "./components/checkout/Checkout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Category from "./pages/Category";
+import Announcement from './components/Announcement';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -95,6 +96,7 @@ console.log(order)
   return (
     <div className={styles.App}>
       <BrowserRouter>
+      <Announcement />
         <NavBar category={category} />
         <Routes>
           <Route
