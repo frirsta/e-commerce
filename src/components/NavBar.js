@@ -19,7 +19,8 @@ import { commerce } from "../library/commerce/commerce";
 
 const drawerWidth = 240;
 
-const NavBar = () => {
+const NavBar = ({category}) => {
+  const [open, setOpen] = useState(false);
   const [cart, setCart] = useState({});
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -36,6 +37,22 @@ const NavBar = () => {
         </Typography>
         <Divider />
         <List>
+        <ListItem className={styles.Menu} onMouseLeave={() => setOpen(false)} disablePadding>
+            <ListItemButton
+              className={`${styles.Link}`}
+              onMouseOver={() => setOpen(true)}
+              sx={{ textAlign: "center" }}
+            >
+              <ListItemText primary={"Home"} />
+            </ListItemButton>
+            <ul className={`${open ? styles.Open : styles.Open}`}>
+              {category.map((item) => (
+              <li className={`${styles.Category} ${styles.Link}`} key={item.id}>
+           <Link to={`/products/${item.slug}`}>{item.name}</Link>
+              </li>
+              ))}
+            </ul>
+          </ListItem>
           <ListItem disablePadding>
             <ListItemButton
               className={styles.Link}

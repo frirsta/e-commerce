@@ -11,10 +11,12 @@ import Checkout from "./components/checkout/Checkout";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Category from "./pages/Category";
 
 function App() {
   const [products, setProducts] = useState([]);
   const [newProducts, setNewProducts] = useState([]);
+  const [category, setCategory] = useState([]);
   const [cart, setCart] = useState({});
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState("");
@@ -35,6 +37,14 @@ function App() {
     setNewProducts(data);
   };
 
+
+  const fetchCategories = async () => {
+    const { data } = await commerce.categories.list({
+include: "breadcrumbs"
+    });
+    setCategory(data);
+  };
+
   const fetchCart = async () => {
     setCart(await commerce.cart.retrieve());
   };
@@ -45,6 +55,8 @@ function App() {
       });
     }
   };
+
+  
 
   const handleUpdateCart = async (productId, quantity) => {
     const cart = await commerce.cart.update(productId, { quantity });
@@ -80,13 +92,15 @@ function App() {
   useEffect(() => {
     fetchProducts();
     fetchNewProducts();
+    fetchCategories()
     fetchCart();
   }, []);
+
 
   return (
     <div className={styles.App}>
       <BrowserRouter>
-        <NavBar />
+        <NavBar category={category} />
         <Routes>
           <Route
             path={"/cart"}
@@ -118,6 +132,7 @@ function App() {
           <Route path="/" element={<Home products={newProducts} />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/products/:category" element={<Category categories={category} />} />
         </Routes>
 
         <Footer />
