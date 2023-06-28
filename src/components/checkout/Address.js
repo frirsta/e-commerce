@@ -4,7 +4,8 @@ import Grid from "@mui/joy/Grid";
 import Button from "@mui/joy/Button";
 import { useForm, FormProvider } from "react-hook-form";
 import { Link } from "react-router-dom";
-import Input from "@mui/joy/Input";
+import TextField from "@mui/material/TextField";
+import styles from "../../styles/Address.module.css";
 
 import { commerce } from "../../library/commerce/commerce";
 
@@ -19,6 +20,8 @@ const Address = ({ checkoutToken, test }) => {
   const [shippingStreet, setShippingStreet] = useState("");
   const [shippingZip, setShippingZip] = useState("");
   const [shippingCity, setShippingCity] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
   const methods = useForm();
 
@@ -68,9 +71,12 @@ const Address = ({ checkoutToken, test }) => {
     <>
       <FormProvider {...methods}>
         <form
+          className={styles.Form}
           onSubmit={methods.handleSubmit((data) =>
             test({
               ...data,
+              firstName,
+              lastName,
               shippingCity,
               shippingEmail,
               shippingStreet,
@@ -81,39 +87,85 @@ const Address = ({ checkoutToken, test }) => {
             })
           )}
         >
-          <Input required name="firstName" placeholder="firstname" />
-          <Input required name="lastName" placeholder="lastname" />
-          <Input
-            required
-            value={shippingStreet}
-            onChange={(e) => setShippingStreet(e.target.value)}
-            name="shippingStreet"
-            placeholder="address"
-          />
-          <Input
-            value={shippingEmail}
-            onChange={(e) => setShippingEmail(e.target.value)}
-            required
-            name="shippingEmail"
-            placeholder="email"
-          />
-          <Input
-            required
-            value={shippingCity}
-            onChange={(e) => setShippingCity(e.target.value)}
-            name="shippingCity"
-            placeholder="city"
-          />
-          <Input
-            required
-            value={shippingZip}
-            onChange={(e) => setShippingZip(e.target.value)}
-            name="shippingZip"
-            placeholder="ZIP / Postal code"
-          />
+          <Grid className={styles.InputContainer} spacing={2} container>
+            <Grid xs={6}>
+              <TextField
+                color="secondary"
+                variant="standard"
+                className={styles.Input}
+                required
+                name="firstName"
+                placeholder="firstname"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+            </Grid>
+            <Grid xs={6}>
+              <TextField
+                color="secondary"
+                variant="standard"
+                className={styles.Input}
+                required
+                name="lastName"
+                placeholder="lastname"
+                value={firstName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+            </Grid>
+            <Grid xs={6}>
+              <TextField
+                color="secondary"
+                variant="standard"
+                className={styles.Input}
+                required
+                value={shippingStreet}
+                onChange={(e) => setShippingStreet(e.target.value)}
+                name="shippingStreet"
+                placeholder="address"
+              />
+            </Grid>
+            <Grid xs={6}>
+              <TextField
+                color="secondary"
+                variant="standard"
+                className={styles.Input}
+                value={shippingEmail}
+                onChange={(e) => setShippingEmail(e.target.value)}
+                required
+                name="shippingEmail"
+                placeholder="email"
+              />
+            </Grid>
+            <Grid xs={6}>
+              <TextField
+                color="secondary"
+                variant="standard"
+                className={styles.Input}
+                required
+                value={shippingCity}
+                onChange={(e) => setShippingCity(e.target.value)}
+                name="shippingCity"
+                placeholder="city"
+              />
+            </Grid>
+            <Grid xs={6}>
+              <TextField
+                color="secondary"
+                variant="standard"
+                className={styles.Input}
+                required
+                value={shippingZip}
+                onChange={(e) => setShippingZip(e.target.value)}
+                name="shippingZip"
+                placeholder="ZIP / Postal code"
+              />
+            </Grid>
+          </Grid>
           <Grid xs={12} sm={6}>
-            <FormLabel>Shipping Country</FormLabel>
+            <FormLabel htmlFor="selectCountry">Shipping Country</FormLabel>
             <select
+              id="selectCountry"
+              autoComplete="off"
               onChange={(e) => setShippingCountry(e.target.value)}
               value={shippingCountry}
             >
@@ -130,8 +182,10 @@ const Address = ({ checkoutToken, test }) => {
             </select>
           </Grid>
           <Grid xs={12} sm={6}>
-            <FormLabel>Subdivisions Country</FormLabel>
+            <FormLabel htmlFor="selectSubdivision">Subdivisions</FormLabel>
             <select
+              id="selectSubdivision"
+              autoComplete="off"
               onChange={(e) => setShippingSubdivision(e.target.value)}
               value={shippingSubdivision}
             >
@@ -148,8 +202,10 @@ const Address = ({ checkoutToken, test }) => {
             </select>
           </Grid>
           <Grid xs={12} sm={6}>
-            <FormLabel>Shipping options</FormLabel>
+            <FormLabel htmlFor="selectOption">Shipping options</FormLabel>
             <select
+              id="selectOption"
+              autoComplete="off"
               onChange={(e) => setShippingOption(e.target.value)}
               value={shippingOption}
             >
@@ -165,11 +221,13 @@ const Address = ({ checkoutToken, test }) => {
                 ))}
             </select>
           </Grid>
-          <div>
-            <Button to="/cart" component={Link}>
+          <div className={styles.ButtonsContainer}>
+            <Button className={styles.Button} to="/cart" component={Link}>
               Back
             </Button>
-            <Button type="submit">Next</Button>
+            <Button className={styles.Button} type="submit">
+              Next
+            </Button>
           </div>
         </form>
       </FormProvider>

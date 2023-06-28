@@ -1,0 +1,23 @@
+.Form{
+      font-family: 'Montserrat', sans-serif!important;
+      max-width: 500px;
+      width: 90vw;
+      margin: 0 auto;
+}
+.Input{
+    font-family: 'Montserrat', sans-serif!important;
+    width: 100%;
+}
+.InputContainer{
+   
+}
+
+.ButtonsContainer{
+    margin: 20px 0!important;
+}
+.Button {
+    font-family: "Montserrat", sans-serif !important;
+    letter-spacing: 3px;
+    font-weight: 400 !important;
+    margin: 0 10px!important;
+  }

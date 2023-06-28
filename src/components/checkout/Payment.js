@@ -7,6 +7,7 @@ import {
 import { loadStripe } from "@stripe/stripe-js";
 import Order from "./Order";
 import { Button, Divider, Typography } from "@mui/joy";
+import styles from '../../styles/Address.module.css';
 
 const StripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
@@ -71,9 +72,9 @@ const Payment = ({
             <form onSubmit={(e) => handleSubmit(e, elements, stripe)}>
               <CardElement />
               <br /> <br />
-              <div>
-                <Button onClick={backStep}>Back</Button>
-                <Button type="submit" disabled={!stripe}>
+              <div className={styles.ButtonsContainer}>
+                <Button className={styles.Button} onClick={backStep}>Back</Button>
+                <Button className={styles.Button} type="submit" disabled={!stripe}>
                   Pay {checkoutToken.subtotal.formatted_with_code}
                 </Button>
               </div>

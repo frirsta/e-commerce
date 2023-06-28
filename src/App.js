@@ -92,7 +92,7 @@ function App() {
     fetchCategories();
     fetchCart();
   }, []);
-
+console.log(order)
   return (
     <div className={styles.App}>
       <BrowserRouter>
