@@ -154,7 +154,7 @@
   }
   /* Cart item */
   .CartItem {
-
+    height: 100%!important;
   }
   .CartItemContainer {
     display: flex;

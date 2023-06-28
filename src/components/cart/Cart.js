@@ -11,13 +11,14 @@ import { Card } from "@mui/joy";
 import { commerce } from "../../library/commerce/commerce";
 
 const Cart = ({ onUpdateCart, onRemoveCart, onEmptyCart }) => {
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState([]);
   const fetchCart = async () => {
     setCart(await commerce.cart.retrieve());
   };
+
   useEffect(() => {
     fetchCart();
-  }, []);
+  }, [cart]);
   const emptyCart = (
     <>
       <span>You have no items in the cart</span>
