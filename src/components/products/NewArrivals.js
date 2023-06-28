@@ -66,7 +66,7 @@ export default function NewArrivals({ products }) {
                             display: "block",
                           }}
                         >
-                          <Button variant="soft" color="info">Shop now</Button>
+                          <Button className={styles.ProductButton} variant="outlined">Shop now</Button>
                         </Link>
                       </Typography>
                   </Box>

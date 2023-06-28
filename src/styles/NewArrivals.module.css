@@ -39,6 +39,16 @@
   .CardCover {
     border-radius: 0px !important;
   }
+
+  .ProductButton {
+    border-radius: 0px !important;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+    font-family: "Montserrat", sans-serif !important;
+    letter-spacing: 3px;
+    font-weight: 300 !important;
+  }
+
   .Button {
     border-radius: 0px !important;
     background-color: #000 !important;
@@ -105,6 +115,14 @@
   .CardCover {
     border-radius: 0px !important;
   
+  }
+  .ProductButton {
+    border-radius: 0px !important;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+    font-family: "Montserrat", sans-serif !important;
+    letter-spacing: 3px;
+    font-weight: 300 !important;
   }
 }
 
