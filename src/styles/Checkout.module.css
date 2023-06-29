@@ -31,7 +31,7 @@
   text-align: center;
 }
 .Divider {
-  margin: 10px 0;
+  margin: 20px 0!important;
 }
 .Summary {
   text-align: center;
@@ -39,6 +39,7 @@
   font-weight: 500;
 }
 .Table {
+  margin: 15px 0;
   width: 100%;
 }
 .TableItems {
@@ -55,6 +56,7 @@
   justify-content: space-between;
   padding: 0 20px;
   font-weight: 500;
+  margin: 5px 0;
 }
 .Button {
   margin: 20px 0;

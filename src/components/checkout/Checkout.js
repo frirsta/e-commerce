@@ -11,8 +11,6 @@ import Address from "./Address";
 import Payment from "./Payment";
 import Divider from "@mui/material/Divider";
 import Button from "@mui/joy/Button";
-import Table from "@mui/joy/Table";
-import Card from "@mui/joy/Card";
 
 const steps = ["Shipping", "Payment details"];
 
@@ -53,72 +51,68 @@ const Checkout = ({ order, onCaptureCheckout, error }) => {
     order.customer ? (
       <>
         <div className={styles.Order}>
-          <span className={styles.OrderConfirmation}>
+          <div className={styles.OrderConfirmation}>
             Thank you for your order,
-          </span>
-          <span className={styles.Name}>
+          </div>
+          <div className={styles.Name}>
             {order.customer.firstname} {order.customer.lastname}
-          </span>
+          </div>
           <Divider className={styles.Divider} variant="middle" />
-          <span className={styles.Summary}>Order summary</span>
+          <div className={styles.Summary}>Order summary</div>
 
-          <span className={styles.OrderReference}>
-            Order ref: <span>{order.customer_reference}</span>
-          </span>
+          <div className={styles.OrderReference}>
+            Order ref: <div>{order.customer_reference}</div>
+          </div>
 
           {order.order.line_items.map((item) => (
-            <Card>
-              <Table key={item.id} className={styles.Table}>
-                <tbody>
-                  <span className={styles.Product}>
-                    <tr className={styles.Row}>
-                      <th>Name:</th> <td>{item.product_name}</td>
-                    </tr>
-                  </span>
-                  <span className={styles.Product}>
-                    <tr className={styles.Row}>
-                      <th>Quantity:</th> <td>{item.quantity}</td>
-                    </tr>
-                  </span>
-                  <span className={styles.Product}>
-                    <tr className={styles.Row}>
-                      <th>Price:</th> <td>{item.price.formatted_with_code}</td>
-                    </tr>
-                  </span>
-                  {item.selected_options.map((option) => (
-                    <span className={styles.Product} key={option.id}>
-                      <tr className={styles.Row}>
-                        <th>{option.group_name}</th>{" "}
-                        <td>{option.option_name}</td>
-                      </tr>
-                    </span>
-                  ))}
-                </tbody>
-              </Table>
-            </Card>
+            <div key={item.id} className={styles.Table}>
+              <div>
+                <div className={`${styles.OrderReference}`}>
+                  Name: <div>{item.product_name}</div>
+                </div>
+                <Divider variant="middle" />
+
+                <div className={`${styles.OrderReference}`}>
+                  Quantity: <div>{item.quantity}</div>
+                </div>
+                <Divider variant="middle" />
+
+                <div className={`${styles.OrderReference}`}>
+                  Price:
+                  <div>{item.price.formatted_with_code}</div>
+                </div>
+                <Divider variant="middle" />
+
+                {item.selected_options.map((option) => (
+                  <div
+                    key={option.option_name}
+                    className={`${styles.OrderReference}`}
+                  >
+                    {option.group_name}
+                    <div>{option.option_name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
 
           <Divider className={styles.Divider} />
-          <Card>
-            <Table className={styles.Table}>
-              <tbody className={styles.TableItems}>
-                <span className={styles.Product}>
-                  {" "}
-                  <tr className={styles.Row}>
-                    <th>Tax: </th>{" "}
-                    <td>{order.tax.amount.formatted_with_code}</td>
-                  </tr>
-                </span>
-                <span className={styles.Product}>
-                  {" "}
-                  <tr className={styles.Row}>
-                    <th>Total: </th>{" "}
-                    <td>{order.order_value.formatted_with_code}</td>
-                  </tr>
-                </span>
-              </tbody>
-            </Table>
-          </Card>
+
+          <div className={styles.Table}>
+            <div className={styles.TableItems}>
+              <div className={`${styles.OrderReference}`}>
+                Tax:
+                <div>{order.tax.amount.formatted_with_code}</div>
+              </div>
+              <Divider variant="middle" />
+
+              <div className={`${styles.OrderReference}`}>
+                Total:
+                <div>{order.order_value.formatted_with_code}</div>
+              </div>
+              <Divider variant="middle" />
+            </div>
+          </div>
 
           <Button className={styles.Button} component={Link} to={"/"}>
             Home

@@ -1,5 +1,7 @@
 # Beauty Pronounced E-commerce
+
 ## This is a hobby project
+
 ## This is not a real company or brand.
 
 - [**Project**](#project)
@@ -12,10 +14,9 @@
 - [**Deployment**](#deployment)
 - [**Credits**](#credits)
 
+# Project
 
-
-# Project 
-Welcome to Beauty Pronounced! Beauty Pronounced is a clothing / beauty brand. The website / brand is for those who want to keep up with the latest fashion trends and look amazing. 
+Welcome to Beauty Pronounced! Beauty Pronounced is a clothing / beauty brand. The website / brand is for those who want to keep up with the latest fashion trends and look amazing.
 
 <br>
 
@@ -27,21 +28,105 @@ Live link: https://beautypronounced-9ad907715922.herokuapp.com/
 
 <img src='src\assets\palette.png' alt="Website color palette">
 
+<br>
 
 # Feautures
+
+<br>
+
+## home
+
+<div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\home_desktop.png' style="width: 20%" alt="home page on desktop screen">
+<img src='src\assets\readme\home_tablet.png' style="width: 30%" alt="home page on tablet screen">
+<img src='src\assets\readme\home_mobile.png' style="width: 40%" alt="home page on mobile screen">
+</div>
+<br>
+
+## about
+
+<div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\about_desktop.png' style="width: 20%" alt="about page on desktop screen">
+<img src='src\assets\readme\about_tablet.png' style="width: 30%" alt="about page on tablet screen">
+<img src='src\assets\readme\about_mobile.png' style="width: 40%" alt="about page on mobile screen">
+</div>
+<br>
+
+## dresses
+
+<div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\dresses_desktop.png' style="width: 20%" alt="dresses page on desktop screen">
+<img src='src\assets\readme\dresses_tablet.png' style="width: 30%" alt="dresses page on tablet screen">
+<img src='src\assets\readme\dresses_mobile.png' style="width: 40%" alt="dresses page on mobile screen">
+</div>
+<br>
+
+## accessories
+
+<div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\accessories_desktop.png' style="width: 20%" alt="accessories page on desktop screen">
+<img src='src\assets\readme\accessories_tablet.png' style="width: 30%" alt="accessories page on tablet scree</div>n">
+<img src='src\assets\readme\accessories_mobile.png' style="width: 40%" alt="accessories page on mobile screen">
+</div>
+<br>
+
+## product_details
+
+<div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\product_details_desktop.png' style="width: 20%" alt="product_details page on desktop screen">
+<img src='src\assets\readme\product_details_tablet.png' style="width: 30%" alt="product_details page on tablet screen">
+<img src='src\assets\readme\product_details_mobile.png' style="width: 40%" alt="product_details page on mobile screen">
+</div>
+<br>
+
+## cart
+
+<div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\cart_desktop.png' style="width: 20%" alt="cart page on desktop screen">
+<img src='src\assets\readme\cart_tablet.png' style="width: 30%" alt="cart page on tablet screen">
+<img src='src\assets\readme\cart_mobile.png' style="width: 40%" alt="cart page on mobile screen">
+</div>
+<br>
+
+## checkout_form
+
+<div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\checkout_form_desktop.png' style="width: 20%" alt="checkout_form page on desktop screen">
+<img src='src\assets\readme\checkout_form_tablet.png' style="width: 30%" alt="checkout_form page on tablet screen">
+<img src='src\assets\readme\checkout_form_mobile.png' style="width: 40%" alt="checkout_form page on mobile screen">
+</div>
+<br>
+
+## checkout
+
+<div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\checkout_desktop.png' style="width: 20%" alt="checkout page on desktop screen">
+<img src='src\assets\readme\checkout_tablet.png' style="width: 30%" alt="checkout page on tablet screen">
+<img src='src\assets\readme\checkout_mobile.png' style="width: 40%" alt="checkout page on mobile screen">
+</div>
+<br>
+
+## order_summary
+
+<div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\order_summary_desktop.png' style="width: 20%" alt="order_summary page on desktop screen">
+<img src='src\assets\readme\order_summary_tablet.png' style="width: 30%" alt="order_summary page on tablet scree</div>n">
+<img src='src\assets\readme\order_summary_mobile.png' style="width: 40%" alt="order_summary page on mobile screen">
+</div>
+<br>
+
 # existing
+
 # left to implement
+
 # Testing
+
 ## validator
-
-
-
-
-
 
 # Technologies:
 
 Libraries and Frameworks:
+
 - React
 - Material UI / Joy UI / Material Icons
 - HTML
@@ -56,15 +141,16 @@ Libraries and Frameworks:
 - react-fast-marquee
 
 # Bugs
+
 # Deployment
 
 # Sources
+
 ## Content
 
 <details>
 <summary>Image Sources
 </summary>
-
 
 Hero
 <a href="https://www.freepik.com/free-photo/cute-young-girl-with-dark-wavy-hairstyle-bright-makeup-silk-dress-black-jacket-holding-sunglasses-hands-looking-away-against-beige-building-wall_16179727.htm#query=fashionmodel&position=1&from_view=search&track=ais?log-in=google">Image by lookstudio</a> on Freepik
@@ -111,7 +197,6 @@ Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_med
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/b-fzW8mJR_k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/i3BpYPMwKiM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-
 grey coat
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/pv6oYcKcxlI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/5B-dLR8jmOI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -137,52 +222,40 @@ Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_med
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/AYN-kdlk6Tg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@adeleshafiee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adele Shafiee</a> on <a href="https://unsplash.com/photos/vagr_XT9Cms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-
 black short dress
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/AJfo8UJV2vI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-  Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/J1K3axuq22k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/J1K3axuq22k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/h-pp5V93MpU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
 
 midi white dress
 
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/x30lVqKUINc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-
-
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/FSgK6j1AjrY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/_rQMZdBRbBo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
 
 short black t-shirt dress
 
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/VdZdQKPtVhk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-
-
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/5NBBZW6LNyg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-
-
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/o9THOb0WfMM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
 
 perfume
 Photo by <a href="https://unsplash.com/ja/@maierfoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eve Maier</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
 Photo by <a href="https://unsplash.com/ja/@maierfoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eve Maier</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
 
 prada
 Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Chouette</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Chouette</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Chouette</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
 chanel
 Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Chouette</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Chouette</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -199,4 +272,5 @@ Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm
 
 Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Chouette</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/ko/@laurachouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Chouette</a> on <a href="https://unsplash.com/@frirsta/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
   </details>
