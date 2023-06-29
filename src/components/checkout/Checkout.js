@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { commerce } from "../../library/commerce/commerce";
 import Paper from "@mui/material/Paper";
 import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
@@ -7,13 +9,10 @@ import Typography from "@mui/material/Typography";
 import styles from "../../styles/Checkout.module.css";
 import Address from "./Address";
 import Payment from "./Payment";
-import { commerce } from "../../library/commerce/commerce";
-import { Divider } from "@mui/material";
-import { Button } from "@mui/joy";
-import { Link } from "react-router-dom";
+import Divider from "@mui/material/Divider";
+import Button from "@mui/joy/Button";
 import Table from "@mui/joy/Table";
 import Card from "@mui/joy/Card";
-
 
 const steps = ["Shipping", "Payment details"];
 
@@ -101,14 +100,26 @@ const Checkout = ({ order, onCaptureCheckout, error }) => {
 
           <Divider className={styles.Divider} />
           <Card>
-          <Table className={styles.Table}>
-            <tbody className={styles.TableItems}>
-            <span className={styles.Product}> <tr className={styles.Row}><th>Tax: </th> <td>{order.tax.amount.formatted_with_code}</td></tr></span>
-            <span className={styles.Product}> <tr className={styles.Row}><th>Total: </th> <td>{order.order_value.formatted_with_code}</td></tr></span>
-            </tbody>
-          </Table>
+            <Table className={styles.Table}>
+              <tbody className={styles.TableItems}>
+                <span className={styles.Product}>
+                  {" "}
+                  <tr className={styles.Row}>
+                    <th>Tax: </th>{" "}
+                    <td>{order.tax.amount.formatted_with_code}</td>
+                  </tr>
+                </span>
+                <span className={styles.Product}>
+                  {" "}
+                  <tr className={styles.Row}>
+                    <th>Total: </th>{" "}
+                    <td>{order.order_value.formatted_with_code}</td>
+                  </tr>
+                </span>
+              </tbody>
+            </Table>
           </Card>
-        
+
           <Button className={styles.Button} component={Link} to={"/"}>
             Home
           </Button>
@@ -118,7 +129,12 @@ const Checkout = ({ order, onCaptureCheckout, error }) => {
       <>
         Error: {error}
         <Divider className={styles.Divider} variant="middle" />
-        <Button className={styles.Button} variant="secondary" component={Link} to={"/"}>
+        <Button
+          className={styles.Button}
+          variant="secondary"
+          component={Link}
+          to={"/"}
+        >
           Home
         </Button>
       </>

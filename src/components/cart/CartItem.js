@@ -16,19 +16,18 @@ const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
         <div className={styles.ProductInformation}>
           <div className={styles.Information}>
             <div>
-              <Typography className={styles.Price}
-              >
+              <Typography className={styles.Price}>
                 {item.line_total.formatted_with_code}
               </Typography>
-              <Typography className={styles.Name}>
-                {item.name}
-              </Typography>
+              <Typography className={styles.Name}>{item.name}</Typography>
             </div>
             <Typography>
               {item.selected_options[0]?.option_name ? (
                 <>
                   <span className={styles.Size}>Size: </span>
-                <span className={styles.SizeItem}>{item.selected_options[0]?.option_name}</span>
+                  <span className={styles.SizeItem}>
+                    {item.selected_options[0]?.option_name}
+                  </span>
                 </>
               ) : null}
             </Typography>

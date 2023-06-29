@@ -7,7 +7,7 @@ import Box from "@mui/joy/Box";
 import styles from "../../styles/Cart.module.css";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Divider from "@mui/joy/Divider";
-import { Card } from "@mui/joy";
+import Card from "@mui/joy/Card";
 import { commerce } from "../../library/commerce/commerce";
 
 const Cart = ({ onUpdateCart, onRemoveCart, onEmptyCart }) => {

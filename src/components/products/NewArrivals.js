@@ -20,40 +20,40 @@ export default function NewArrivals({ products }) {
       <Grid className={styles.ProductGrid} container>
         {products.map((item) => (
           <Grid key={item.id}>
-             <Card className={styles.Product}>
-            <CardOverflow className={styles.CardOverflow}>
-              <Link to={`/item/${item.id}`} className={styles.ProductLink}>
-                <CardMedia
-                  className={styles.Image}
-                  component={"img"}
-                  image={item.image.url}
-                />
-              </Link>
-            <CardCover
-            className={`${styles.CardCover} gradient-cover"`}
-                sx={{
-                  "&:hover, &:focus-within": {
-                    opacity: 1,
-                  },
-                  opacity: 0,
-                  transition: "0.3s ease-in",
-                  background:
+            <Card className={styles.Product}>
+              <CardOverflow className={styles.CardOverflow}>
+                <Link to={`/item/${item.id}`} className={styles.ProductLink}>
+                  <CardMedia
+                    className={styles.Image}
+                    component={"img"}
+                    image={item.image.url}
+                  />
+                </Link>
+                <CardCover
+                  className={`${styles.CardCover} gradient-cover"`}
+                  sx={{
+                    "&:hover, &:focus-within": {
+                      opacity: 1,
+                    },
+                    opacity: 0,
+                    transition: "0.3s ease-in",
+                    background:
                       "linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.44796380090497734) 50%, rgba(0,0,0,0.45) 100%)",
-                }}
-              >
-                <Box>
-                  <Box
-                    sx={{
-                      p: 2,
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 1.5,
-                      flexGrow: 1,
-                      alignSelf: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <Typography level="h2" noWrap sx={{ fontSize: "lg" }}>
+                  }}
+                >
+                  <Box>
+                    <Box
+                      sx={{
+                        p: 2,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1.5,
+                        flexGrow: 1,
+                        alignSelf: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Typography level="h2" noWrap sx={{ fontSize: "lg" }}>
                         <Link
                           component={RouterLink}
                           to={`/item/${item.id}`}
@@ -66,20 +66,32 @@ export default function NewArrivals({ products }) {
                             display: "block",
                           }}
                         >
-                          <Button className={styles.ProductButton} variant="outlined">Shop now</Button>
+                          <Button
+                            className={styles.ProductButton}
+                            variant="outlined"
+                          >
+                            Shop now
+                          </Button>
                         </Link>
                       </Typography>
+                    </Box>
                   </Box>
-                </Box>
-              </CardCover>
-            </CardOverflow>
-          </Card>
+                </CardCover>
+              </CardOverflow>
+            </Card>
           </Grid>
         ))}
       </Grid>
 
       <div>
-        <Button color="info" className={styles.Button} component={RouterLink} to={'/shop'}>View all</Button>
+        <Button
+          color="info"
+          className={styles.Button}
+          component={RouterLink}
+          to={"/shop"}
+        >
+          View all
+        </Button>
       </div>
     </div>
   );

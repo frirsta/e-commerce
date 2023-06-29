@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "../styles/Home.module.css";
 import Button from "@mui/joy/Button";
 import LocalShippingSharpIcon from "@mui/icons-material/LocalShippingSharp";
@@ -8,7 +9,6 @@ import ShoppingBagSharpIcon from "@mui/icons-material/ShoppingBagSharp";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import NewArrivals from "../components/products/NewArrivals";
-import { Link } from "react-router-dom";
 import Banner from "../components/Banner";
 const Home = ({ products }) => {
   return (
@@ -26,7 +26,7 @@ const Home = ({ products }) => {
       <NewArrivals products={products} />
       <Banner />
       <div className={styles.DeliveryContainer}>
-        <div className={styles.SvgContainer}>
+        <div className={styles.SvgContainerOne}>
           <svg
             preserveAspectRatio="none"
             viewBox="0 0 1200 120"
@@ -89,7 +89,7 @@ const Home = ({ products }) => {
             </Grid>
           </Grid>
         </Box>
-        <div className={styles.SvgContainer}>
+        <div className={styles.One}>
           <svg
             preserveAspectRatio="none"
             viewBox="0 0 1200 120"

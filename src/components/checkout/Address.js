@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useForm, FormProvider } from "react-hook-form";
+import { Link } from "react-router-dom";
 import FormLabel from "@mui/joy/FormLabel";
 import Grid from "@mui/joy/Grid";
 import Button from "@mui/joy/Button";
-import { useForm, FormProvider } from "react-hook-form";
-import { Link } from "react-router-dom";
 import TextField from "@mui/material/TextField";
 import styles from "../../styles/Address.module.css";
-import Select from '@mui/joy/Select';
-import Option from '@mui/joy/Option';
 
 import { commerce } from "../../library/commerce/commerce";
 
@@ -110,7 +108,7 @@ const Address = ({ checkoutToken, test }) => {
                 required
                 name="lastName"
                 placeholder="lastname"
-                value={firstName}
+                value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
               />
             </Grid>
@@ -164,66 +162,87 @@ const Address = ({ checkoutToken, test }) => {
             </Grid>
           </Grid>
           <Grid className={styles.Shipping} container>
-          <Grid xs={12}>
-            <FormLabel htmlFor="selectCountry">Country</FormLabel>
-            <Select
-              id="selectCountry"
-              autoComplete="off"
-              onChange={(e) => setShippingCountry(e.target.value)}
-              value={shippingCountry}
-            >
-              {Object.entries(shippingCountries)
-                .map(([code, name]) => ({
-                  id: code,
-                  name: name,
-                }))
-                .map((item) => (
-                  <Option key={item.id} value={item.id}>
-                    {item.name}
-                  </Option>
-                ))}
-            </Select>
-          </Grid>
-          <Grid xs={12}>
-            <FormLabel htmlFor="selectSubdivision">Subdivision</FormLabel>
-            <Select
-              id="selectSubdivision"
-              autoComplete="off"
-              onChange={(e) => setShippingSubdivision(e.target.value)}
-              value={shippingSubdivision}
-            >
-              {Object.entries(shippingSubdivisions)
-                .map(([code, name]) => ({
-                  id: code,
-                  name: name,
-                }))
-                .map((item) => (
-                  <Option key={item.id} value={item.id}>
-                    {item.name}
-                  </Option>
-                ))}
-            </Select>
-          </Grid>
-          <Grid xs={12}>
-            <FormLabel htmlFor="selectOption">Options</FormLabel>
-            <Select
-              id="selectOption"
-              autoComplete="off"
-              onChange={(e) => setShippingOption(e.target.value)}
-              value={shippingOption}
-            >
-              {shippingOptions
-                .map((sO) => ({
-                  id: sO.id,
-                  name: `${sO.description} - (${sO.price.formatted_with_code})`,
-                }))
-                .map((item) => (
-                  <Option key={item.id} value={item.id}>
-                    {item.name}
-                  </Option>
-                ))}
-            </Select>
-          </Grid>
+            <Grid className={styles.SelectContainer} xs={12}>
+              <FormLabel className={styles.Label} htmlFor="selectCountry">
+                Country
+              </FormLabel>
+              <select
+                className={styles.Select}
+                id="selectCountry"
+                autoComplete="off"
+                onChange={(e) => setShippingCountry(e.target.value)}
+                value={shippingCountry}
+              >
+                {Object.entries(shippingCountries)
+                  .map(([code, name]) => ({
+                    id: code,
+                    name: name,
+                  }))
+                  .map((item) => (
+                    <option
+                      className={styles.Option}
+                      key={item.id}
+                      value={item.id}
+                    >
+                      {item.name}
+                    </option>
+                  ))}
+              </select>
+            </Grid>
+            <Grid className={styles.SelectContainer} xs={12}>
+              <FormLabel className={styles.Label} htmlFor="selectSubdivision">
+                Subdivision
+              </FormLabel>
+              <select
+                className={styles.Select}
+                id="selectSubdivision"
+                autoComplete="off"
+                onChange={(e) => setShippingSubdivision(e.target.value)}
+                value={shippingSubdivision}
+              >
+                {Object.entries(shippingSubdivisions)
+                  .map(([code, name]) => ({
+                    id: code,
+                    name: name,
+                  }))
+                  .map((item) => (
+                    <option
+                      className={styles.Option}
+                      key={item.id}
+                      value={item.id}
+                    >
+                      {item.name}
+                    </option>
+                  ))}
+              </select>
+            </Grid>
+            <Grid className={styles.SelectContainer} xs={12}>
+              <FormLabel className={styles.Label} htmlFor="selectOption">
+                Options
+              </FormLabel>
+              <select
+                className={styles.Select}
+                id="selectOption"
+                autoComplete="off"
+                onChange={(e) => setShippingOption(e.target.value)}
+                value={shippingOption}
+              >
+                {shippingOptions
+                  .map((sO) => ({
+                    id: sO.id,
+                    name: `${sO.description} - (${sO.price.formatted_with_code})`,
+                  }))
+                  .map((item) => (
+                    <option
+                      className={styles.Option}
+                      key={item.id}
+                      value={item.id}
+                    >
+                      {item.name}
+                    </option>
+                  ))}
+              </select>
+            </Grid>
           </Grid>
           <div className={styles.ButtonsContainer}>
             <Button className={styles.Button} to="/cart" component={Link}>

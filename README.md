@@ -1,8 +1,46 @@
 # Beauty Pronounced E-commerce
 ## This is a hobby project
+## This is not a real company or brand.
+
+- [**Project**](#project)
+- [**Design**](#design)
+- [**Features**](#features)
+- [**Future Features**](#future-features)
+- [**Testing**](#testing)
+- [**Technologies**](#technologies)
+- [**Bugs**](#bugs)
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
+
+
+
+# Project 
+Welcome to Beauty Pronounced! Beauty Pronounced is a clothing / beauty brand. The website / brand is for those who want to keep up with the latest fashion trends and look amazing. 
+
+<br>
+
 Live link: https://beautypronounced-9ad907715922.herokuapp.com/
 
-Technologies:
+<br>
+
+# Design
+
+<img src='src\assets\palette.png' alt="Website color palette">
+
+
+# Feautures
+# existing
+# left to implement
+# Testing
+## validator
+
+
+
+
+
+
+# Technologies:
+
 Libraries and Frameworks:
 - React
 - Material UI / Joy UI / Material Icons
@@ -17,7 +55,11 @@ Libraries and Frameworks:
 - React hook form
 - react-fast-marquee
 
+# Bugs
+# Deployment
 
+# Sources
+## Content
 
 <details>
 <summary>Image Sources

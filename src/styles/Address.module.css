@@ -1,30 +1,41 @@
-.Form{
-      font-family: 'Montserrat', sans-serif!important;
-      max-width: 500px;
-      width: 90vw;
-      margin: 0 auto;
+.Form {
+  font-family: "Montserrat", sans-serif !important;
+  max-width: 500px;
+  width: 90vw;
+  margin: 0 auto;
 }
-.Input{
-    font-family: 'Montserrat', sans-serif!important;
-    width: 100%;
+.Input {
+  font-family: "Montserrat", sans-serif !important;
+  width: 100%;
 }
-.InputContainer{
-   
+.InputContainer {
 }
 
-.ButtonsContainer{
-    margin: 20px 0!important;
+.ButtonsContainer {
+  margin: 20px 0 !important;
 }
 .Button {
-    font-family: "Montserrat", sans-serif !important;
-    letter-spacing: 3px;
-    font-weight: 400 !important;
-    margin: 0 10px!important;
-  }
+  font-family: "Montserrat", sans-serif !important;
+  letter-spacing: 3px;
+  font-weight: 400 !important;
+  margin: 0 10px !important;
+}
 
+.Shipping {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+.Select {
+  font-family: "Montserrat", sans-serif !important;
+  padding: 7px 5px;
+  border-radius: 10px;
+  width: 100%;
+}
+.Label {
+  font-family: "Montserrat", sans-serif !important;
+}
 
-  .Shipping{
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0;
-  }
+.SelectContainer {
+  margin: 10px 0;
+}

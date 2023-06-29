@@ -44,7 +44,7 @@ const Product = ({ product }) => {
                     image={product.image.url}
                   />
                 </Link>
-              <CardCover
+                <CardCover
                   className="gradient-cover"
                   sx={{
                     "&:hover, &:focus-within": {
@@ -53,7 +53,7 @@ const Product = ({ product }) => {
                     opacity: 0,
                     transition: "0.3s ease-in",
                     background:
-                        "linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.44796380090497734) 50%, rgba(0,0,0,0.45) 100%)",
+                      "linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.44796380090497734) 50%, rgba(0,0,0,0.45) 100%)",
                   }}
                 >
                   <Box>
@@ -81,7 +81,9 @@ const Product = ({ product }) => {
                             display: "block",
                           }}
                         >
-                          <Button className={styles.Button} variant="outlined">Shop now</Button>
+                          <Button className={styles.Button} variant="outlined">
+                            Shop now
+                          </Button>
                         </Link>
                       </Typography>
                     </Box>

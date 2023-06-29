@@ -8,13 +8,13 @@ const Products = ({ products, categories }) => {
   return (
     <div>
       <Categories categories={categories} />
-    <Grid className={styles.ProductsContainer} container>
-      {products.map((product) => (
-        <Grid key={product.id}>
-          <Product product={product} />
-        </Grid>
-      ))}
-    </Grid>
+      <Grid className={styles.ProductsContainer} container>
+        {products.map((product) => (
+          <Grid key={product.id}>
+            <Product product={product} />
+          </Grid>
+        ))}
+      </Grid>
     </div>
   );
 };

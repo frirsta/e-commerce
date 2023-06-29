@@ -14,7 +14,8 @@ import Tabs from "@mui/joy/Tabs";
 import TabList from "@mui/joy/TabList";
 import Tab, { tabClasses } from "@mui/joy/Tab";
 import TabPanel from "@mui/joy/TabPanel";
-import { Box, Divider } from "@mui/joy";
+import Box from "@mui/joy/Box";
+import Divider from "@mui/joy/Divider";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -120,75 +121,71 @@ const ProductDetails = ({ onAddToCart }) => {
             </form>
           </div>
           <div className={styles.ProductMaterial}>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>Size and fit</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-              
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Size and fit</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
                   <li>
                     <b>Height: </b> 175cm / 5'9
                   </li>
                   <li>
                     <b>Size: </b> S
                   </li>
-                
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>Clothing Care</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-              
-              Machine wash according to the instructions on the care label
-                
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>Product Description</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography
-                dangerouslySetInnerHTML={{ __html: product.description }}
-              ></Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>Material</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Amet laboris ullamco tempor esse ad Lorem laboris cillum. Esse
-                non reprehenderit sunt qui officia dolore consectetur ullamco
-                qui laboris reprehenderit qui laborum. Pariatur ad magna
-                consectetur ipsum aliquip.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-        </div>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Clothing Care</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Machine wash according to the instructions on the care label
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Product Description</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography
+                  dangerouslySetInnerHTML={{ __html: product.description }}
+                ></Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Material</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Amet laboris ullamco tempor esse ad Lorem laboris cillum. Esse
+                  non reprehenderit sunt qui officia dolore consectetur ullamco
+                  qui laboris reprehenderit qui laborum. Pariatur ad magna
+                  consectetur ipsum aliquip.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </div>
         </div>
       </div>
       <div>

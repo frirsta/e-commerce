@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { commerce } from "../library/commerce/commerce";
 import Product from "../components/products/Product";
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import styles from "../styles/Products.module.css";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
@@ -42,7 +42,11 @@ const Category = () => {
 
   return (
     <div>
-      <Breadcrumbs className={styles.BreadcrumbsContainer} separator="/" aria-label="breadcrumb">
+      <Breadcrumbs
+        className={styles.BreadcrumbsContainer}
+        separator="/"
+        aria-label="breadcrumb"
+      >
         <RouterLink className={styles.Breadcrumbs} to={"/shop"}>
           Shop
         </RouterLink>

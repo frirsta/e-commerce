@@ -6,8 +6,10 @@ import {
 } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import Order from "./Order";
-import { Button, Divider, Typography } from "@mui/joy";
-import styles from '../../styles/Address.module.css';
+import Button from "@mui/joy/Button";
+import Divider from "@mui/joy/Divider";
+import Typography from "@mui/joy/Typography";
+import styles from "../../styles/Address.module.css";
 
 const StripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
@@ -73,8 +75,14 @@ const Payment = ({
               <CardElement />
               <br /> <br />
               <div className={styles.ButtonsContainer}>
-                <Button className={styles.Button} onClick={backStep}>Back</Button>
-                <Button className={styles.Button} type="submit" disabled={!stripe}>
+                <Button className={styles.Button} onClick={backStep}>
+                  Back
+                </Button>
+                <Button
+                  className={styles.Button}
+                  type="submit"
+                  disabled={!stripe}
+                >
                   Pay {checkoutToken.subtotal.formatted_with_code}
                 </Button>
               </div>

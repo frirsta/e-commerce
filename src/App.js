@@ -11,7 +11,7 @@ import Checkout from "./components/checkout/Checkout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Category from "./pages/Category";
-import Announcement from './components/Announcement';
+import Announcement from "./components/Announcement";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -92,11 +92,11 @@ function App() {
     fetchCategories();
     fetchCart();
   }, []);
-console.log(order)
+  console.log(order);
   return (
     <div className={styles.App}>
       <BrowserRouter>
-      <Announcement />
+        <Announcement />
         <NavBar category={category} />
         <Routes>
           <Route
@@ -114,7 +114,10 @@ console.log(order)
             path={"/item/:id"}
             element={<ProductDetails onAddToCart={handleAddToCart} />}
           />
-          <Route path={"/shop"} element={<Products products={products} categories={category} />} />
+          <Route
+            path={"/shop"}
+            element={<Products products={products} categories={category} />}
+          />
           <Route
             path="/checkout"
             element={
@@ -128,7 +131,7 @@ console.log(order)
           />
           <Route path="/" element={<Home products={newProducts} />} />
           <Route path="/About" element={<About />} />
-          
+
           <Route
             path="/products/:category"
             element={<Category categories={category} />}

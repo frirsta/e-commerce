@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    
   }
   .HeroImage {
     height: 600px;
@@ -29,10 +28,10 @@
     text-align: center;
   }
   .HeroButton {
-    border-radius: 0px!important;
-    background-color: #000!important;
+    border-radius: 0px !important;
+    background-color: #000 !important;
     margin: 0 auto;
-    padding: 15px 40px!important;
+    padding: 15px 40px !important;
     color: #fff;
   }
   .HeroButton:hover {
@@ -52,7 +51,7 @@
   }
   .Delivery {
     background-color: #fae0df;
-    padding: 50px 30px;
+    padding: 0px;
     width: 100%;
   }
   .DeliveryItem {
@@ -71,6 +70,10 @@
   .DeliveryGrid {
     max-width: 1200px;
     margin: 0 auto !important;
+  }
+  .SvgContainerOne {
+    overflow: hidden;
+    height: 98px;
   }
   .SvgContainer {
     overflow: hidden;
@@ -107,7 +110,6 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    
   }
   .HeroImage {
     height: 600px;
@@ -130,10 +132,10 @@
     text-align: center;
   }
   .HeroButton {
-    border-radius: 0px!important;
-    background-color: #000!important;
+    border-radius: 0px !important;
+    background-color: #000 !important;
     margin: 0 auto;
-    padding: 15px 40px!important;
+    padding: 15px 40px !important;
     color: #fff;
   }
   .HeroButton:hover {
@@ -153,6 +155,10 @@
     background-color: #fae0df;
     padding: 100px 30px;
     width: 100%;
+  }
+  .SvgContainerOne {
+    overflow: hidden;
+    height: 80px;
   }
   .SvgContainer {
     overflow: hidden;
@@ -180,20 +186,17 @@
     font-weight: 500;
   }
   .DeliveryTextSpan {
-    color: rgb(75, 77, 90);
+    color: gray;
     font-size: 15px;
   }
   .DeliveryGrid {
     max-width: 1200px;
     margin: 0 auto !important;
   }
-  
 }
 @media screen and (min-width: 768px) {
-  
 }
 @media screen and (min-width: 900px) {
-
 }
 @media screen and (min-width: 992px) {
 }

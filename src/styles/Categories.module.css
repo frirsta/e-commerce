@@ -1,21 +1,21 @@
-.Categories{
-    width: 80vw;
-    margin: 30px auto;
+.Categories {
+  width: 80vw;
+  margin: 30px auto;
 }
-.List{
-    max-width: 1200px;
-    margin: 0 auto;
-    list-style-type: none;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin: 10px 0;
+.List {
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px 0;
 }
-.Link{
-    text-decoration: none;
-    color: gray;   
+.Link {
+  text-decoration: none;
+  color: gray;
 }
 
-.Divider{
-    margin: 20px 0;
+.Divider {
+  margin: 20px 0;
 }

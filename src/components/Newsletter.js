@@ -28,16 +28,13 @@ export default function InputSubscription() {
   return (
     <form onSubmit={handleSubmit} id="demo">
       <FormControl>
-        <FormLabel
-        className={styles.Label}
-        >
+        <FormLabel className={styles.Label}>
           Beauty Pronounced Newsletter
         </FormLabel>
         <Input
           className={styles.Newsletter}
           size="md"
           variant="outlined"
-       
           sx={{ "--Input-decoratorChildHeight": "45px" }}
           placeholder="mail@gmail.com"
           type="email"
@@ -49,12 +46,10 @@ export default function InputSubscription() {
           error={data.status === "failure"}
           endDecorator={
             <Button
-            className={styles.Button}
+              className={styles.Button}
               variant="solid"
-           
               loading={data.status === "loading"}
               type="submit"
-              
             >
               Subscribe
             </Button>

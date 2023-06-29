@@ -25,6 +25,7 @@
     background-color: #a86e3b;
     height: 2px;
     width: 100px;
+    margin: 20px 0!important;
   }
   .Image {
     height: 400px;
@@ -34,7 +35,7 @@
   .CardOverflow {
     max-width: 95vw;
     height: 400px;
-    padding: 0px!important;
+    padding: 0px !important;
   }
   .CardCover {
     border-radius: 0px !important;
@@ -75,7 +76,6 @@
   .ProductGrid {
     justify-content: center;
     margin: 50px 0 !important;
-    
   }
   .Product {
     border-radius: 0px !important;
@@ -91,6 +91,7 @@
     background-color: #a86e3b;
     height: 2px;
     width: 100px;
+    margin: 20px 0!important;
   }
   .Image {
     height: 400px;
@@ -99,7 +100,7 @@
   .CardOverflow {
     max-width: 95vw;
     height: 400px;
-    padding: 0px!important;
+    padding: 0px !important;
   }
   .Button {
     border-radius: 0px !important;
@@ -114,7 +115,6 @@
   }
   .CardCover {
     border-radius: 0px !important;
-  
   }
   .ProductButton {
     border-radius: 0px !important;
@@ -128,18 +128,23 @@
 
 @media screen and (min-width: 768px) {
   .Image {
+    max-width: 350px;
+    height: 500px;
+  }
+  .CardOverflow {
+    max-width: 350px !important;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .Image {
     max-width: 300px;
-   
   }
   .CardOverflow {
     max-width: 300px !important;
   }
-}
-@media screen and (min-width: 992px) {
-
 
 }
 
 @media screen and (min-width: 900px) {
-
 }

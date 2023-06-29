@@ -4,11 +4,11 @@
     border-radius: 0px !important;
   }
   .Label {
-    color: #fff!important;
+    color: #fff !important;
   }
   .Button {
-    border-radius: 0px!important;
-    background-color: #000!important;
+    border-radius: 0px !important;
+    background-color: #000 !important;
   }
 }
 
@@ -18,12 +18,12 @@
     width: 30vw;
   }
   .Label {
-    color: #fff!important;
+    color: #fff !important;
   }
 
   .Button {
-    border-radius: 0px!important;
-    background-color: #000!important;
+    border-radius: 0px !important;
+    background-color: #000 !important;
   }
 }
 
