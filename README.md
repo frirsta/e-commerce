@@ -32,6 +32,8 @@ Live link: https://beautypronounced-9ad907715922.herokuapp.com/
 
 # Feautures
 
+I am currently working on this website, therefore the live website can look different from these images.
+
 <br>
 
 ## home
