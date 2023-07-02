@@ -38,6 +38,7 @@ export default function InputSubscription() {
           sx={{ "--Input-decoratorChildHeight": "45px" }}
           placeholder="mail@gmail.com"
           type="email"
+          name="newsletter"
           required
           value={data.email}
           onChange={(event) =>

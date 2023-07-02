@@ -14,9 +14,10 @@
 }
 @media screen and (max-width: 600px) {
   .ProductsContainer {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    margin: auto;
+    align-items: center;
   }
 
   .Category {

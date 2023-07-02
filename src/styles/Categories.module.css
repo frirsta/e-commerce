@@ -19,3 +19,13 @@
 .Divider {
   margin: 20px 0;
 }
+
+
+
+@media screen and (max-width: 600px) {
+  .Link {
+    text-decoration: none;
+    color: gray;
+    font-size: 10px;
+  }
+}
