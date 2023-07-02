@@ -2,44 +2,49 @@
   .ProductContainer {
     display: flex;
     flex-direction: column;
-    margin: 20px 5px;
+    margin: 0;
+    width: 50vw;
+    padding: 3px;
   }
 
   .ImageSkeleton {
-    border-radius: 20px !important;
-    height: 400px !important;
-    width: 90vw !important;
-    max-width: 300px;
+    border-radius: 0px !important;
+    height:270px !important;
+    width: 50vw !important;
   }
   .Product {
     border-radius: 0px !important;
+    width: fit-content;
+    height: 250px;
+
   }
   .Image {
-    height: 400px;
-    width: 90vw !important;
-    max-width: 300px;
+    height: 270px;
+    width:100%;
+    object-fit: cover;
   }
   .CardOverflow {
-    max-width: 95vw;
-    height: 400px;
+
   }
   .Name {
     margin-top: 5px !important;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 10px;
   }
   .Price {
     font-weight: 600;
-    font-size: 13px;
+    font-size: 10px;
     color: gray;
   }
   .SkeletonName {
+    border-radius: 0px !important;
     width: 75%;
-    font-size: 15px;
+    font-size: 10px;
   }
   .SkeletonPrice {
+    border-radius: 0px !important;
     width: 20%;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .TextContainer {
@@ -85,12 +90,15 @@
   .ImageSkeleton {
     height: 300px !important;
     width: 30vw !important;
+    border-radius: 0px !important;
   }
   .SkeletonName {
+    border-radius: 0px !important;
     width: 75%;
     font-size: 15px;
   }
   .SkeletonPrice {
+    border-radius: 0px !important;
     width: 20%;
     font-size: 15px;
   }
