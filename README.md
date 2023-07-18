@@ -2,19 +2,21 @@
 
 ## This is a hobby project
 
-## This is not a real company or brand.
+By creating the Beauty Pronounced e-commerce website, I gained hands-on experience with ReactJS, CommerceJS, Stripe, and Material-UI, showcasing my ability to work with modern web development technologies and integrate external services. This project demonstrates my proficiency in developing functional and visually appealing e-commerce platforms while ensuring a smooth user experience and secure payment processing.
 
 - [**Project**](#project)
 - [**Design**](#design)
-- [**Features**](#features)
-- [**Future Features**](#future-features)
-- [**Testing**](#testing)
-- [**Technologies**](#technologies)
-- [**Bugs**](#bugs)
+- [**E-commerce functionality**](#e-commerce-functionality)
+- [**Responsive Design**](#responsive-design)
+- [**Styling and UI**](#styling-and-ui)
 - [**Deployment**](#deployment)
+- [**Features**](#features)
+- [**Technologies**](#technologies)
 - [**Credits**](#credits)
 
 # Project
+
+## This is not a real company or brand.
 
 Welcome to Beauty Pronounced! Beauty Pronounced is a clothing / beauty brand. The website / brand is for those who want to keep up with the latest fashion trends and look amazing.
 
@@ -30,6 +32,30 @@ Live link: https://beautypronounced-9ad907715922.herokuapp.com/
 
 <br>
 
+# E-commerce Functionality
+
+Implemented various e-commerce features, including product listings, shopping cart functionality and secure payment processing with Stripe integration.
+
+<br>
+
+# Responsive Design:
+
+Created a responsive and user-friendly interface, ensuring a seamless browsing experience across different devices and screen sizes.
+
+<br>
+
+# Styling and UI:
+
+Utilized Material-UI to design and style the website, achieving an appealing and consistent visual aesthetic.
+
+<br>
+
+# Deployment:
+
+Successfully deployed the website on Heroku,
+
+<br>
+
 # Feautures
 
 I am currently working on this website, therefore the live website can look different from these images.
@@ -38,92 +64,121 @@ I am currently working on this website, therefore the live website can look diff
 
 ## home
 
+<details><summary>Home page</summary>
+
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
 <img src='src\assets\readme\home_desktop.png' style="width: 20%" alt="home page on desktop screen">
 <img src='src\assets\readme\home_tablet.png' style="width: 30%" alt="home page on tablet screen">
 <img src='src\assets\readme\home_mobile.png' style="width: 40%" alt="home page on mobile screen">
 </div>
+
+</details>
+
 <br>
 
 ## about
 
+<details><summary>About page</summary>
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
 <img src='src\assets\readme\about_desktop.png' style="width: 20%" alt="about page on desktop screen">
 <img src='src\assets\readme\about_tablet.png' style="width: 30%" alt="about page on tablet screen">
 <img src='src\assets\readme\about_mobile.png' style="width: 40%" alt="about page on mobile screen">
 </div>
+
+</details>
+
 <br>
 
 ## dresses
 
+<details><summary>Dresses page</summary>
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
 <img src='src\assets\readme\dresses_desktop.png' style="width: 20%" alt="dresses page on desktop screen">
 <img src='src\assets\readme\dresses_tablet.png' style="width: 30%" alt="dresses page on tablet screen">
 <img src='src\assets\readme\dresses_mobile.png' style="width: 40%" alt="dresses page on mobile screen">
 </div>
+
+</details>
+
 <br>
 
 ## accessories
 
+<details><summary>Accessories page</summary>
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
 <img src='src\assets\readme\accessories_desktop.png' style="width: 20%" alt="accessories page on desktop screen">
 <img src='src\assets\readme\accessories_tablet.png' style="width: 30%" alt="accessories page on tablet scree</div>n">
 <img src='src\assets\readme\accessories_mobile.png' style="width: 40%" alt="accessories page on mobile screen">
 </div>
+
+</details>
+
 <br>
 
 ## product_details
 
+<details><summary>Product details page</summary>
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
 <img src='src\assets\readme\product_details_desktop.png' style="width: 20%" alt="product_details page on desktop screen">
 <img src='src\assets\readme\product_details_tablet.png' style="width: 30%" alt="product_details page on tablet screen">
 <img src='src\assets\readme\product_details_mobile.png' style="width: 40%" alt="product_details page on mobile screen">
 </div>
+
+</details>
+
 <br>
 
 ## cart
 
+<details><summary>Cart page</summary>
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
 <img src='src\assets\readme\cart_desktop.png' style="width: 20%" alt="cart page on desktop screen">
 <img src='src\assets\readme\cart_tablet.png' style="width: 30%" alt="cart page on tablet screen">
 <img src='src\assets\readme\cart_mobile.png' style="width: 40%" alt="cart page on mobile screen">
 </div>
+
+</details>
+
 <br>
 
 ## checkout_form
 
+<details><summary>Checkout form page</summary>
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
 <img src='src\assets\readme\checkout_form_desktop.png' style="width: 20%" alt="checkout_form page on desktop screen">
 <img src='src\assets\readme\checkout_form_tablet.png' style="width: 30%" alt="checkout_form page on tablet screen">
 <img src='src\assets\readme\checkout_form_mobile.png' style="width: 40%" alt="checkout_form page on mobile screen">
 </div>
+
+</details>
+
 <br>
 
 ## checkout
 
+<details><summary>Checkout page</summary>
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
 <img src='src\assets\readme\checkout_desktop.png' style="width: 20%" alt="checkout page on desktop screen">
 <img src='src\assets\readme\checkout_tablet.png' style="width: 30%" alt="checkout page on tablet screen">
 <img src='src\assets\readme\checkout_mobile.png' style="width: 40%" alt="checkout page on mobile screen">
 </div>
+
+</details>
+
 <br>
 
 ## order_summary
 
+<details><summary>Order summary page</summary>
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
 <img src='src\assets\readme\order_summary_desktop.png' style="width: 20%" alt="order_summary page on desktop screen">
 <img src='src\assets\readme\order_summary_tablet.png' style="width: 30%" alt="order_summary page on tablet scree</div>n">
 <img src='src\assets\readme\order_summary_mobile.png' style="width: 40%" alt="order_summary page on mobile screen">
 </div>
+
+</details>
+
 <br>
-
-# existing
-
-# left to implement
-
-# Testing
-
-## validator
 
 # Technologies:
 
@@ -141,10 +196,6 @@ Libraries and Frameworks:
 - react-responsive-carousel
 - React hook form
 - react-fast-marquee
-
-# Bugs
-
-# Deployment
 
 # Sources
 
