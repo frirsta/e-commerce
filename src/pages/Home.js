@@ -114,14 +114,6 @@ const Home = ({ products }) => {
       <Box>
         <Brand />
       </Box>
-      <Box className={`${styles.HeroImage} ${styles.About}`}>
-        <h2 className={styles.HeroText}>
-          Our first Beauty House<br></br> Pronounced
-        </h2>
-        <Button component={Link} to={"/about"} className={ButtonStyles.Button}>
-          Learn More
-        </Button>
-      </Box>
     </Box>
   );
 };
