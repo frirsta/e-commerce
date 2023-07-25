@@ -1,0 +1,9 @@
+/* Webfont: Merchant-MediumCondensed */@font-face {
+    font-family: 'MerchantMedCond';
+    src: url('Merchant-MediumCondensed.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-MediumCondensed.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

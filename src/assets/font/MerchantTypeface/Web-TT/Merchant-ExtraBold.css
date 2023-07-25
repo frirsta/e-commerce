@@ -1,0 +1,12 @@
+/* Webfont: Merchant-ExtraBold */@font-face {
+    font-family: 'MerchantExtBd';
+    src: url('Merchant-ExtraBold.eot'); /* IE9 Compat Modes */
+    src: url('Merchant-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Merchant-ExtraBold.woff') format('woff'), /* Modern Browsers */
+         url('Merchant-ExtraBold.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-ExtraBold.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,9 @@
+/* Webfont: Merchant-Light */@font-face {
+    font-family: 'MerchantLight';
+    src: url('Merchant-Light.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-Light.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,9 @@
+/* Webfont: Merchant-BlackCondensed */@font-face {
+    font-family: 'MerchantBlackCond';
+    src: url('Merchant-BlackCondensed.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-BlackCondensed.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

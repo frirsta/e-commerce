@@ -1,0 +1,12 @@
+/* Webfont: Merchant-LightExpanded */@font-face {
+    font-family: 'MerchantLightExp';
+    src: url('Merchant-LightExpanded.eot'); /* IE9 Compat Modes */
+    src: url('Merchant-LightExpanded.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Merchant-LightExpanded.woff') format('woff'), /* Modern Browsers */
+         url('Merchant-LightExpanded.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-LightExpanded.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

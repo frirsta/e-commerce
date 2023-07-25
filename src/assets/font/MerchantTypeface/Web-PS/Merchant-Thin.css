@@ -1,0 +1,9 @@
+/* Webfont: Merchant-Thin */@font-face {
+    font-family: 'MerchantThin';
+    src: url('Merchant-Thin.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-Thin.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

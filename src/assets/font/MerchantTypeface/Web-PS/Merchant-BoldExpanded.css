@@ -1,0 +1,9 @@
+/* Webfont: Merchant-BoldExpanded */@font-face {
+    font-family: 'MerchantExp';
+    src: url('Merchant-BoldExpanded.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-BoldExpanded.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

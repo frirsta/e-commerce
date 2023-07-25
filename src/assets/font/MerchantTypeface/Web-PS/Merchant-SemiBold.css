@@ -1,0 +1,9 @@
+/* Webfont: Merchant-SemiBold */@font-face {
+    font-family: 'MerchantSemBd';
+    src: url('Merchant-SemiBold.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-SemiBold.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

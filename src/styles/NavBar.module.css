@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Fonts";
-  src: url("../assets/font/magnisa-sans-font-1687741923-0/Magnisasans-Regular-BF641b06340b5e9.otf");
+  src: url("../assets/font/MerchantTypeface/Variable-TT/Merchant-VF.ttf");
 }
 
 @media screen and (max-width: 900px) {
@@ -69,7 +69,7 @@
   }
   .Brand {
     font-family: "Fonts", cursive !important;
-    font-size: 35px !important;
+    font-size: 45px !important;
     margin: 0px !important;
     text-transform: uppercase;
   }

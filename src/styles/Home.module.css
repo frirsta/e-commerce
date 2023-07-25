@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Fonts";
+  src: url("../assets/font/MerchantTypeface/Variable-TT/Merchant-VF.ttf");
+}
 .Home {
   display: flex;
   flex-direction: column;
@@ -7,18 +11,17 @@
 .HeroImage {
   height: 600px;
   object-fit: cover;
-  width: 90vw;
+  width: 100vw;
   overflow: hidden;
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
 }
 .Hero {
-  background: url("../assets/hero.jpg") no-repeat center center;
+  background: url("../assets/hero/Hero.jpg") no-repeat center center;
   background-size: cover;
+  font-family: "Fonts", cursive !important;
 }
 .HeroText {
   font-size: 45px;
@@ -84,10 +87,6 @@
 }
 
 @media screen and (min-width: 600px) {
-  .Hero {
-    margin: 20px 0;
-  }
-
   /* delivery */
 
   .Delivery {

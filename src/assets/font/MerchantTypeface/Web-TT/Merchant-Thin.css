@@ -1,0 +1,12 @@
+/* Webfont: Merchant-Thin */@font-face {
+    font-family: 'MerchantThin';
+    src: url('Merchant-Thin.eot'); /* IE9 Compat Modes */
+    src: url('Merchant-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Merchant-Thin.woff') format('woff'), /* Modern Browsers */
+         url('Merchant-Thin.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-Thin.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

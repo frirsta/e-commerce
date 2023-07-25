@@ -206,6 +206,8 @@ Libraries and Frameworks:
 </summary>
 
 Hero
+<a href="https://www.freepik.com/free-photo/high-fashion-portrait-young-beautiful-brunette-woman-wearing-nice-trendy-suit-sexy-fashion-model-posing-studio-fashionable-female-isolated-white_26613916.htm#&position=33&from_view=collections">Image by halayalex</a> on Freepik
+
 <a href="https://www.freepik.com/free-photo/cute-young-girl-with-dark-wavy-hairstyle-bright-makeup-silk-dress-black-jacket-holding-sunglasses-hands-looking-away-against-beige-building-wall_16179727.htm#query=fashionmodel&position=1&from_view=search&track=ais?log-in=google">Image by lookstudio</a> on Freepik
 
 Readme home
@@ -281,6 +283,8 @@ Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_me
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/J1K3axuq22k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/h-pp5V93MpU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/ko/@elise_outside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elise Wilcox</a> on <a href="https://unsplash.com/photos/J1K3axuq22k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 midi white dress
 

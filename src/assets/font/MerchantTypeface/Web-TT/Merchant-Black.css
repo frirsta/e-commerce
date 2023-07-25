@@ -1,0 +1,12 @@
+/* Webfont: Merchant-Black */@font-face {
+    font-family: 'MerchantBlack';
+    src: url('Merchant-Black.eot'); /* IE9 Compat Modes */
+    src: url('Merchant-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Merchant-Black.woff') format('woff'), /* Modern Browsers */
+         url('Merchant-Black.woff2') format('woff2'), /* Modern Browsers */
+         url('Merchant-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
