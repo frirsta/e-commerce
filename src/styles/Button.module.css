@@ -1,0 +1,19 @@
+.Button {
+  border-radius: 0px !important;
+  background-color: #000 !important;
+  margin: 0 auto;
+  padding: 15px 40px !important;
+  color: #fff;
+}
+.Button:hover {
+  opacity: 0.8;
+  transition: ease 0.3s;
+}
+
+.AddToCartButton {
+  width: 100%;
+  background-color: #000 !important;
+  color: #fff !important;
+  margin: 50px 0 !important;
+  border-radius: 0px !important;
+}

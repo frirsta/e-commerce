@@ -27,17 +27,6 @@
     color: #fff;
     text-align: center;
   }
-  .HeroButton {
-    border-radius: 0px !important;
-    background-color: #000 !important;
-    margin: 0 auto;
-    padding: 15px 40px !important;
-    color: #fff;
-  }
-  .HeroButton:hover {
-    opacity: 0.8;
-    transition: ease 0.3s;
-  }
 
   /* about */
   .About {
@@ -131,17 +120,7 @@
   .HeroText {
     text-align: center;
   }
-  .HeroButton {
-    border-radius: 0px !important;
-    background-color: #000 !important;
-    margin: 0 auto;
-    padding: 15px 40px !important;
-    color: #fff;
-  }
-  .HeroButton:hover {
-    opacity: 0.8;
-    transition: ease 0.3s;
-  }
+
   /* about */
   .About {
     background: url("../assets/about.jpg") no-repeat center center;

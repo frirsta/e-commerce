@@ -5,6 +5,7 @@ import { commerce } from "../../library/commerce/commerce";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import IconButton from "@mui/joy/IconButton";
 import styles from "../../styles/ProductDetails.module.css";
+import ButtonStyles from "../../styles/Button.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -112,7 +113,7 @@ const ProductDetails = ({ onAddToCart }) => {
                 ))}
               </ToggleButtonGroup>
               <Button
-                className={styles.AddToCartButton}
+                className={ButtonStyles.AddToCartButton}
                 type="submit"
                 aria-label="add to cart"
               >

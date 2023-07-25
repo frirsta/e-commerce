@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Home.module.css";
+import ButtonStyles from "../styles/Button.module.css";
 import Button from "@mui/joy/Button";
 import LocalShippingSharpIcon from "@mui/icons-material/LocalShippingSharp";
 import CurrencyExchangeSharpIcon from "@mui/icons-material/CurrencyExchangeSharp";
@@ -10,23 +11,25 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import NewArrivals from "../components/products/NewArrivals";
 import Banner from "../components/Banner";
+import Brand from "../components/Brand";
+
 const Home = ({ products }) => {
   return (
-    <div className={styles.Home}>
-      <div className={`${styles.HeroImage} ${styles.Hero}`}>
+    <Box className={styles.Home}>
+      <Box className={`${styles.HeroImage} ${styles.Hero}`}>
         <h2 className={styles.HeroText}>
           Beauty <br></br> Pronounced
         </h2>
 
-        <Button component={Link} to={"/shop"} className={styles.HeroButton}>
+        <Button component={Link} to={"/shop"} className={ButtonStyles.Button}>
           Shop Now
         </Button>
-      </div>
+      </Box>
 
       <NewArrivals products={products} />
       <Banner />
-      <div className={styles.DeliveryContainer}>
-        <div className={styles.SvgContainerOne}>
+      <Box className={styles.DeliveryContainer}>
+        <Box className={styles.SvgContainerOne}>
           <svg
             preserveAspectRatio="none"
             viewBox="0 0 1200 120"
@@ -43,7 +46,7 @@ const Home = ({ products }) => {
             />
             <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
           </svg>
-        </div>
+        </Box>
         <Box className={styles.Delivery}>
           <Grid
             className={styles.DeliveryGrid}
@@ -52,44 +55,44 @@ const Home = ({ products }) => {
             columnSpacing={{ xs: 1, sm: 2, md: 3 }}
           >
             <Grid item xs={10} sm={6} md={3}>
-              <div className={styles.DeliveryItem}>
+              <Box className={styles.DeliveryItem}>
                 <LocalShippingSharpIcon className={styles.Icon} />
                 <span className={styles.DeliveryText}>Fast Delivery</span>
                 <span className={styles.DeliveryTextSpan}>
                   Environmentally friendly delivery
                 </span>
-              </div>
+              </Box>
             </Grid>
             <Grid item xs={10} sm={6} md={3}>
-              <div className={styles.DeliveryItem}>
+              <Box className={styles.DeliveryItem}>
                 <CurrencyExchangeSharpIcon className={styles.Icon} />
                 <span className={styles.DeliveryText}>Fast Delivery</span>
                 <span className={styles.DeliveryTextSpan}>
                   Environmentally friendly delivery
                 </span>
-              </div>
+              </Box>
             </Grid>
             <Grid item xs={10} sm={6} md={3}>
-              <div className={styles.DeliveryItem}>
+              <Box className={styles.DeliveryItem}>
                 <ShoppingCartCheckoutSharpIcon className={styles.Icon} />
                 <span className={styles.DeliveryText}>Fast Delivery</span>
                 <span className={styles.DeliveryTextSpan}>
                   Environmentally friendly delivery
                 </span>
-              </div>
+              </Box>
             </Grid>
             <Grid item xs={10} sm={6} md={3}>
-              <div className={styles.DeliveryItem}>
+              <Box className={styles.DeliveryItem}>
                 <ShoppingBagSharpIcon className={styles.Icon} />
                 <span className={styles.DeliveryText}>Fast Delivery</span>
                 <span className={styles.DeliveryTextSpan}>
                   Environmentally friendly delivery
                 </span>
-              </div>
+              </Box>
             </Grid>
           </Grid>
         </Box>
-        <div className={styles.One}>
+        <Box className={styles.One}>
           <svg
             preserveAspectRatio="none"
             viewBox="0 0 1200 120"
@@ -106,17 +109,20 @@ const Home = ({ products }) => {
             />
             <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
           </svg>
-        </div>
-      </div>
-      <div className={`${styles.HeroImage} ${styles.About}`}>
+        </Box>
+      </Box>
+      <Box>
+        <Brand />
+      </Box>
+      <Box className={`${styles.HeroImage} ${styles.About}`}>
         <h2 className={styles.HeroText}>
           Our first Beauty House<br></br> Pronounced
         </h2>
-        <Button component={Link} to={"/about"} className={styles.HeroButton}>
+        <Button component={Link} to={"/about"} className={ButtonStyles.Button}>
           Learn More
         </Button>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 
