@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "Fonts";
   src: url("../assets/font/MerchantTypeface/Variable-TT/Merchant-VF.ttf");
@@ -7,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  overflow: hidden;
 }
 .HeroImage {
   height: 600px;
@@ -23,13 +25,29 @@
   background-size: cover;
   font-family: "Fonts", cursive !important;
 }
+.HeroTextContainer {
+  position: relative;
+  bottom: 90px;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
 .HeroText {
-  font-size: 45px;
+  font-size: 45px !important;
   font-weight: 100;
-  color: #fff;
-  text-align: center;
+  color: #000;
+  text-align: right;
 }
 
+.HeroTextContainer h3 {
+  font-family: "Montserrat", sans-serif !important;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
 /* delivery */
 .DeliveryContainer {
   margin: 100px 0;
@@ -77,9 +95,6 @@
 }
 
 @media screen and (min-width: 380px) {
-  .HeroText {
-    font-size: 60px;
-  }
   .Icon {
     width: 70px !important;
     height: 70px !important;
@@ -87,6 +102,16 @@
 }
 
 @media screen and (min-width: 600px) {
+  .Hero {
+    background: url("../assets/hero/Hero1.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  .HeroImage {
+    height: 700px;
+  }
+  .HeroText {
+    font-size: 65px !important;
+  }
   /* delivery */
 
   .Delivery {

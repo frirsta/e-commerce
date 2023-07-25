@@ -1,10 +1,10 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { commerce } from "./library/commerce/commerce";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import styles from "./App.module.css";
 import Products from "./components/products/Products";
-import { commerce } from "./library/commerce/commerce";
-import { useEffect, useState } from "react";
 import Cart from "./components/cart/Cart";
 import ProductDetails from "./components/products/ProductDetails";
 import Checkout from "./components/checkout/Checkout";

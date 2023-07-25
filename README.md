@@ -190,6 +190,8 @@ Libraries and Frameworks:
 - CSS
 - Stripe
 
+- aos
+- Animate.css
 - React-router-dom
 - CommerceJS
 - Express
@@ -206,9 +208,7 @@ Libraries and Frameworks:
 </summary>
 
 Hero
-<a href="https://www.freepik.com/free-photo/high-fashion-portrait-young-beautiful-brunette-woman-wearing-nice-trendy-suit-sexy-fashion-model-posing-studio-fashionable-female-isolated-white_26613916.htm#&position=33&from_view=collections">Image by halayalex</a> on Freepik
-
-<a href="https://www.freepik.com/free-photo/cute-young-girl-with-dark-wavy-hairstyle-bright-makeup-silk-dress-black-jacket-holding-sunglasses-hands-looking-away-against-beige-building-wall_16179727.htm#query=fashionmodel&position=1&from_view=search&track=ais?log-in=google">Image by lookstudio</a> on Freepik
+Photo by <a href="https://unsplash.com/@zvandrei?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrey Zvyagintsev</a> on <a href="https://unsplash.com/photos/HiDFZMT8Z5s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Readme home
 Image by <a href="https://www.freepik.com/free-photo/fast-fashion-vs-slow-sustainable-fashion_19533990.htm#&position=6&from_view=collections">Freepik</a>

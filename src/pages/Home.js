@@ -17,13 +17,25 @@ const Home = ({ products }) => {
   return (
     <Box className={styles.Home}>
       <Box className={`${styles.HeroImage} ${styles.Hero}`}>
-        <h2 className={styles.HeroText}>
-          Beauty <br></br> Pronounced
-        </h2>
-
-        <Button component={Link} to={"/shop"} className={ButtonStyles.Button}>
-          Shop Now
-        </Button>
+        <Box className={styles.HeroTextContainer}>
+          <h2
+            data-aos-duration="2000"
+            data-aos="fade-in"
+            className={styles.HeroText}
+          >
+            Beauty <br></br> Pronounced
+          </h2>
+          <h3>Shop our latest collection now</h3>
+          <Button
+            data-aos-duration="2000"
+            data-aos="fade-in"
+            component={Link}
+            to={"/shop"}
+            className={ButtonStyles.Button}
+          >
+            Shop Now
+          </Button>
+        </Box>
       </Box>
 
       <NewArrivals products={products} />
