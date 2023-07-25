@@ -12,6 +12,12 @@
   width: 90vw;
   margin: 0 auto;
 }
+.Select {
+  border-radius: 0px !important;
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+  margin-left: auto;
+}
 @media screen and (max-width: 600px) {
   .ProductsContainer {
     display: flex;

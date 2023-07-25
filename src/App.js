@@ -14,19 +14,11 @@ import Category from "./pages/Category";
 import Announcement from "./components/Announcement";
 
 function App() {
-  const [products, setProducts] = useState([]);
   const [newProducts, setNewProducts] = useState([]);
   const [category, setCategory] = useState([]);
   const [cart, setCart] = useState({});
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState("");
-  const fetchProducts = async () => {
-    const { data } = await commerce.products.list({
-      sortBy: "created_at",
-      sortDirection: "desc",
-    });
-    setProducts(data);
-  };
 
   const fetchNewProducts = async () => {
     const { data } = await commerce.products.list({
@@ -87,7 +79,6 @@ function App() {
   };
 
   useEffect(() => {
-    fetchProducts();
     fetchNewProducts();
     fetchCategories();
     fetchCart();
@@ -114,10 +105,7 @@ function App() {
             path={"/item/:id"}
             element={<ProductDetails onAddToCart={handleAddToCart} />}
           />
-          <Route
-            path={"/shop"}
-            element={<Products products={products} categories={category} />}
-          />
+          <Route path={"/shop"} element={<Products categories={category} />} />
           <Route
             path="/checkout"
             element={

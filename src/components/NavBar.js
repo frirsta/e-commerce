@@ -163,12 +163,34 @@ const NavBar = ({ category }) => {
                 onMouseLeave={handleClose}
                 sx={{ transition: "all ease .5s" }}
               >
-                <MenuItem className={styles.MenuItem}>All</MenuItem>
-                <MenuItem className={styles.MenuItem}>
+                <MenuItem
+                  component={Link}
+                  to={"/shop"}
+                  className={styles.MenuItem}
+                >
+                  All
+                </MenuItem>
+                <MenuItem
+                  component={Link}
+                  to={"/products/jackets-and-coats"}
+                  className={styles.MenuItem}
+                >
                   Jackets and coats
                 </MenuItem>
-                <MenuItem className={styles.MenuItem}>Dresses</MenuItem>
-                <MenuItem className={styles.MenuItem}>Accessories</MenuItem>
+                <MenuItem
+                  component={Link}
+                  to={"/products/dresses"}
+                  className={styles.MenuItem}
+                >
+                  Dresses
+                </MenuItem>
+                <MenuItem
+                  component={Link}
+                  to={"/products/accessories"}
+                  className={styles.MenuItem}
+                >
+                  Accessories
+                </MenuItem>
               </Menu>
               <Link to={`/about`} className={styles.Link}>
                 About
