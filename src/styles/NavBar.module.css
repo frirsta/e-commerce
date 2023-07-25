@@ -49,11 +49,7 @@
   height: 90px;
   padding: 0px 20px;
 }
-.IconContainer {
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
-}
+
 .Button {
   text-decoration: none;
 }
@@ -85,15 +81,7 @@
   color: #a86e3b;
   transition: ease 0.3s;
 }
-.IconButton {
-  padding: 0px !important;
-}
-.ShoppingCartContainer {
-  padding-right: 10px !important;
-}
-.MenuIcon {
-  padding-left: 15px !important;
-}
+
 .Toolbar {
   padding: 0px !important;
 }
@@ -173,15 +161,20 @@
   .ShopMenu {
     width: 100%;
     position: absolute !important;
-    top: 110px !important;
+    top: 0px !important;
+    z-index: 100;
+    height: 100px;
     border: none !important;
     box-shadow: none !important;
     flex-direction: row !important;
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: ease 0.5s;
   }
-
+  .MenuItem {
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 992px) {
 }

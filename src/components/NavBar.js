@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { commerce } from "../library/commerce/commerce";
+import styles from "../styles/NavBar.module.css";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Badge from "@mui/joy/Badge";
-import styles from "../styles/NavBar.module.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
@@ -129,7 +129,7 @@ const NavBar = ({ category }) => {
             </Link>
           </Typography>
           <Toolbar className={styles.Toolbar}>
-            <Box className={styles.IconContainer}>
+            <Box>
               <IconButton
                 className={`${styles.IconButton} ${styles.MenuIcon}`}
                 color="inherit"
@@ -158,8 +158,10 @@ const NavBar = ({ category }) => {
               </Link>
               <Menu
                 className={styles.ShopMenu}
-                open={menu}
+                anchorEl={menu}
+                open={Boolean(menu)}
                 onMouseLeave={handleClose}
+                sx={{ transition: "all ease .5s" }}
               >
                 <MenuItem className={styles.MenuItem}>All</MenuItem>
                 <MenuItem className={styles.MenuItem}>
