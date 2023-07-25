@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { commerce } from "../library/commerce/commerce";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Badge from "@mui/joy/Badge";
 import styles from "../styles/NavBar.module.css";
@@ -15,7 +16,8 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { commerce } from "../library/commerce/commerce";
+import Menu from "@mui/joy/Menu";
+import MenuItem from "@mui/joy/MenuItem";
 
 const drawerWidth = 240;
 
@@ -23,6 +25,17 @@ const NavBar = ({ category }) => {
   const [open, setOpen] = useState(false);
   const [cart, setCart] = useState({});
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [menu, setMenu] = useState(null);
+
+  const handleOpen = (event) => {
+    if (menu !== event.currentTarget) {
+      setMenu(event.currentTarget);
+    }
+  };
+
+  const handleClose = () => {
+    setMenu(null);
+  };
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -136,10 +149,25 @@ const NavBar = ({ category }) => {
                 Home
               </Link>
 
-              <Link to={`/shop`} className={`${styles.Link} ${styles.Shop}`}>
+              <Link
+                onMouseOver={handleOpen}
+                to={`/shop`}
+                className={`${styles.Link} ${styles.Shop}`}
+              >
                 Shop
               </Link>
-
+              <Menu
+                className={styles.ShopMenu}
+                open={menu}
+                onMouseLeave={handleClose}
+              >
+                <MenuItem className={styles.MenuItem}>All</MenuItem>
+                <MenuItem className={styles.MenuItem}>
+                  Jackets and coats
+                </MenuItem>
+                <MenuItem className={styles.MenuItem}>Dresses</MenuItem>
+                <MenuItem className={styles.MenuItem}>Accessories</MenuItem>
+              </Menu>
               <Link to={`/about`} className={styles.Link}>
                 About
               </Link>

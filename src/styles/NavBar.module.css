@@ -3,102 +3,101 @@
   src: url("../assets/font/MerchantTypeface/Variable-TT/Merchant-VF.ttf");
 }
 
-@media screen and (max-width: 900px) {
-  .Open {
-    height: 150px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 0px;
-    font-size: 14px;
-  }
-  .Menu {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .Category {
-    list-style-type: none;
-    color: gray;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  .Category:hover {
-    color: #a86e3b;
-    transition: ease 0.3s;
-  }
-  .Close {
-    display: none;
-  }
-  .NavBarContainer {
-    background-color: transparent !important;
-    width: 100vw;
-  }
-  .NavBar {
-    position: unset !important;
-    width: 100vw !important;
-    background-color: transparent !important;
-    color: gray !important;
-    box-shadow: none !important;
-    flex-direction: row-reverse !important;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    padding: 0px 20px;
-  }
-  .IconContainer {
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-  }
-  .Button {
-    text-decoration: none;
-  }
-  .BrandLink {
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-    transition: ease 0.3s;
-  }
-  .BrandLink:hover {
-    color: #a86e3b;
-  }
-  .Brand {
-    font-family: "Fonts", cursive !important;
-    font-size: 45px !important;
-    margin: 0px !important;
-    text-transform: uppercase;
-  }
-  .MobileBrand {
-    font-family: "Fonts", cursive !important;
-    font-size: 20px !important;
-  }
-  .Link {
-    color: gray;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  .Link:hover {
-    color: #a86e3b;
-    transition: ease 0.3s;
-  }
-  .IconButton {
-    padding: 0px !important;
-  }
-  .ShoppingCartContainer {
-    padding-right: 10px !important;
-  }
-  .MenuIcon {
-    padding-left: 15px !important;
-  }
-  .Toolbar {
-    padding: 0px !important;
-  }
+.Open {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0px;
+  font-size: 14px;
 }
+.Menu {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.Category {
+  list-style-type: none;
+  color: gray;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.Category:hover {
+  color: #a86e3b;
+  transition: ease 0.3s;
+}
+.Close {
+  display: none;
+}
+.NavBarContainer {
+  background-color: transparent !important;
+  width: 100vw;
+}
+.NavBar {
+  position: unset !important;
+  width: 100vw !important;
+  background-color: transparent !important;
+  color: gray !important;
+  box-shadow: none !important;
+  flex-direction: row-reverse !important;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0px 20px;
+}
+.IconContainer {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.Button {
+  text-decoration: none;
+}
+.BrandLink {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  transition: ease 0.3s;
+}
+.BrandLink:hover {
+  color: #a86e3b;
+}
+.Brand {
+  font-family: "Fonts", cursive !important;
+  font-size: 45px !important;
+  margin: 0px !important;
+  text-transform: uppercase;
+}
+.MobileBrand {
+  font-family: "Fonts", cursive !important;
+  font-size: 20px !important;
+}
+.Link {
+  color: gray;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.Link:hover {
+  color: #a86e3b;
+  transition: ease 0.3s;
+}
+.IconButton {
+  padding: 0px !important;
+}
+.ShoppingCartContainer {
+  padding-right: 10px !important;
+}
+.MenuIcon {
+  padding-left: 15px !important;
+}
+.Toolbar {
+  padding: 0px !important;
+}
+
 @media screen and (min-width: 900px) {
   .Shop:hover {
     transition: all ease 0.3s;
@@ -122,42 +121,19 @@
     width: 100vw;
   }
   .Menu {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
     top: 75px;
   }
-  .Category {
-    list-style-type: none;
-    color: gray;
-    margin: 0 10px;
-    text-decoration: none;
-  }
 
-  .Category:hover {
-    color: #a86e3b;
-    transition: ease 0.3s;
-  }
-
-  .Close {
-    display: none;
-  }
   .Brand {
     display: none;
   }
   .BrandLink {
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
     letter-spacing: 2px;
-    transition: ease 0.3s;
   }
-  .BrandLink:hover {
-    color: #a86e3b;
-  }
+
   .DesktopBrand {
     font-family: "Fonts", cursive !important;
     font-size: 35px !important;
@@ -165,26 +141,12 @@
     max-width: 400px;
     text-transform: uppercase;
   }
-  .NavBarContainer {
-    background-color: transparent !important;
-    width: 100vw;
-  }
+
   .NavBar {
     max-width: 1200px;
-    background-color: transparent !important;
-    color: gray !important;
-    box-shadow: none !important;
-    flex-direction: row-reverse !important;
-    align-items: center;
-    justify-content: space-between;
     margin: 0 auto;
-    position: unset !important;
-    height: 90px;
-    padding: 0px 20px;
   }
-  .IconButton {
-    padding: 0px !important;
-  }
+
   .ShoppingCartContainer {
     display: flex;
     width: 33vw !important;
@@ -205,15 +167,21 @@
     align-items: center;
     width: 30vw;
   }
-  .Link {
-    color: gray;
-    margin: 0 10px;
-    text-decoration: none;
+
+  /* Menu */
+
+  .ShopMenu {
+    width: 100%;
+    position: absolute !important;
+    top: 110px !important;
+    border: none !important;
+    box-shadow: none !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
-  .Link:hover {
-    color: #a86e3b;
-    transition: ease 0.3s;
-  }
+
 }
 @media screen and (min-width: 992px) {
 }
