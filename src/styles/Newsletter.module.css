@@ -1,29 +1,18 @@
-@media screen and (max-width: 600px) {
-  .Newsletter {
-    width: 80vw;
-    border-radius: 0px !important;
-  }
-  .Label {
-    color: #fff !important;
-  }
-  .Button {
-    border-radius: 0px !important;
-    background-color: #000 !important;
-  }
+.Newsletter {
+  width: 80vw;
+  border-radius: 0px !important;
+}
+.Label {
+  color: #fff !important;
+}
+.Button {
+  border-radius: 0px !important;
+  background-color: #000 !important;
 }
 
 @media screen and (min-width: 600px) {
   .Newsletter {
-    border-radius: 0px !important;
     width: 30vw;
-  }
-  .Label {
-    color: #fff !important;
-  }
-
-  .Button {
-    border-radius: 0px !important;
-    background-color: #000 !important;
   }
 }
 

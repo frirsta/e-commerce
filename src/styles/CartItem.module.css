@@ -1,172 +1,89 @@
-@media screen and (max-width: 768px) {
-  .CartItem {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px 0;
-  }
-  .Image {
-    width: 100px;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  .ProductInformation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 10px;
-    width: 60vw;
-    max-width: 300px;
-  }
+.CartItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0;
+}
+.Image {
+  width: 100px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.ProductInformation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 60vw;
+  max-width: 300px;
+}
 
-  .Information {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .ButtonsContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+.Information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-  .Quantity,
-  .Size,
-  .Price,
-  .Name,
-  .SizeItem,
-  .UpdateButton,
-  .EmptyButton {
-    font-family: "Montserrat", sans-serif !important;
-  }
-  .Quantity {
-    font-weight: 600;
-  }
-  .Size {
-    font-weight: 700;
-    font-size: 13px;
-    color: gray;
-  }
-  .Price {
-    font-weight: 700;
-    color: #000 !important;
-    font-size: 14px !important;
-    padding: 5px 0;
-  }
-  .Name {
-    font-size: 14px !important;
-    font-weight: 600;
-  }
-  .SizeItem {
-    font-size: 12px;
-    font-weight: 700;
-  }
-  .UpdateButton {
-    border: 1px solid #000000;
-    color: #000;
-    border-radius: 7px;
-    padding: 2px !important;
-  }
-  .EmptyButton {
-    color: gray;
-  }
-  .RemoveButton {
-  }
-  .DeleteButton {
-  }
+.Quantity,
+.Size,
+.Price,
+.Name,
+.SizeItem,
+.UpdateButton,
+.EmptyButton {
+  font-family: "Montserrat", sans-serif !important;
+}
+.Quantity {
+  font-weight: 600;
+}
+.Size {
+  font-weight: 700;
+  font-size: 13px;
+  color: gray;
+}
+.Price {
+  font-weight: 700;
+  color: #000 !important;
+  font-size: 14px !important;
+  padding: 5px 0;
+}
+.Name {
+  font-size: 14px !important;
+  font-weight: 600;
+}
+.SizeItem {
+  font-size: 12px;
+  font-weight: 700;
+}
+.UpdateButton {
+  border: 1px solid #000000;
+  color: #000;
+  border-radius: 7px;
+  padding: 2px !important;
+}
+.EmptyButton {
+  color: gray;
+}
 
-  .Icon {
-    width: 15px !important;
-    height: 15px !important;
-  }
-  .UpdateButtonsContainer {
-    display: flex;
-    align-items: center;
-  }
+.Icon {
+  width: 15px !important;
+  height: 15px !important;
+}
+.UpdateButtonsContainer {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
-  .Quantity,
-  .Size,
-  .Price,
-  .Name,
-  .SizeItem,
-  .UpdateButton,
-  .EmptyButton {
-    font-family: "Montserrat", sans-serif !important;
-  }
-  .CartItem {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px 0;
-  }
-  .Image {
-    width: 100px;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  .ProductInformation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 10px;
-    width: 60vw;
-    max-width: 300px;
-  }
-
-  .Information {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .ButtonsContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  .Quantity {
-    font-weight: 600;
-  }
-  .Size {
-    font-weight: 700;
-    font-size: 13px;
-    color: gray;
-  }
-  .Price {
-    font-weight: 700;
-    color: #000 !important;
-    font-size: 14px !important;
-    padding: 5px 0;
-  }
-  .Name {
-    font-weight: 600;
-  }
-  .SizeItem {
-    font-size: 12px;
-    font-weight: 700;
-  }
-  .UpdateButton {
-    border: 1px solid #000000;
-    color: #000;
-    border-radius: 7px;
-  }
-  .EmptyButton {
-    color: gray;
-  }
-
-  .Icon {
-    width: 15px !important;
-    height: 15px !important;
-  }
   .UpdateButtonsContainer {
     height: 27px;
-    display: flex;
-    align-items: center;
   }
 }
 @media screen and (min-width: 992px) {

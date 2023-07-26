@@ -8,7 +8,7 @@ const About = () => {
         <h4 className={styles.HeroText}>A few words</h4>
         <h3 className={styles.HeroText}>About us</h3>
       </div>
-      <div className={`${styles.Container} ${styles.Who}`}>
+      <div className={`${styles.Container}`}>
         <div className={styles.AboutTextContainer}>
           <span className={styles.Title}>who we are</span>
           <h2>
@@ -24,7 +24,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className={`${styles.Container} ${styles.When}`}>
+      <div className={`${styles.Container}`}>
         <div className={`${styles.Image} ${styles.HistoryImage}`}></div>
         <div className={styles.TextContainer}>
           <span className={styles.Title}>since 1998</span>

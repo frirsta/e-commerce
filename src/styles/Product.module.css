@@ -1,81 +1,72 @@
-@media screen and (max-width: 600px) {
-  .ProductContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 5px;
-  }
-
-  .ImageSkeleton {
-    border-radius: 0px !important;
-    height: 400px !important;
-    width: 90vw !important;
-    max-width: 300px;
-  }
-  .Product {
-    border-radius: 0px !important;
-  }
-  .Image {
-    height: 400px;
-    width: 90vw !important;
-    max-width: 300px;
-  }
-  .CardOverflow {
-    max-width: 95vw;
-    height: 400px;
-  }
-  .Name {
-    margin-top: 5px !important;
-    font-weight: 600;
-    font-size: 15px;
-  }
-  .Price {
-    font-weight: 600;
-    font-size: 13px;
-    color: gray;
-  }
-  .SkeletonName {
-    border-radius: 0px !important;
-    width: 75%;
-    font-size: 15px;
-  }
-  .SkeletonPrice {
-    border-radius: 0px !important;
-    width: 20%;
-    font-size: 15px;
-  }
-
-  .TextContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .ProductInformation {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5px;
-  }
-  .Button {
-    border-radius: 0px !important;
-    border: 1px solid #fff !important;
-    color: #fff !important;
-    font-family: "Montserrat", sans-serif !important;
-    letter-spacing: 3px;
-    font-weight: 300 !important;
-  }
+.ProductContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 5px;
 }
+
+.ImageSkeleton {
+  border-radius: 0px !important;
+  height: 400px !important;
+  width: 90vw !important;
+  max-width: 300px;
+}
+.Product {
+  border-radius: 0px !important;
+}
+.Image {
+  height: 400px;
+  width: 90vw !important;
+  max-width: 300px;
+}
+.CardOverflow {
+  max-width: 95vw;
+  height: 400px;
+}
+.Name {
+  margin-top: 5px !important;
+  font-weight: 600;
+  font-size: 15px;
+}
+.Price {
+  font-weight: 600;
+  font-size: 13px;
+  color: gray;
+}
+.SkeletonName {
+  border-radius: 0px !important;
+  width: 75%;
+  font-size: 15px;
+}
+.SkeletonPrice {
+  border-radius: 0px !important;
+  width: 20%;
+  font-size: 15px;
+}
+
+.TextContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 100%;
+  justify-content: space-between;
+}
+.ProductInformation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+}
+.Button {
+  border-radius: 0px !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  font-family: "Montserrat", sans-serif !important;
+  letter-spacing: 3px;
+  font-weight: 300 !important;
+}
+
 @media screen and (min-width: 600px) {
-  .ProductContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 5px;
-  }
-  .Product {
-    border-radius: 0px !important;
-  }
   .Image {
     height: 300px;
     width: 30vw !important;
@@ -89,42 +80,12 @@
     width: 30vw !important;
     border-radius: 0px !important;
   }
-  .SkeletonName {
-    border-radius: 0px !important;
-    width: 75%;
-    font-size: 15px;
-  }
-  .SkeletonPrice {
-    border-radius: 0px !important;
-    width: 20%;
-    font-size: 15px;
-  }
+
   .Name {
     padding: 10px 0;
-    font-weight: 600;
   }
   .Text {
     font-size: 10px;
-  }
-  .ProductInformation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .TextContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .Button {
-    border-radius: 0px !important;
-    border: 1px solid #fff !important;
-    color: #fff !important;
-    font-family: "Montserrat", sans-serif !important;
-    letter-spacing: 3px;
-    font-weight: 300 !important;
   }
 }
 @media screen and (min-width: 768px) {
@@ -142,12 +103,6 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .ProductContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 5px;
-  }
-
   .Image {
     height: 400px;
     max-width: 300px;

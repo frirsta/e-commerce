@@ -87,7 +87,7 @@ const Address = ({ checkoutToken, test }) => {
             })
           )}
         >
-          <Grid className={styles.InputContainer} spacing={2} container>
+          <Grid spacing={2} container>
             <Grid xs={6}>
               <TextField
                 color="secondary"
@@ -179,11 +179,7 @@ const Address = ({ checkoutToken, test }) => {
                     name: name,
                   }))
                   .map((item) => (
-                    <option
-                      className={styles.Option}
-                      key={item.id}
-                      value={item.id}
-                    >
+                    <option key={item.id} value={item.id}>
                       {item.name}
                     </option>
                   ))}
@@ -206,11 +202,7 @@ const Address = ({ checkoutToken, test }) => {
                     name: name,
                   }))
                   .map((item) => (
-                    <option
-                      className={styles.Option}
-                      key={item.id}
-                      value={item.id}
-                    >
+                    <option key={item.id} value={item.id}>
                       {item.name}
                     </option>
                   ))}
@@ -233,11 +225,7 @@ const Address = ({ checkoutToken, test }) => {
                     name: `${sO.description} - (${sO.price.formatted_with_code})`,
                   }))
                   .map((item) => (
-                    <option
-                      className={styles.Option}
-                      key={item.id}
-                      value={item.id}
-                    >
+                    <option key={item.id} value={item.id}>
                       {item.name}
                     </option>
                   ))}

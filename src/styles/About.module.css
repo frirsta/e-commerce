@@ -1,115 +1,51 @@
-@media screen and (max-width: 600px) {
-  .Hero {
-    background: url("../assets/AboutHero.jpg") no-repeat center center;
-    background-size: cover;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 100px 20px 35px;
-    filter: grayscale(1);
-    height: 400px;
-  }
-  .Hero h4 {
-    font-size: 17px;
-    margin: 0px;
-    line-height: 5px;
-    padding-left: 3px;
-  }
-  .Hero h3 {
-    font-size: 60px;
-    margin: 0px;
-  }
-  .HeroText {
-    color: #fff;
-  }
-  .Container {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0;
-    padding: 20px;
-  }
-  .TextContainer {
-    text-align: center;
-    padding: 10% 20% 0%;
-  }
-  .Who {
-  }
-  .When {
-  }
-  .Why {
-  }
-  .Title {
-    font-weight: 500;
-  }
-  .Image {
-    height: 300px;
-  }
-  .HistoryImage {
-    background: url("../assets/Runway.jpg") no-repeat center center;
-    background-size: cover;
-  }
-  .MissionImage {
-    background: url("../assets/SewingKit.jpg") no-repeat center center;
-    background-size: cover;
-  }
+.Hero {
+  background: url("../assets/AboutHero.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 100px 20px 35px;
+  filter: grayscale(1);
+  height: 400px;
+}
+.Hero h4 {
+  font-size: 17px;
+  margin: 0px;
+  line-height: 5px;
+  padding-left: 3px;
+}
+.Hero h3 {
+  font-size: 60px;
+  margin: 0px;
+}
+.HeroText {
+  color: #fff;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  padding: 20px;
+}
+.TextContainer {
+  text-align: center;
+  padding: 10% 8% 0%;
 }
 
-@media screen and (min-width: 600px) {
-  .Hero {
-    background: url("../assets/AboutHero.jpg") no-repeat center center;
-    background-size: cover;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 100px 20px 35px;
-    filter: grayscale(1);
-    height: 400px;
-  }
-  .Hero h4 {
-    font-size: 17px;
-    margin: 0px;
-    line-height: 5px;
-    padding-left: 3px;
-  }
-  .Hero h3 {
-    font-size: 60px;
-    margin: 0px;
-  }
-  .HeroText {
-    color: #fff;
-  }
-  .Container {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0;
-    padding: 20px;
-  }
-  .TextContainer {
-    text-align: center;
-    padding: 10% 20% 0%;
-  }
-  .Who {
-  }
-  .When {
-  }
-  .Why {
-  }
-  .Title {
-    font-weight: 500;
-  }
-  .Image {
-    height: 300px;
-  }
-  .HistoryImage {
-    background: url("../assets/Runway.jpg") no-repeat center center;
-    background-size: cover;
-  }
-  .MissionImage {
-    background: url("../assets/SewingKit.jpg") no-repeat center center;
-    background-size: cover;
-  }
+.Title {
+  font-weight: 500;
+}
+.Image {
+  height: 300px;
+}
+.HistoryImage {
+  background: url("../assets/Runway.jpg") no-repeat center center;
+  background-size: cover;
+}
+.MissionImage {
+  background: url("../assets/SewingKit.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -126,7 +62,6 @@
     padding: 0 20px;
   }
   .TextContainer {
-    text-align: center;
     padding: 10%;
     width: 50%;
     height: 400px;

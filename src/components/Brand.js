@@ -27,7 +27,10 @@ const Brand = () => {
         redefining the essence of style for the empowered and discerning woman
         of today.
       </Typography>
-      <Typography level="h5" sx={{ letterSpacing: 2, fontWeight: 100 }}>
+      <Typography
+        level="h5"
+        sx={{ letterSpacing: 2, fontWeight: 400, color: "gray" }}
+      >
         "Embrace elegance, choose timeless. Invest in pieces that whisper
         eternity, as fashion transcends seasons."
       </Typography>

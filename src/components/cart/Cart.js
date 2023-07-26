@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { commerce } from "../../library/commerce/commerce";
 import CircularProgress from "@mui/joy/CircularProgress";
 import CartItem from "./CartItem";
 import Button from "@mui/joy/Button";
@@ -8,7 +9,6 @@ import styles from "../../styles/Cart.module.css";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Divider from "@mui/joy/Divider";
 import Card from "@mui/joy/Card";
-import { commerce } from "../../library/commerce/commerce";
 
 const Cart = ({ onUpdateCart, onRemoveCart, onEmptyCart }) => {
   const [cart, setCart] = useState([]);
@@ -34,7 +34,12 @@ const Cart = ({ onUpdateCart, onRemoveCart, onEmptyCart }) => {
     <>
       <div className={styles.EmptyCart}>
         <h2 className={styles.Title}>My Cart</h2>
-        <Button className={styles.DeleteButton} onClick={onEmptyCart}>
+        <Button
+          variant="plain"
+          color="neutral"
+          className={styles.DeleteButton}
+          onClick={onEmptyCart}
+        >
           <DeleteIcon /> Empty Cart
         </Button>
       </div>

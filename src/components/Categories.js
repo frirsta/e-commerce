@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../styles/Categories.module.css";
 import { Link } from "react-router-dom";
+import styles from "../styles/Categories.module.css";
 import Divider from "@mui/material/Divider";
 
 const Categories = ({ categories }) => {

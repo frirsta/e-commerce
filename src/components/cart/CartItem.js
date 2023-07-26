@@ -35,7 +35,6 @@ const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
           <div className={styles.ButtonsContainer}>
             <div>
               <IconButton
-                className={styles.DeleteButton}
                 onClick={() => onRemoveCart(item.id)}
                 variant="solid"
                 aria-label="delete"
@@ -45,7 +44,6 @@ const CartItem = ({ item, onUpdateCart, onRemoveCart }) => {
             </div>
             <Box className={styles.UpdateButtonsContainer}>
               <IconButton
-                className={styles.RemoveButton}
                 onClick={() => onUpdateCart(item.id, item.quantity - 1)}
                 aria-label="remove"
               >
