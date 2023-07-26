@@ -4,7 +4,7 @@ import { commerce } from "./library/commerce/commerce";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import styles from "./App.module.css";
-import Products from "./components/products/Products";
+import Products from "./pages/Products";
 import Cart from "./components/cart/Cart";
 import ProductDetails from "./components/products/ProductDetails";
 import Checkout from "./components/checkout/Checkout";

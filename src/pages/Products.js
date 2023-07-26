@@ -1,22 +1,44 @@
 import React, { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
-import styles from "../../styles/Products.module.css";
-import Categories from "../Categories";
+import styles from "../styles/Products.module.css";
+import Categories from "../components/Categories";
 import Select, { selectClasses } from "@mui/joy/Select";
 import Option from "@mui/joy/Option";
 import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
 import Divider from "@mui/joy/Divider";
-import { commerce } from "../../library/commerce/commerce";
-import Product from "./Product";
+import { commerce } from "../library/commerce/commerce";
+import Product from "../components/products/Product";
 
 const options = [
   {
     name: "Price, low to high",
     value: "asc",
+    sortBy: "price",
   },
   {
     name: "Price, high to low",
     value: "desc",
+    sortBy: "price",
+  },
+  {
+    name: "Date, new to old",
+    value: "desc",
+    sortBy: "created_at",
+  },
+  {
+    name: "Date, old to new",
+    value: "asc",
+    sortBy: "created_at",
+  },
+  {
+    name: "Alphabetically, A-Z",
+    value: "asc",
+    sortBy: "name",
+  },
+  {
+    name: "Alphabetically, Z-A",
+    value: "desc",
+    sortBy: "name",
   },
 ];
 
@@ -29,8 +51,8 @@ const Products = ({ categories }) => {
       setSelectOption(selectOption);
     }
     const { data } = await commerce.products.list({
-      sortBy: "price",
-      sortDirection: selectOption,
+      sortBy: selectOption?.sortBy,
+      sortDirection: selectOption?.value,
     });
     setProducts(data);
   };
@@ -62,8 +84,8 @@ const Products = ({ categories }) => {
           {options.map((option) => (
             <Option
               onChange={(e) => setSelectOption(e.target.name)}
-              key={option.value}
-              value={option.value}
+              key={option.name}
+              value={option}
             >
               {option.name}
             </Option>
