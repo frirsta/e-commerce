@@ -8,6 +8,8 @@ import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
 import Divider from "@mui/joy/Divider";
 import { commerce } from "../library/commerce/commerce";
 import Product from "../components/products/Product";
+import { Box } from "@mui/joy";
+import { Typography } from "@mui/material";
 
 const options = [
   {
@@ -62,36 +64,47 @@ const Products = ({ categories }) => {
   return (
     <div>
       <Categories categories={categories} />
-
       <div>
         <Divider />
-        <Select
-          className={styles.Select}
-          value={selectOption}
-          placeholder="Sort by"
-          onChange={handleSelect}
-          indicator={<KeyboardArrowDown />}
+        <Box
           sx={{
-            width: 200,
-            [`& .${selectClasses.indicator}`]: {
-              transition: "0.2s",
-              [`&.${selectClasses.expanded}`]: {
-                transform: "rotate(-180deg)",
-              },
-            },
+            display: "flex",
+            flexDirection: "row-reverse",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          {options.map((option) => (
-            <Option
-              onChange={(e) => setSelectOption(e.target.name)}
-              key={option.name}
-              value={option}
-            >
-              {option.name}
-            </Option>
-          ))}
-        </Select>
-
+          <Select
+            className={styles.Select}
+            value={selectOption}
+            placeholder="Sort by"
+            onChange={handleSelect}
+            indicator={<KeyboardArrowDown />}
+            sx={{
+              [`& .${selectClasses.indicator}`]: {
+                transition: "0.2s",
+                [`&.${selectClasses.expanded}`]: {
+                  transform: "rotate(-180deg)",
+                },
+              },
+            }}
+          >
+            {options.map((option) => (
+              <Option
+                onChange={(e) => setSelectOption(e.target.name)}
+                key={option.name}
+                value={option}
+              >
+                {option.name}
+              </Option>
+            ))}
+          </Select>
+          <Box className={styles.NumberOfProductsContainer}>
+            <Typography className={styles.NumberOfProducts}>
+              {products.length} Products
+            </Typography>
+          </Box>
+        </Box>
         <Divider />
         <Grid className={styles.ProductsContainer} container>
           {products?.map((product) => (

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Link as RouterLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { commerce } from "../library/commerce/commerce";
+import styles from "../styles/Products.module.css";
 import Product from "../components/products/Product";
 import Grid from "@mui/material/Grid";
-import styles from "../styles/Products.module.css";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardOverflow from "@mui/joy/CardOverflow";
@@ -12,7 +13,6 @@ import Box from "@mui/joy/Box";
 import CardCover from "@mui/joy/CardCover";
 import Typography from "@mui/joy/Typography";
 import Link from "@mui/joy/Link";
-import { Link as RouterLink } from "react-router-dom";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 
 const Category = () => {

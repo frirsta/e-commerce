@@ -1,7 +1,8 @@
-.Breadcrumbs {
+.Breadcrumbs,
+.NumberOfProducts {
   text-decoration: none;
   color: gray;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 .Breadcrumbs:hover {
   color: #a86e3b;
@@ -12,11 +13,15 @@
   width: 90vw;
   margin: 0 auto;
 }
+.NumberOfProductsContainer {
+  padding-left: 20px;
+}
 .Select {
   border-radius: 0px !important;
   border-top: 0px !important;
   border-bottom: 0px !important;
   margin-left: auto;
+  width: 150px;
 }
 
 .ProductsContainer {
@@ -44,6 +49,12 @@
   }
   .Category {
     margin: 15px;
+  }
+  .Select {
+    width: 200px;
+  }
+  .NumberOfProductsContainer {
+    position: absolute;
   }
 }
 @media screen and (min-width: 768px) {

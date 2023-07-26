@@ -1,15 +1,15 @@
+import React, { useEffect, useState } from "react";
+import { Link as RouterLink } from "react-router-dom";
+import styles from "../../styles/Product.module.css";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardOverflow from "@mui/joy/CardOverflow";
-import React, { useEffect, useState } from "react";
-import styles from "../../styles/Product.module.css";
 import Skeleton from "@mui/material/Skeleton";
 import Box from "@mui/joy/Box";
 import CardCover from "@mui/joy/CardCover";
 import Typography from "@mui/joy/Typography";
 import Link from "@mui/joy/Link";
 import Button from "@mui/joy/Button";
-import { Link as RouterLink } from "react-router-dom";
 
 const Product = ({ product }) => {
   const [loading, setLoading] = useState(true);
