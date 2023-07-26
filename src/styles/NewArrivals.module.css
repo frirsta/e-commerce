@@ -1,128 +1,74 @@
-@media screen and (max-width: 600px) {
-  .Trendy {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 50px 0;
-  }
-  .Product {
-    border-radius: 0px !important;
-    margin: 10px;
-  }
-  .ProductGrid {
-    justify-content: center;
-    margin: 50px 0 !important;
-  }
-  .Popular {
-    font-size: 20px;
-  }
-  .TrendyTitle {
-    font-size: 50px;
-  }
-  .Divider {
-    background-color: #a86e3b;
-    height: 2px;
-    width: 100px;
-    margin: 20px 0 !important;
-  }
-  .Image {
-    height: 400px;
-    width: 90vw !important;
-    max-width: 300px;
-  }
-  .CardOverflow {
-    max-width: 95vw;
-    height: 400px;
-    padding: 0px !important;
-  }
-  .CardCover {
-    border-radius: 0px !important;
-  }
+.Trendy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+}
+.Product {
+  border-radius: 0px !important;
+  margin: 10px;
+}
+.ProductGrid {
+  justify-content: center;
+  margin: 50px 0 !important;
+}
+.Popular {
+  font-size: 20px;
+}
+.TrendyTitle {
+  font-size: 50px;
+}
+.Divider {
+  background-color: #a86e3b;
+  height: 2px;
+  width: 100px;
+  margin: 20px 0 !important;
+}
+.Image {
+  height: 400px;
+  width: 90vw !important;
+  max-width: 300px;
+}
+.CardOverflow {
+  max-width: 95vw;
+  height: 400px;
+  padding: 0px !important;
+}
+.CardCover {
+  border-radius: 0px !important;
+}
 
-  .ProductButton {
-    border-radius: 0px !important;
-    border: 1px solid #fff !important;
-    color: #fff !important;
-    font-family: "Montserrat", sans-serif !important;
-    letter-spacing: 3px;
-    font-weight: 300 !important;
-  }
+.ProductButton {
+  border-radius: 0px !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  font-family: "Montserrat", sans-serif !important;
+  letter-spacing: 3px;
+  font-weight: 300 !important;
+}
 
-  .Button {
-    border-radius: 0px !important;
-    background-color: #000 !important;
-    margin: 0 auto;
-    padding: 15px 40px !important;
-    color: #fff;
-  }
-  .Button:hover {
-    opacity: 0.8;
-    transition: ease 0.3s;
-  }
+.Button {
+  border-radius: 0px !important;
+  background-color: #000 !important;
+  margin: 0 auto;
+  padding: 15px 40px !important;
+  color: #fff;
+}
+.Button:hover {
+  opacity: 0.8;
+  transition: ease 0.3s;
 }
 
 @media screen and (min-width: 600px) {
   .Trendy {
     max-width: 1300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 50px 0;
   }
-  .ProductGrid {
-    justify-content: center;
-    margin: 50px 0 !important;
-  }
-  .Product {
-    border-radius: 0px !important;
-    margin: 10px;
-  }
-  .Popular {
-    font-size: 20px;
-  }
-  .TrendyTitle {
-    font-size: 50px;
-  }
-  .Divider {
-    background-color: #a86e3b;
-    height: 2px;
-    width: 100px;
-    margin: 20px 0 !important;
-  }
+
   .Image {
     height: 400px;
     width: 45vw !important;
-  }
-  .CardOverflow {
-    max-width: 95vw;
-    height: 400px;
-    padding: 0px !important;
-  }
-  .Button {
-    border-radius: 0px !important;
-    background-color: #000 !important;
-    margin: 0 auto;
-    padding: 15px 40px !important;
-    color: #fff;
-  }
-  .Button:hover {
-    opacity: 0.8;
-    transition: ease 0.3s;
-  }
-  .CardCover {
-    border-radius: 0px !important;
-  }
-  .ProductButton {
-    border-radius: 0px !important;
-    border: 1px solid #fff !important;
-    color: #fff !important;
-    font-family: "Montserrat", sans-serif !important;
-    letter-spacing: 3px;
-    font-weight: 300 !important;
   }
 }
 
