@@ -119,7 +119,7 @@ const NavBar = ({ category }) => {
               component={Link}
               to={"cart"}
             >
-              <Badge badgeContent={cart?.total_items} color="info"></Badge>
+              <Badge badgeContent={cart?.total_items} color="neutral"></Badge>
               <ShoppingCartOutlinedIcon />
             </IconButton>
           </div>
