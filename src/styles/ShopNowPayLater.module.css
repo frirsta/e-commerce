@@ -1,0 +1,14 @@
+.ShopNowPayLater {
+  height: 100px;
+  background-color: #efefef;
+  width: 100vw !important;
+  margin-top: 100px;
+}
+.Text {
+  font-size: 30px;
+  background-color: #efefef;
+  font-weight: 200;
+  padding: 0px 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
