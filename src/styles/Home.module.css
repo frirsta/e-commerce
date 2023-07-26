@@ -28,7 +28,7 @@
 .HeroTextContainer {
   position: relative;
   bottom: 90px;
-  right: 5px;
+  right: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
