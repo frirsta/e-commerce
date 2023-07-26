@@ -67,9 +67,9 @@ I am currently working on this website, therefore the live website can look diff
 <details><summary>Home page</summary>
 
 <div style=" display: flex; align-items: flex-start; justify-content: space-between">
+<img src='src\assets\readme\home_mobile.png' style="width: 40%" alt="home page on mobile screen">
 <img src='src\assets\readme\home_desktop.png' style="width: 20%" alt="home page on desktop screen">
 <img src='src\assets\readme\home_tablet.png' style="width: 30%" alt="home page on tablet screen">
-<img src='src\assets\readme\home_mobile.png' style="width: 40%" alt="home page on mobile screen">
 </div>
 
 </details>
