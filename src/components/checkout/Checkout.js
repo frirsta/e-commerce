@@ -43,7 +43,7 @@ const Checkout = ({ order, onCaptureCheckout, error }) => {
 
   const test = (data) => {
     setShippingData(data);
-    console.log(shippingData);
+    // console.log(shippingData);
     nextStep();
   };
 

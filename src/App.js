@@ -83,7 +83,7 @@ function App() {
     fetchCategories();
     fetchCart();
   }, []);
-  console.log(order);
+  // console.log(order);
   return (
     <div className={styles.App}>
       <BrowserRouter>

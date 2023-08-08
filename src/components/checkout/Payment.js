@@ -20,7 +20,7 @@ const Payment = ({
   shippingData,
   onCaptureCheckout,
 }) => {
-  console.log(shippingData);
+  // console.log(shippingData);
   const handleSubmit = async (event, elements, stripe) => {
     event.preventDefault();
     if (!stripe || !elements) return;
@@ -33,7 +33,7 @@ const Payment = ({
     });
 
     if (error) {
-      console.log(error);
+      // console.log(error);
     } else {
       const orderData = {
         line_items: checkoutToken.line_items,
@@ -60,7 +60,7 @@ const Payment = ({
       };
       onCaptureCheckout(checkoutToken.id, orderData);
       nextStep();
-      console.log(orderData);
+      // console.log(orderData);
     }
   };
   return (
