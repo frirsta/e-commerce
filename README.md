@@ -22,7 +22,7 @@ Welcome to Beauty Pronounced! Beauty Pronounced is a clothing / beauty brand. Th
 
 <br>
 
-Live link: https://beautypronounced-9ad907715922.herokuapp.com/
+Live link: https://beautypronounce-82db06287836.herokuapp.com/
 
 <br>
 
