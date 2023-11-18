@@ -2,6 +2,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/65fd9846-7de1-41d4-bd35-f3b93aa64766/deploy-status)](https://app.netlify.com/sites/beautypronounced/deploys)
 
+<br>
+
+Live link: <b> https://beautypronounced.netlify.app/ </b>
+
+<br>
+
 ## This is a hobby project
 
 By creating the Beauty Pronounced e-commerce website, I gained hands-on experience with ReactJS, CommerceJS, Stripe, and Material-UI, showcasing my ability to work with modern web development technologies and integrate external services. This project demonstrates my proficiency in developing functional and visually appealing e-commerce platforms while ensuring a smooth user experience and secure payment processing.
@@ -24,9 +30,6 @@ Welcome to Beauty Pronounced! Beauty Pronounced is a clothing / beauty brand. Th
 
 <br>
 
-Live link: https://beautypronounce-82db06287836.herokuapp.com/
-
-<br>
 
 # Design
 
