@@ -23,9 +23,6 @@ By creating the Beauty Pronounced e-commerce website, I gained hands-on experien
 - [**Credits**](#credits)
 
 # Project
-
-## This is not a real company or brand.
-
 Welcome to Beauty Pronounced! Beauty Pronounced is a clothing / beauty brand. The website / brand is for those who want to keep up with the latest fashion trends and look amazing.
 
 <br>
